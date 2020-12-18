@@ -40,8 +40,8 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 600px){
     .bg-image{
-        height: 70vh;
-        width: 250vw;
+        height: 60vh;
+        width: 300vw;
     }
 }
 
