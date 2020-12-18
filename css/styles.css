@@ -18,13 +18,17 @@ body::-webkit-scrollbar {
 /* Navbar Start */
 
 .nav-text{
-    color: black;
+    color: #ffffff;
 }
 
-/* Home Start */
+@media screen and (max-width: 600px){
+    .navbar{
+        display: none;
+    }
+}
 
-.home-image {
-    background-image: url('cut-bg.png');
+.bg-image {
+    /* background-image: url('cut-bg.png'); */
     /* height: 100vh; */
     width: 100%;
     background-position: center;
@@ -33,6 +37,17 @@ body::-webkit-scrollbar {
     /* background-attachment: fixed; */
     position: fixed;
 }
+
+@media screen and (max-width: 600px){
+    .bg-image{
+        height: 70vh;
+        width: 250vw;
+    }
+}
+
+
+/* Home Start */
+
 
 .home-bg{
     height: 100vh;
@@ -55,7 +70,7 @@ body::-webkit-scrollbar {
     z-index: -1;
 }
 .home-text h1{
-    font-size: 6em;
+    font-size: 20vw;
 }
 
 /* About Start */
@@ -64,7 +79,7 @@ body::-webkit-scrollbar {
     /* position: absolute; */
     background-color: black;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     z-index: -2;
 }
 
