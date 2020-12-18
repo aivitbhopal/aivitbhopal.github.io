@@ -27,6 +27,8 @@ body::-webkit-scrollbar {
     }
 }
 
+/* Background Image start */
+
 .bg-image {
     /* background-image: url('cut-bg.png'); */
     /* height: 100vh; */
@@ -49,7 +51,7 @@ body::-webkit-scrollbar {
 /* Home Start */
 
 
-.home-bg{
+.home{
     height: 100vh;
     background-color: cornsilk;
     z-index: 4;
@@ -65,12 +67,15 @@ body::-webkit-scrollbar {
     z-index: 2;
     text-align: center;
   }
-.home-text::before{
-    background-color: cornsilk;
-    z-index: -1;
-}
+
 .home-text h1{
-    font-size: 20vw;
+    font-size: 6em;
+}
+
+@media screen and (max-width: 600px){
+    .home-text h1{
+        font-size: 20vw;
+    }
 }
 
 /* About Start */
@@ -80,6 +85,46 @@ body::-webkit-scrollbar {
     background-color: black;
     height: 100vh;
     width: 100vw;
+    z-index: -2;
+}
+
+/* Ideathon start */
+
+.ideathon{
+    /* position: absolute; */
+    background-color:yellow;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Judges start */
+
+.judges{
+    /* position: absolute; */
+    background-color:yellow;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Schedule start */
+
+.schedule{
+    /* position: absolute; */
+    background-color:yellow;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Register start */
+
+.register{
+    /* position: absolute; */
+    background-color:yellow;
+    height: 100vh;
+    width: 100%;
     z-index: -2;
 }
 
