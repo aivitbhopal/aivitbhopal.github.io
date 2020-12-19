@@ -4,20 +4,43 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro&display=swap');
+
+@font-face {
+    font-family: CrackedCode;
+    src: url('../font/CrackedCode.ttf');
+}
+
+@font-face {
+    font-family: pdark;
+    src: url('../font/pdark.ttf');
+}
+
+@font-face {
+    font-family: circuitboard;
+    src: url('../font/Circuitboard-pnEy.ttf');
+}
+
 body {
     font-size: 16px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
     display: none;
-  }
+}
+
+
 
 /* Navbar Start */
-
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .nav-text{
     color: #ffffff;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px){
@@ -86,28 +109,45 @@ body::-webkit-scrollbar {
 
 .home{
     height: 100vh;
-    background-color: cornsilk;
-    z-index: 4;
+    /* background-color: cornsilk; */
+    z-index: -2;
 }
   
 .home-text {
+    width: 100vw;
+    height: 100vh;
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
 .home-text h1{
-    font-size: 6em;
+    font-size: 5.5em;
+    font-family: CrackedCode;
+    overflow: hidden;
 }
+
+.home-text h2{
+    font-family: circuitboard;
+    font-size: 4em;
+}
+
+.home-text h3{
+    font-family: pdark;
+    font-size: 2em;
+}
+
 
 @media screen and (max-width: 600px){
     .home-text h1{
-        font-size: 20vw;
+        font-size: 10vw;
     }
 }
 
@@ -121,14 +161,26 @@ body::-webkit-scrollbar {
 }
 
 .about-text{
-    width: 100vw;
+    width: 100%;
     color: white;
     font-weight: bold;
     position: absolute;
     top: 112%;
     left: 1%;
     z-index: 3;
-    text-align: center;   
+    text-align: center;
+    /* border: 3px solid red; */
+}
+.scroll {
+    /* background-color: #fed9ff; */
+    width: 600px;
+    height: 64vh;
+    overflow: auto;
+    text-align: justify;
+    padding: 20px;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
 }
 
 /* Ideathon start */
@@ -149,6 +201,113 @@ body::-webkit-scrollbar {
     left: 1%;
     z-index: 3;
     text-align: center;   
+}
+
+.details{
+    font-family: Oxygen;
+}
+
+.details .box{
+    position: relative;
+    height: 63vh;
+    width: 22%;
+    background: #060c21;
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin-left: 2vw;
+}
+.details .box::before{
+    content: '';
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    right: -2.5px;
+    bottom: -2.5px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;            
+}
+.details .box:nth-child(1)::before{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+.details .box:nth-child(2)::before{
+    background: linear-gradient(315deg,#89ff00,#00bcd4);
+}
+.details .box:nth-child(3)::before{
+    background: linear-gradient(315deg,#5d02ff,#ffc107);
+}
+.details .box:nth-child(4)::before{
+    background: linear-gradient(315deg,#e64a19,#89ff00);
+}
+.details .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+}
+.con{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+.box .con h2{
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 6em;
+    font-weight: bold;
+    color: rgba(255,255,255,0.05);
+    transition: 0.5s;
+
+}
+.box:hover .con h2{
+    top: -90px;
+}
+.box .con h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+
+}
+.box .con p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.box .con a{
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: medium;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.box:hover .con a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.box .con a:hover{
+    color: #000;
+    background: #fff;
 }
 
 /* Judges start */
@@ -176,6 +335,32 @@ body::-webkit-scrollbar {
     height: 100vh;
     width: 100%;
     z-index: -2;
+}
+
+.register-text{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 512%;
+    left: 1%;
+    z-index: 3;
+    text-align: center;
+    /* border: 3px solid red; */
+}
+
+/* Form Start */
+.form{
+    /* left: 10vw; */
+    padding-left: 10vw;
+    justify-self: right;
+    /* border: 3px solid red; */
+    position: absolute;
+    height: 81vh;
+    overflow: hidden;
+}
+.form::-webkit-scrollbar{
+    display: none;
 }
 
 /* Contact start */
