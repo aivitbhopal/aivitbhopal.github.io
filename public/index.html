@@ -46,8 +46,8 @@
               <p>2<sup>nd</sup> January, 2021 - 3<sup>rd</sup> January, 2021</p><br>
               <a href="#register" class="btn btn-dark btn-lg">Register Now</a>
             </div>
-            <div class="col-md-4" style="margin-top: 50vh;">
-              <img src="images/education.png" width="100%">
+            <div class="col-md-4" style="margin-top: 30vh;">
+              <img src="images/3d_art.png" width="100%">
             </div>
           </div>
         </div>
@@ -147,7 +147,29 @@
             </div>
             <div class="col-md-6">
               <div class="form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsCWCN8499dakENRqpixpm9gZxuV03Dk5a_SkBMSRoyoXQ4g/viewform?embedded=true" scrolling=no width="640" height="667" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <form action="" method="POST" id="registrationform">
+                  <h1>Register</h1>
+                  <div class="alert">Message Sent</div>
+                  <fieldset>
+                    <!-- Section 1 -->
+                    <legend><span class="section">1</span>Your Basic Info</legend>
+                    <label class="" for="name">Name:</label>
+                    <input type="text" name="name" value="" id="name" required />
+              
+                    <label class="" for="email">Email:</label>
+                    <input type="email" name="email" value="" id="email" required />
+              
+                    <label for="password">password:</label>
+                    <input type="password" name="password" value="" id="password" required />
+                  </fieldset>       
+              
+                  <button type="submit" sendMessage()>Register</button>
+                </form>
+                <!-- <form class="form-inline d-flex">
+                  <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+                  <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+                </form> -->
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsCWCN8499dakENRqpixpm9gZxuV03Dk5a_SkBMSRoyoXQ4g/viewform?embedded=true" scrolling=no width="640" height="667" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
               </div>
             </div>
           </div>
@@ -197,5 +219,10 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <script src="js/firebase.js"></script>
   </body>
 </html>
