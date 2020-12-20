@@ -323,9 +323,9 @@ body::-webkit-scrollbar {
     z-index: -2;
 }
 
-/* Schedule start */
+/* Timeline start */
 
-.schedule{
+.timeline{
     background-color:chocolate;
     height: 100vh;
     width: 100%;
@@ -353,7 +353,11 @@ body::-webkit-scrollbar {
     /* border: 3px solid red; */
 }
 
-/* Form Start */
+.rules{
+    padding-left: 10vw;
+    margin-top: 10vh;
+}
+
 .form{
     top: 5vh;
     right: 10vw;
