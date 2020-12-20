@@ -355,7 +355,8 @@ body::-webkit-scrollbar {
 
 .rules{
     padding-left: 10vw;
-    margin-top: 10vh;
+    margin-top: 8vh;
+    font-size: 1.2em;
 }
 
 .form{
@@ -388,4 +389,27 @@ body::-webkit-scrollbar {
     z-index: 3;
     text-align: center;
     /* border: 3px solid red; */
+}
+
+.QandA{
+    font-size: 1.2em;
+    padding: 0.5em;
+    /* border: 3px solid red; */
+    border-radius: 1em;
+    background-color: bisque;
+    margin-top: 0.8em;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.question{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.0em;
+    color: goldenrod;
+}
+
+.answer{
+    font-family: 'Pacifico', cursive;
+    color: purple;
 }
