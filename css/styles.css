@@ -154,7 +154,7 @@ body::-webkit-scrollbar {
 /* About Start */
 
 .about{
-    background-color: black;
+    /* background-color: black; */
     height: 100vh;
     width: 100vw;
     z-index: -2;
@@ -171,8 +171,12 @@ body::-webkit-scrollbar {
     text-align: center;
     /* border: 3px solid red; */
 }
-.scroll {
-    /* background-color: #fed9ff; */
+
+.about-p p{
+    font-size: 1.2em;
+}
+
+/* .scroll {
     width: 600px;
     height: 64vh;
     overflow: auto;
@@ -181,12 +185,12 @@ body::-webkit-scrollbar {
 }
 .scroll::-webkit-scrollbar {
     display: none;
-}
+} */
 
 /* Ideathon start */
 
 .ideathon{
-    background-color:yellow;
+    /* background-color:yellow; */
     height: 100vh;
     width: 100%;
     z-index: -2;
@@ -231,13 +235,13 @@ body::-webkit-scrollbar {
 .details .box:nth-child(1)::before{
     background: linear-gradient(315deg,#ff0057,#e64a19);
 }
-.details .box:nth-child(2)::before{
+.details .box:nth-child(4)::before{
     background: linear-gradient(315deg,#89ff00,#00bcd4);
 }
 .details .box:nth-child(3)::before{
     background: linear-gradient(315deg,#5d02ff,#ffc107);
 }
-.details .box:nth-child(4)::before{
+.details .box:nth-child(2)::before{
     background: linear-gradient(315deg,#e64a19,#89ff00);
 }
 .details .box::after{
@@ -313,16 +317,17 @@ body::-webkit-scrollbar {
 /* Judges start */
 
 .judges{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     height: 100vh;
     width: 100%;
+    left: 15vw;
     z-index: -2;
 }
 
 /* Schedule start */
 
 .schedule{
-    background-color:chocolate;
+    /* background-color:chocolate; */
     height: 100vh;
     width: 100%;
     z-index: -2;
@@ -331,7 +336,7 @@ body::-webkit-scrollbar {
 /* Register start */
 
 .register{
-    background-color:greenyellow;
+    /* background-color:greenyellow; */
     height: 100vh;
     width: 100%;
     z-index: -2;
@@ -350,18 +355,19 @@ body::-webkit-scrollbar {
 }
 
 /* Form Start */
-/* .form{
+.form{
     padding-left: 10vw;
     justify-self: right;
     position: absolute;
-    height: 81vh;
+    height: 77vh;
+    width: 50vw;
     overflow: hidden;
 }
-.form::-webkit-scrollbar{
+.google-form::-webkit-scrollbar{
     display: none;
-} */
+}
 
-form {
+/* form {
     max-width: 400px;
     margin: 35px auto;
     border-radius: 10px;
@@ -456,13 +462,25 @@ form {
     form {
       max-width: 480px;
     }
-  }
+  } */
 
 /* Contact start */
 
-.contact{
-    background-color:maroon;
+.faqs{
+    /* background-color:maroon; */
     height: 100vh;
     width: 100%;
     z-index: -2;
+}
+
+.faqs-text{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 612%;
+    left: 1%;
+    z-index: 3;
+    text-align: center;
+    /* border: 3px solid red; */
 }
