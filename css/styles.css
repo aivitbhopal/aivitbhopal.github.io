@@ -374,7 +374,8 @@ body::-webkit-scrollbar {
 
 .faqs{
     background-color:maroon;
-    height: 100vh;
+    min-height: 100vh;
+    /* height: ; */
     width: 100%;
     z-index: -2;
 }
@@ -393,7 +394,7 @@ body::-webkit-scrollbar {
 
 .QandA{
     font-size: 1.2em;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     /* border: 3px solid red; */
     border-radius: 1em;
     background-color: bisque;
@@ -406,10 +407,29 @@ body::-webkit-scrollbar {
 .question{
     font-family: 'Source Code Pro', monospace;
     font-size: 1.0em;
-    color: goldenrod;
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;   
+}
+
+.ac, .question:hover {
+    /* background-color: #ccc; */
 }
 
 .answer{
     font-family: 'Pacifico', cursive;
     color: purple;
+    padding: 0 18px;
+    background-color: white;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: none;
+    overflow: hidden;
+    z-index: 5;
 }

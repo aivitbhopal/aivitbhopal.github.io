@@ -42,7 +42,7 @@
             <div class="col-md-8" style="padding-top: 30vh; margin-left: -5vw;">
               <h2>AI Division</h2><br>
               <h3>Presents</h3><br>
-              <h1>HACK4YOU</h1><br>
+              <h1>IDEATHON</h1><br>
               <p>2<sup>nd</sup> January, 2021 - 3<sup>rd</sup> January, 2021</p><br>
               <a href="#register" class="btn btn-dark btn-lg">Register Now</a>
             </div>
@@ -73,7 +73,7 @@
               <div class="about-p">
                 <h1 style="font-family: circuitboard;">About the Ideathon</h1>
                 <p>A short brainstorming session to bring to light the fresh solutions that the next generation possesses, to solve certain challenges in a new and innovative way. Working as an individual or a group using the concept and application of Artificial Intelligence to reach at possible solutions. Transforming the way of thinking and providing a competitive environment for the young talents.</p>
-                <img src="images/about.png" alt="..." width="350px">
+                <img src="images/about.png" alt="..." width="250px">
               </div>
             </div>
           </div>
@@ -211,6 +211,26 @@
     <!-- footer -->
 
     <!-- JavaScript -->
+    <script>
+      var acc = document.getElementsByClassName("question");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("ac");
+
+          /* Toggle between hiding and showing the active panel */
+          var answer = this.nextElementSibling;
+          if (answer.style.display === "block") {
+            answer.style.display = "none";
+          } else {
+            answer.style.display = "block";
+          }
+        });
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="js/three.min.js"></script>
