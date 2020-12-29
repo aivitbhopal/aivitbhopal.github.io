@@ -544,8 +544,13 @@ body::-webkit-scrollbar {
 
 .rules{
     padding-left: 10vw;
-    margin-top: 8vh;
-    font-size: 1.2em;
+    margin-top: 5vh;
+    font-size: 1.5em;
+}
+
+.rules li{
+    padding-top: 5vh;
+    text-align: justify;
 }
 
 .form{
