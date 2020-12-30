@@ -26,7 +26,7 @@ body {
     font-size: 16px;
     font-family: 'Source Code Pro', monospace;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -110,7 +110,6 @@ body::-webkit-scrollbar {
 
 .home{
     height: 100vh;
-    /* background-color: cornsilk; */
     z-index: -2;
 }
   
@@ -129,6 +128,13 @@ body::-webkit-scrollbar {
     overflow: hidden;
   }
 
+.home-col-left{
+    padding-top: 30vh;
+    margin-left: -5vw;
+}
+.home-col-right{
+    margin-top: 30vh;
+}
 .home-text h1{
     font-size: 5.5em;
     font-family: CrackedCode;
@@ -144,11 +150,41 @@ body::-webkit-scrollbar {
     font-family: pdark;
     font-size: 2em;
 }
-
+.home-img{
+    width:100%;
+}
+.logo-img{
+    display: none;
+}
 
 @media screen and (max-width: 600px){
+    .home{
+        justify-content: center;
+    }
     .home-text h1{
         font-size: 10vw;
+    }
+    .home-text{
+        top:20%;
+        justify-content: center;
+        overflow: visible;
+    }
+    .home-col-left{
+        margin-top: 1vh;
+        /* padding-left: 6vw; */
+        margin-left: 0;
+    }
+    .home-col-right{
+        margin-top: 4vh;
+        padding-right: 0%;
+        overflow: visible;
+    }
+    .logo-img{
+        width: 40%;
+        display: inline;
+    }
+    .home-img{
+        width:70%;
     }
 }
 
