@@ -259,17 +259,36 @@ body::-webkit-scrollbar {
     padding-left: 4vw;
     padding-right: 3vw;
 }
+.about-p img{
+    height: 40vh;
+    padding-left: 25vh;
+}
+.about-p h1{
+    font-size: 2em;
+    text-align: center;
+}
 @media screen and (max-width: 700px){
+    .about{
+        height: 130vh;
+    }
+    .about-text{
+        top: 102%;
+    }
     .about-p p{
         font-size: 0.8em;
+    }
+    .about-p img{
+        padding-left: 10vw;
     }
     .about-p h6{
         font-size: 0.9em;
     }
     .about-p h1{
         font-size: 2em;
+        text-align: center;
     }
     .about-col-left{
+        margin-top: -10vh;
         padding-left: 0%;
         padding: 15px;
     }
@@ -411,9 +430,20 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 700px){
+    .ideathon{
+        /* background-color:yellow; */
+        height: 190vh;
+    }
+    
+    .ideathon-text{
+        top: 232%; 
+    }
+    .details{
+        margin-top: -10vh;
+    }
     .details .box{
         position: relative;
-        height: 63vh;
+        height: 54vh;
         width: 80%;
         background: #060c21;
         display: flex;
@@ -483,7 +513,6 @@ body::-webkit-scrollbar {
     justify-content: justify;
     align-items: center;
     z-index: 6;
-    
 }
 
 .judge-border-big{
@@ -509,12 +538,67 @@ body::-webkit-scrollbar {
     top: -20vw;
     position: relative;
 }
+.judge-phone{
+    display: none;
+}
+.judge-web{
+    display: block;
+}
+
+@media screen and (max-width: 700px){
+    .judges{
+        height: 200vh;
+    }
+    .judge-web{
+        display: none;
+    }
+    .judge-phone{
+        display: inline;
+        width: 100%;
+        /* padding: 0; */
+    }
+    .judges-text{
+        top: 422%;
+    }
+    .judge-img{
+        margin-top: 5vh;
+        width: 80vw;
+        height: 85vw;
+        margin-left: 4vw;
+    }
+    .judges-p:nth-child(1){
+        margin-top: -10vh;
+    }
+    .j2{
+        margin-top: -30vh;
+    }
+    .judge-border{
+        margin-left: 2vw;
+        width: 86vw;
+        height: 84vw;
+        top: -88vw;
+        left: -1vw;
+    }
+    .judges-p h1{
+        font-size: 2em;
+        font-weight: bold;
+        top: -80vw;
+        position: relative;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .judges-p p{
+        font-size: 1.2em;
+        top: -80vw;
+        position: relative;
+    }
+}
 
 /* Timeline start */
 
 .timeline{
     background-color:chocolate;
-    height: 100vh;
+    height: 140vh;
     width: 100%;
     z-index: -2;
 }
@@ -535,11 +619,26 @@ body::-webkit-scrollbar {
 .scroll {
     /* background-color: #e64a19; */
     width: 98vw;
-    height: 64vh;
+    height: 110vh;
     overflow: auto;
     text-align: justify;
     padding: 20px;
 }
+@media screen and (max-width: 700px){
+    .timeline{
+        height: 140vh;
+    }
+    
+    .timeline-text{
+        top: 622%;
+    }
+    .scroll{
+        margin-left: -5vh;
+        margin-top: -10vh;
+        height: auto;
+    }
+}
+
 .scroll::-webkit-scrollbar {
     display: none;
 }
@@ -639,7 +738,7 @@ body::-webkit-scrollbar {
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
   /* Place the timelime to the left */
     .timeline-div::after {
       left: 31px;
@@ -650,6 +749,7 @@ body::-webkit-scrollbar {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
+      overflow: visible;
     }
   
   /* Make sure that all arrows are pointing leftwards */
@@ -669,6 +769,13 @@ body::-webkit-scrollbar {
     .right {
       left: 0%;
     }
+    .content{
+        width: 34vh;
+        overflow: visible;
+    }
+    .content h2{
+        font-size: 1.4em;
+    }
   }
 
 /* Register start */
@@ -685,7 +792,7 @@ body::-webkit-scrollbar {
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 512%;
+    top: 552%;
     left: 1%;
     z-index: 3;
     text-align: center;
@@ -723,6 +830,44 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
+@media screen and (max-width: 700px) {
+    .register{
+        /* background-color:rgb(0, 90, 53); */
+        height: 150vh;
+        width: 100%;
+        z-index: -2;
+    }
+    .register-col-left{
+        /* padding-top: 30vh; */
+        margin-left: -8vw;
+        margin-top: -10vh;
+    }
+    .register-col-right{
+        margin-top: 0vh;
+        margin-left: -8vw;
+    }
+    .rules{
+        font-size: 1em;
+    }
+    .rules li{
+        padding-top: 2vh;
+    }
+    .register-text{
+        top: 762%;
+    }
+    .form{
+        top: 5vh;
+        right: 10vw;
+        padding-left: 10vw;
+        justify-self: right;
+        /* position: absolute; */
+        height: 98vh;
+        width: 95vw;
+        overflow: hidden;
+    }
+    
+}
+
 /* Contact start */
 
 .faqs{
@@ -738,7 +883,7 @@ body::-webkit-scrollbar {
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 612%;
+    top: 652%;
     left: 1%;
     z-index: 3;
     text-align: center;
@@ -788,4 +933,53 @@ body::-webkit-scrollbar {
     display: none;
     overflow: hidden;
     z-index: 5;
+}
+
+.quiz-col-left{
+    margin-top: 10vh; padding-left: 6vw;
+}
+.quiz-col-right{
+    margin-top: 4vh; padding-right: 6vw;
+}
+.scroll-faq{
+    /* background-color: #e64a19; */
+    width: 98vw;
+    height: 64vh;
+    overflow: auto;
+    text-align: justify;
+    padding: 20px;
+}
+.scroll-faq::-webkit-scrollbar {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .faqs{
+        /* background-color:rgb(0, 90, 53); */
+        height: 115vh;
+        width: 100%;
+        z-index: -2;
+    }
+    
+    .faqs-text{
+        top: 912%;
+    }
+    .quiz-col-left{
+        margin-top: 0vh;
+        padding-left: 3vw;
+        padding-right: 6vw;
+    }
+    .quiz-col-right{
+        margin-top: -2vh;
+        /* padding-right: 2vw; */
+        /* padding-left: 13vw; */
+    }
+    .scroll-faq{
+        /* background-color: #e64a19; */
+        margin-top: -10vh;
+        width: 98vw;
+        height: 100vh;
+        overflow: auto;
+        text-align: justify;
+        padding: 0px;
+    }
 }
