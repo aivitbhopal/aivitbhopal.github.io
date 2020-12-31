@@ -24,7 +24,7 @@
 body {
     background-color: black;
     font-size: 16px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     overflow: hidden;
 }
@@ -89,6 +89,24 @@ body::-webkit-scrollbar {
     -webkit-text-stroke-color: black;
 }
 
+@media screen and (max-width: 600px){
+    .heading{
+        width: 92vw;
+        height: 10vh;
+        /* border: 3px solid red; */
+        /* top: -12%; */
+    }
+    .heading h2{
+        font-size: 3.5em;
+        margin-top: -0.2vh;
+    }
+    .heading p{
+        margin-top: -3vh;
+        letter-spacing: -0.03em;
+        font-size: 5em;
+    }
+}
+
 /* Background Image start */
 
 .bg-image {
@@ -99,10 +117,17 @@ body::-webkit-scrollbar {
     position: fixed;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .bg-image{
         height: 60vh;
         width: 300vw;
+    }
+    .div-scroll{
+        margin-top: -10vh;
+        width: 98vw;
+        height: 70vh;
+        overflow: auto;
+        text-align: justify;
     }
 }
 
@@ -116,7 +141,7 @@ body::-webkit-scrollbar {
 .home-text {
     width: 100vw;
     height: 100vh;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     position: absolute;
     top: 40%;
@@ -197,7 +222,7 @@ body::-webkit-scrollbar {
 /* About Start */
 
 .about{
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     height: 100vh;
     width: 100vw;
     z-index: -2;
@@ -211,12 +236,47 @@ body::-webkit-scrollbar {
     top: 112%;
     left: 1%;
     z-index: 3;
-    text-align: center;
+    text-align: justify;
     /* border: 3px solid red; */
 }
 
 .about-p p{
-    font-size: 1.2em;
+    font-size: 1.3em;
+}
+.about-p h6{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.about-col-left{
+    padding-left: 4vw;
+    padding-right: 3vw;
+}
+.about-col-right{
+    margin-top: -18vh;
+    padding-left: 4vw;
+    padding-right: 3vw;
+}
+@media screen and (max-width: 700px){
+    .about-p p{
+        font-size: 0.8em;
+    }
+    .about-p h6{
+        font-size: 0.9em;
+    }
+    .about-p h1{
+        font-size: 2em;
+    }
+    .about-col-left{
+        padding-left: 0%;
+        padding: 15px;
+    }
+    .about-col-right{
+        margin-top: -5vh;
+        padding: 15px;
+    }
 }
 
 /* Ideathon start */
@@ -230,7 +290,7 @@ body::-webkit-scrollbar {
 
 .ideathon-text{
     width: 100vw;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     position: absolute;
     top: 212%;
@@ -241,11 +301,12 @@ body::-webkit-scrollbar {
 
 .details{
     font-family: Oxygen;
+    margin-top: 3vh;
 }
 
 .details .box{
     position: relative;
-    height: 63vh;
+    height: 57vh;
     width: 22%;
     background: #060c21;
     display: flex;
@@ -289,6 +350,8 @@ body::-webkit-scrollbar {
 .con{
     position: relative;
     padding: 20px;
+    padding-top: 0px;
+    margin-top: -3vh;
     transform: translateY(40px);
 }
 .box .con h2{
@@ -298,7 +361,7 @@ body::-webkit-scrollbar {
     margin: 0;
     margin: 0;
     padding: 0;
-    font-size: 6em;
+    font-size: 10em;
     font-weight: bold;
     color: rgba(255,255,255,0.05);
     transition: 0.5s;
@@ -308,8 +371,9 @@ body::-webkit-scrollbar {
     top: -90px;
 }
 .box .con h3{
-    margin: 0 0 10px;
+    /* margin: 0 0 10px; */
     padding: 0;
+    /* top: -30vh; */
     font-size: 2em;
     font-weight: bold;
     color: #fff;
@@ -346,6 +410,23 @@ body::-webkit-scrollbar {
     background: #fff;
 }
 
+@media screen and (max-width: 700px){
+    .details .box{
+        position: relative;
+        height: 63vh;
+        width: 80%;
+        background: #060c21;
+        display: flex;
+        justify-content: justify;
+        align-items: center;
+        margin: 1em;
+    }
+    .box .con h3{
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
 /* Judges start */
 
 .judges{
@@ -368,10 +449,36 @@ body::-webkit-scrollbar {
 }
 
 .judge-img{
+    margin-top: 5vh;
     position: relative;
     display: flex;
-    width: 20vw;
-    height: 21vw;
+    width: 19vw;
+    height: 20vw;
+    justify-self: center;
+    justify-content: justify;
+    align-items: center;
+    z-index: 6;
+    margin-left: 2vw;
+    
+}
+
+.judge-border{
+    margin-left: 2vw;
+    /* border: 3px solid black; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 21vw;
+    height: 20vw;
+    top: -21vw;
+    left: -1vw;
+    position: relative;
+    /* z-index: 7; */
+}
+
+.judge-img-big{
+    position: relative;
+    display: flex;
+    width: 22vw;
+    height: 23vw;
     justify-self: center;
     justify-content: justify;
     align-items: center;
@@ -379,12 +486,13 @@ body::-webkit-scrollbar {
     
 }
 
-.judge-border{
-    border: 3px solid black;
-    width: 20vw;
-    height: 21vw;
-    top: -22vw;
-    left: 1vw;
+.judge-border-big{
+    /* border: 3px solid black; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 24vw;
+    height: 23vw;
+    top: -24vw;
+    left: -1vw;
     position: relative;
 }
 
@@ -427,7 +535,7 @@ body::-webkit-scrollbar {
 .scroll {
     /* background-color: #e64a19; */
     width: 98vw;
-    height: 65vh;
+    height: 64vh;
     overflow: auto;
     text-align: justify;
     padding: 20px;
@@ -584,9 +692,18 @@ body::-webkit-scrollbar {
     /* border: 3px solid red; */
 }
 
+.register-col-left{
+    /* padding-top: 30vh; */
+    margin-left: -5vw;
+}
+.register-col-right{
+    margin-top: -15vh;
+    /* padding-left: 50vw; */
+}
+
 .rules{
     padding-left: 10vw;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     font-size: 1.5em;
 }
 
@@ -600,7 +717,7 @@ body::-webkit-scrollbar {
     right: 10vw;
     padding-left: 10vw;
     justify-self: right;
-    position: absolute;
+    /* position: absolute; */
     height: 77vh;
     width: 50vw;
     overflow: hidden;
@@ -609,7 +726,7 @@ body::-webkit-scrollbar {
 /* Contact start */
 
 .faqs{
-    background-color:maroon;
+    background-color: #9370bb;
     min-height: 100vh;
     /* height: ; */
     width: 100%;
