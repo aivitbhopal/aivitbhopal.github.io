@@ -272,7 +272,7 @@ body::-webkit-scrollbar {
         height: 130vh;
     }
     .about-text{
-        top: 102%;
+        top: 112%;
     }
     .about-p p{
         font-size: 0.8em;
@@ -436,7 +436,7 @@ body::-webkit-scrollbar {
     }
     
     .ideathon-text{
-        top: 232%; 
+        top: 252%; 
     }
     .details{
         margin-top: -10vh;
@@ -558,7 +558,7 @@ body::-webkit-scrollbar {
         /* padding: 0; */
     }
     .judges-text{
-        top: 422%;
+        top: 452%;
     }
     .judge-img{
         margin-top: 5vh;
@@ -626,11 +626,11 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 700px){
     .timeline{
-        height: 140vh;
+        height: 130vh;
     }
     
     .timeline-text{
-        top: 622%;
+        top: 662%;
     }
     .scroll{
         margin-left: -5vh;
@@ -853,7 +853,7 @@ body::-webkit-scrollbar {
         padding-top: 2vh;
     }
     .register-text{
-        top: 762%;
+        top: 802%;
     }
     .form{
         top: 5vh;
@@ -961,7 +961,7 @@ body::-webkit-scrollbar {
     }
     
     .faqs-text{
-        top: 912%;
+        top: 972%;
     }
     .quiz-col-left{
         margin-top: 0vh;
