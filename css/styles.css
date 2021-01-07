@@ -814,9 +814,10 @@ body::-webkit-scrollbar {
     font-size: 1.5em;
 }
 
-.rules li{
-    padding-top: 5vh;
+.rules p{
+    padding-top: 15vh;
     text-align: justify;
+    font-size: 2.5em;
 }
 
 .register-col-right p{
@@ -875,8 +876,8 @@ body::-webkit-scrollbar {
     .rules{
         font-size: 1em;
     }
-    .rules li{
-        padding-top: 2vh;
+    .rules p{
+        padding-top: 10vh;
     }
     .register-text{
         top: 802%;
