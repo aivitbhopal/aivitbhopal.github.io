@@ -79,6 +79,7 @@ body::-webkit-scrollbar{
 .showcase .images .img2{
     height: 20%;
     width: 20%;
+    padding-top: 3vh;
     position: relative;
     align-self: center;
     margin-left: 5vw;
@@ -123,14 +124,7 @@ body::-webkit-scrollbar{
     text-align: center;
     z-index: 2;
 }
-.showcase-top p {
-    margin-top: 30vh;
-    color: yellow;
-    word-wrap: break-word;
-    position: relative;
-    /* font-weight: 350; */
-    width: 100%;
-}
+
 .showcase-top h1 {
     white-space: nowrap;
     width: 100%;
@@ -157,7 +151,7 @@ body::-webkit-scrollbar{
     -webkit-text-fill-color: transparent;
     color: #14dcff;
     font-weight: 600;
-    font-size: 4.5rem;
+    font-size: 2.5em;
     z-index: 2;
 }
 .showcase-top h3{
@@ -168,16 +162,16 @@ body::-webkit-scrollbar{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 13vh;
-    font-size: 4.5rem;
+    font-size: 2.5em;
 }
-.showcase-top a:hover{
+/* .showcase-top a:hover{
     padding-left: 35vw;
     color: rgb(0, 25, 54);
     background: chartreuse;
     box-shadow: 0 0 10px chartreuse,0 0 10px chartreuse,0 0 10px chartreuse,0 0 10px chartreuse;
     z-index: 30;
 
-}
+} */
 .showcase-bar {
     max-width: 100%;
     height:fit-content;
@@ -186,10 +180,38 @@ body::-webkit-scrollbar{
     /* background-color: black; */
     /* border-bottom : 3px solid #3d3d3d; */
 }
-.showcase-bar a img {
+/* .showcase-bar a img {
     top: 9%;
     position: relative;
     padding: 0.5%;
+} */
+.showcase-top p {
+    margin-top: 30vh;
+    color: yellow;
+    word-wrap: break-word;
+    position: relative;
+    /* font-weight: 350; */
+    /* width: 100%; */
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0px;
+    cursor: auto;
+    background: 0%;
+    border-top: 0.5vh solid;
+    font-size: 1em;
+    padding-top: 0.5rem;
+}
+.btn-xl {
+    /* width: 30vw; */
+    /* padding-top: 2%; */
+    white-space: nowrap;
+    margin-bottom: 2vh;
 }
 
 
@@ -517,7 +539,7 @@ body::-webkit-scrollbar{
     font-size: 1.5em;
     font-weight: 600;
     background-color: #00d9ffcb;
-    width: 52vw;
+    width: 20vw;
     padding-bottom: 1vh;
     padding-top: 0.5vh;
 }
@@ -536,11 +558,11 @@ body::-webkit-scrollbar{
 
 .day2 h2{
     padding-right: 10vh;
-    margin-top: 18vh;
+    margin-top: 5vh;
     font-size: 1.5em;
     font-weight: 600;
     /* float: right; */
-    width: 50vw;
+    width: 20vw;
     padding-left: 2vw;
     background-color: rgb(9, 12, 43);
     /* margin-bottom: 15vh; */
