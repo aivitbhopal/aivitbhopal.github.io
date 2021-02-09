@@ -410,7 +410,7 @@ body::-webkit-scrollbar{
   }
   .card:hover
   {
-    box-shadow: 0 30px 70px rgba(247, 247, 247, 0.658);
+    box-shadow: 0 12px 30px rgba(247, 247, 247, 0.658);
   }
   .card .box1
   {
@@ -449,7 +449,7 @@ body::-webkit-scrollbar{
     padding: 4px 10px;
     border-radius: 15px;
   }
-  .card .box1 ul
+  /* .card .box1 ul
   {
     margin: 0;
     padding: 0;
@@ -465,7 +465,6 @@ body::-webkit-scrollbar{
     display: block;
     color: #aaa;
     margin: 0 10px;
-    /* margin-top: ; */
     font-size: 20px;
     transition: 0.5s;
     text-align: center;
@@ -474,7 +473,29 @@ body::-webkit-scrollbar{
   {
     color: rgb(9, 12, 43);
     transform: rotateY(360deg);
-  }
+  } */
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
 .day1{
     color: seashell;
     background-color: rgb(9, 12, 43);
