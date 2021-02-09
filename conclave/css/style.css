@@ -193,6 +193,9 @@ body::-webkit-scrollbar{
     /* font-weight: 350; */
     /* width: 100%; */
 }
+.showcase-top p:hover {
+    color: yellow;
+}
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -423,7 +426,7 @@ body::-webkit-scrollbar{
   {
     position: relative;
     width: 13vw;
-    height: 14vw;
+    height: 15vw;
     background: #fff;
     box-shadow: 0 20px 50px rgba(0,0,0,.1);
     border-radius: 10px;
@@ -517,6 +520,34 @@ body::-webkit-scrollbar{
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+.over {
+    /* border: 5px dotted #bbb; */
+    width: 80%;
+    border-radius: 15px; /* Rounded border */
+    margin: 0 auto; /* Center the coupon */
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+.speaker-overlay {
+    /* padding: 2px 16px; */
+    background-color: #f1f1f1;
+    /* width: 300px; */
+}
+
+.speaker-overlay p{
+    font-size: 0.5em;
+}
+
+.speaker-overlay h2{
+    font-size: 1em;
 }
 .day1{
     color: seashell;
