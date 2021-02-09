@@ -651,6 +651,6 @@ body::-webkit-scrollbar{
 
 .footer{
     background-color: rgb(0, 0, 0);
-    height: 30vh;
+    height: 10vh;
     min-width: 100vw;
 }
