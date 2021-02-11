@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Quiz 2</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+          background-color: black;
+          font-size: 16px;
+          font-family: Arial, Helvetica, sans-serif;
+          height: 100%;
+          /* overflow: hidden; */
+      }
+      body::-webkit-scrollbar {
+          display: none;
+      }
+      .button {
+        border-radius: 4px;
+        background-color: #3150fd;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    </style>
+  </head>
+<body>
+  <iframe src="https://h5p.org/h5p/embed/1082392" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+  <br><br>
+  <div style="align-items: center; padding-left: 45vw;">
+    <a class="button" href="part2.html"><span>Next Quiz</span></a>
+  </div>
+</body>
+</html>

@@ -1,476 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideathon</title>
-    <link rel="icon" href="images/ICON.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
+    <!-- <link rel="stylesheet" href="css/load.css"> -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="icon" href="img/icon.png" type="image/x-ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top flex-column flex-sm-row" style="padding-left: 2%;padding-right: 2%;">
-        <a class="navbar-brand" href="index.html">
-            <img class="logo" src="images/vit-logo.png" style="width: 10vw;" alt="image">
-        </a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link active" href="#home">Home</a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link" href="#about">About</a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link" href="#ideathon">Ideathon</a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link" href="#judges">Judges</a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link" href="#timeline">Timeline</a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link" href="#register">Result</a>
-        <a class="nav-text flex-sm-fill text-sm-center nav-link" href="#faqs">FAQs</a>
-        <a class="navbar-brand" href="index.html">
-            <img class="logo" src="images/division-logo.png" style="width: 10vw;" alt="image">
-        </a>
-    </nav>        
-    <!-- Navbar end -->
-    
-    
-    <section>
-      <div>
-        <img src="images/cut-bg.png" class="bg-image">
-      </div>
-
-      <!-- Home start -->
-      <section id="home">
-        <div class="home"></div>
-        <div class="home-text">
-          <div class="row">
-            <div class="col-md-8 home-col-left">
-              <img src="images/vit-logo.png" class="logo-img">
-              <img src="images/division-logo.png" class="logo-img">
-              <h2>AI Division</h2><br>
-              <h3>Presents</h3><br>
-              <h1>IDEATHON</h1><br>
-              <p>2<sup>nd</sup> January, 2021 - 3<sup>rd</sup> January, 2021</p><br>
-              <a href="#register" class="btn btn-dark btn-lg">Register Now</a>
-              <!-- <a href="https://h5p.org/h5p/embed/1083182" target="_blank" class="btn btn-dark btn-lg">Quiz 1</a> -->
-              <!-- <a href="AI4U/quiz2.html" target="_blank" class="btn btn-dark btn-lg">Quiz 2</a> -->
-              <!-- <a href="https://idky.h5p.com/content/1291208378249046678/embed" target="_blank" class="btn btn-dark btn-lg">Quiz 3</a> -->
-            </div>
-            <div class="col-md-4 home-col-right">
-              <img src="images/3d_art.png" class="home-img">
-            </div>
-          </div>
+    <title>AI Conclave&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;VIT Bhopal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scr/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onload="loader()">
+    <div class="showcase check" id="hm" align="center">
+        <video autoplay muted loop id="myVideo">
+            <source src="vid/200129-01-Plexus-human-body-whit.mp4" type="video/mp4">
+        </video>
+        <div class="images">
+            <a href="https://vitbhopal.ac.in/"><img class="img1" src="img/logow.png" alt=""></a>
+            <a href="index.html"><img class="img2" src="img/aic.png" alt=""></a>
+            <a href="https://vitbhopal.ac.in/ai/"><img class="img3" src="img/aiml.png" alt=""></a>
         </div>
-      </section>
-      <!-- Home end -->
-
-      <!-- About start -->
-      <section id="about">
-        <div class="about"></div>
-        <div class="container about-text">
-          <div class="heading">
-            <h2>About Us</h2>
-            <p>ABOUT&nbsp;US</p>
-          </div>
-          <div style="height: 20vh;"></div>
-          <!-- <div class="div-scroll"> -->
-            <div class="row" style="width: 98vw;">
-              <div class="col-md-6 about-col-left">
-                <div class="about-p">
-                  <h6>"Success in creating effective AI could be the biggest event in the history of our civilization. Or the worst. We just don't know."</h6><h6 style="text-align: right;"> - Stephen Hawking</h6>
-                  <p>AI4U is a nationwide weekend-long workshop organized by VIT Bhopal, to guide young minds to ride along with the technology of the future world. In this skill development initiative by the university, students would be given insights and introduced to limitless future possibilities of AI along with engaging them in a first-hand experience of building real-time AI applications under the guidance of AI-Specialised students and faculty members. The AI4U Workshop brings together over 2,000 representatives countrywide to engage in meaningful conversations and gives a unique exposure to every individual about the AI-powered real-world possibilities.</p>
-                </div>
-              </div>
-              <div class="col-md-6 about-col-right">
-                <div class="about-p">
-                  <h1 style="font-family: circuitboard;">About the Ideathon</h1>
-                  <p>A short brainstorming session to bring to light the fresh solutions that the next generation possesses, to solve certain challenges in a new and innovative way. Working as an individual or a group using the concept and application of Artificial Intelligence to reach at possible solutions. Transforming the way of thinking and providing a competitive environment for the young talents.</p>
-                  <img src="images/about.png" alt="...">
-                </div>
-              </div>
-            </div>
-          <!-- </div>   -->
+        <div class="showcase-hidden">
+            <h2>A R T I F I C I A L</h2>
+            <h2>I N T E L L I G E N C E</h2>
+            <h2>C O N C L A V E</h2>
+            <h2>2 0 2 1</h2>
         </div>
-      </section>
-      <!-- About end -->
+        <div class="showcase-top">
+            <h1>VIT&nbsp;&nbsp;&nbsp;Bhopal&nbsp;&nbsp;&nbsp;University&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;AI&nbsp;&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;ML&nbsp;&nbsp;&nbsp;Division&nbsp;&nbsp;&nbsp;Presents&nbsp;&nbsp;&nbsp;-</h1>
+            <h2>A R T I F I C I A L&nbsp;&nbsp;&nbsp;I N T E L L I G E N C E</h2>
+            <h3>C O N C L A V E&nbsp;&nbsp;&nbsp;2 0 2 1</h3>
+            <p class="btn btn-xl">Feburary&nbsp;26&nbsp;-&nbsp;27</p>
+        </div>
 
-      <!-- Ideathon start -->
-      <section id="ideathon">
-        <div class="ideathon"></div>
-        <div class="container ideathon-text">
-          <div class="heading">
-            <h2>Ideathon</h2>
-            <p>IDEATHON</p>
-          </div>
-          <div style="height: 20vh;"></div>
-          <!-- <div class="div-scroll"> -->
-            <div class="row details" style="width: 98vw; margin-left: 5%;">
-              <div class="col-md-3 box">
-                  <div class="con">
-                      <h2>1</h2>
-                      <h3>AI&nbsp;in&nbsp;Agriculture</h3>
-                      <img src="images/agriculture.png" width="75%">
-                      <a href="pdf/agriculture.pdf" target="_blank">Read More</a>
-                  </div>
-              </div>
-              <div class="col-md-3 box">
-                  <div class="con">
-                      <h2>2</h2>
-                      <h3>AI&nbsp;in&nbsp;Healthcare</h3>
-                      <img src="images/healtcare.png" width="75%">
-                      <a href="pdf/healthcare.pdf" target="_blank">Read More</a>
-                  </div>
-              </div>
-              <div class="col-md-3 box">
-                  <div class="con">
-                      <h2>3</h2>
-                      <h3>AI in Education</h3>
-                      <img src="images/education.png" width="75%">
-                      <a href="pdf/education.pdf" target="_blank">Read More</a>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                <!-- <div class="con">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla pariatur veritatis inventore mollitia natus assumenda a, labore similique quo perferendis molestias obcaecati magnam sit, ut porro recusandae ullam, aperiam sapiente.</p>
-                    <a href="#">Read More</a>
+
+        <div class="time">
+            <ul>
+                <li><span id="days"></span>Days</li>
+                <li><span id="hours"></span>Hrs</li>
+                <li><span id="minutes"></span>Mins</li>
+                <li><span id="seconds"></span>Secs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content col-md-6 left about-us">
+            <h1>About Us</h1>
+            <p>VIT Bhopal University has a goal with a new global outlook that empowers its aspirants to attain excellence through learning. The objective is to educate students from all over India, and from other countries, for them to become enlightened individuals, improving the standards of the society.</p>
+            <p>Here at VIT Bhopal’s AI Division, we give credence to practical skills and hands-on experience to develop and shape the career orientation of students.</p>
+            <p>AI Club is the newly launched technical club of VIT Bhopal. Where we promise to deliver far-ranging knowledge about Artificial Intelligence and Machine Learning to students. The purpose of this club is to give students an insight into what is needed to make their work persistent in the industrial world.</p>
+        </div>
+        <div class="content col-md-6 right">
+            <div class="slideshow-container">
+                <div class="sl1 mySlides">
+                  <img src="img/slideshow/VIT-Bhopal-1-scaled-e1580792779550.jpg" style="width:100%">
+                </div>
+              
+                <!-- <div class="sl1 mySlides fade">
+                  <img src="img/slideshow/sdasd.jpg" style="width:100%">
+                </div>
+              
+                <div class="sl1 mySlides fade">
+                  <img src="img/slideshow/class-room-1-scaled.jpg" style="width:100%">
                 </div> -->
               </div>
-            </div>
-          <!-- </div>                 -->
         </div>
-        </div>
-      </section>
-      <!-- Ideathon end -->
 
-      <!-- Judges start -->
-      <section id="judges">
-        <div class="judges"></div>
-        <div class="container judges-text">
-          <div class="heading">
-            <h2>Judges</h2>
-            <p>JUDGES</p>
-          </div>
-          <div style="height: 20vh;"></div>
-            <div class="row" style="width: 98vw;">
-              <div class="col-md-4 judge-phone">
-                <div class="judges-p">
-                  <img src="images/nageswara.jpg" class="judge-img">
-                  <div class="judge-border"></div>
-                  <h1>Dr Nageswara Guptha</h1>
-                  <p>Division Head - Artificial Intelligence and Machine Learning</p>
+        <div class="content col-md-6 right">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                  <img src="img/slideshow/class-room-1-scaled.jpg">
                 </div>
-              </div>
-              <div class="col-md-4 j2">
-                <div class="judges-p">
-                  <img src="images/dr.Sountharrajan.jpg" class="judge-img">
-                  <div class="judge-border"></div>
-                  <h1>Dr S Sountharrajan</h1>
-                  <p>Programme Chair - B.Tech CSE specialisation in Artificial Intelligence and Machine Learning</p>
-                </div>
-              </div>
-              <div class="col-md-4 judge-web">
-                <div class="judges-p">
-                  <img src="images/nageswara.jpg" class="judge-img-big">
-                  <div class="judge-border-big"></div>
-                  <h1 style="margin-top:-5vh">Dr Nageswara Guptha</h1>
-                  <p>Division Head - Artificial Intelligence and Machine Learning</p>
-                </div>
-              </div>
-              <div class="col-md-4 j2">
-                <div class="judges-p">
-                  <img src="images/pandimurugan.jpg" class="judge-img">
-                  <div class="judge-border"></div>
-                  <h1>Dr Pandimurugan</h1>
-                  <p>Programme Chair - Integrated M.Tech Artificial Intelligence and Machine Learning</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- Judges end -->
-
-      <!-- Timeline start -->
-      <section id="timeline">
-        <div class="timeline"></div>
-        <div class="container timeline-text">
-          <div class="heading">
-            <h2>Timeline</h2>
-            <p>TIMELINE</p>
-          </div>
-          <div style="height: 20vh;"></div>
-          <div class="scroll">
-            <div class="timeline-div">
-              <div class="container-div left">
-                <div class="content">
-                  <h2>3<sup>rd</sup> January 2021, 11:59 PM IST</h2>
-                  <p>Last date for registration<p>
-                </div>
-              </div>
-              <div class="container-div right">
-                <div class="content">
-                  <h2>4<sup>th</sup> January 2021, 11:59 PM IST</h2>
-                  <p>Last date for idea submission</p>
-                </div>
-              </div>
-              <div class="container-div left">
-                <div class="content">
-                  <h2>5<sup>th</sup> January 2021 01:00 PM IST</h2>
-                  <p>Top 3 teams from each track result declaration</p>
-                </div>
-              </div>
-              <div class="container-div right">
-                <div class="content">
-                  <h2>6<sup>th</sup> January 2021 05:00 PM IST</h2>
-                  <p>Presentation of Ideas in form of Power Point Presentation</p>
-                </div>
-              </div>
-              <div class="container-div left">
-                <div class="content">
-                  <h2>7<sup>th</sup> January 2021 01:00 PM IST</h2>
-                  <p>Overall Ideathon Winner Announcement !!!</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="content col-md-6 left conclave">
+            <h1>AI Conclave</h1>
+            <p>AI Conclave is a 2-day Nationwide event, held on 26th and 27th February 2021. It aims to impart knowledge and raise awareness about Artificial Intelligence and related technologies in the mind of the enthusiastic youth of India.
+            AI Conclave 2021 is a medium through which you may carve your path to learn more about AI and ML. Loaded with discussions, quizzes, keynotes sessions by subject matter experts, AI Conclave helps students gain sufficient knowledge and enhance their competence and expertise. Speakers from around the globe are invited to share their knowledge through Sessions on Deep Learning, Neural Networks, Data Science, etc. Acknowledging students about the innumerable technologies that incessantly evolve through AI and furnish remarkable opportunities in learning and practicing, is AI Conclave’s primary objective.</p>
         </div>
-      </section>
-      <!-- timeline end -->
-
-      <!-- Register start -->
-      <section id="register">
-        <div class="register"></div>
-        <div class="container register-text">
-          <div class="heading">
-            <h2>Result</h2>
-            <p>RESULT</p>
-          </div>
-          <div style="height: 20vh;"></div>
-          <!-- <div class="div-scroll"> -->
-            <div class="row" style="width: 98vw;">
-              <div class="col-md-6 register-col-left">
-                <div class="rules">
-                  <p>Congratulations !!!</p>
+        
+        <div class="content glance col-md-12 left">
+            <!-- <div class="glance"> -->
+                <br>
+                <p1>From&nbsp;&nbsp;VIT&nbsp;&nbsp;Bhopal,&nbsp;&nbsp;the&nbsp;&nbsp;AI&nbsp;&nbsp;Conclave&nbsp;&nbsp;brings&nbsp;&nbsp;to&nbsp;&nbsp;you</p1>
+                <br>
+                <table width=100%>
+                    <tr>
+                        <td align="center"><a>6+</a></td>
+                        <td align="center"><a>1000+</a></td>
+                        <td align="center"><a>2</a></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p2>Speakers from the industry</p2>
+                        </td>
+                        <td align="center">
+                            <p2>Participants across India</p2>
+                        </td>
+                        <td align="center">
+                            <p2>Days of technical brilliance</p2>
+                        </td>
+                    </tr>
+                </table>
+            <!-- </div> -->
+        </div>
+        
+        <div class="content col-md-12 speakers right">
+            <h1>Speakers</h1>
+            <div class="list">
+                <div onclick="on1()" class="card">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="img/s2.jfif" alt="">
+                        </div>
+                        <h2>Dr. Xavier Fernando<br><span>Senior UI Designer</span></h2>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6 register-col-right">
-                <div style="height: 10vh;"></div>
-                <p>Click on the button on the right to check the final Ideathon results</p>
-                <div style="height: 2vh;"></div>
-                <a href="pdf/results-final.pdf" target="_blank" class="btn btn-dark btn-lg" style="background-color: red; color: white; font-weight: bold;">Result</a>
-                <!-- <div class="form">
-                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqmoyKzedTvrO2UCimqfi6cX01Rcr_NhwJwA1k547-xyNS0Q/viewform?embedded=true" class="google-form" width="106%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div id="overlay1" class="overlay" onclick="off1()">
+                    <div class="row over">
+                        <div class="col-md-6 speaker-overlay">
+                            <img src="img/s2.jfif" alt="Avatar" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 speaker-overlay">
+                          <h2>John Doe</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function on1() {
+                      document.getElementById("overlay1").style.display = "block";
+                    }
+                    
+                    function off1() {
+                      document.getElementById("overlay1").style.display = "none";
+                    }
+                </script>
+                <div onclick="on2()" class="card">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="img/s2.jfif" alt="">
+                        </div>
+                        <h2>Dr. Onkar Krishna<br><span>Senior UI Designer</span></h2>
+                    </div>
+                </div>
+                <div id="overlay2" class="overlay" onclick="off2()">
+                    <div class="row over">
+                        <div class="col-md-6 speaker-overlay">
+                            <img src="img/s2.jfif" alt="Avatar" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 speaker-overlay">
+                          <h2>John Doe</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function on2() {
+                      document.getElementById("overlay2").style.display = "block";
+                    }
+                    
+                    function off2() {
+                      document.getElementById("overlay2").style.display = "none";
+                    }
+                </script>
+                <div onclick="on3()" class="card">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="img/s2.jfif" alt="">
+                        </div>
+                        <h2>Dr. Shailesh Kumar<br><span>Senior UI Designer</span></h2>
+                    </div>
+                </div>
+                <div id="overlay3" class="overlay" onclick="off3()">
+                    <div class="row over">
+                        <div class="col-md-6 speaker-overlay">
+                            <img src="img/s2.jfif" alt="Avatar" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 speaker-overlay">
+                          <h2>John Doe</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function on3() {
+                      document.getElementById("overlay3").style.display = "block";
+                    }
+                    
+                    function off3() {
+                      document.getElementById("overlay3").style.display = "none";
+                    }
+                </script>
+                <div onclick="on4()" class="card">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="img/s2.jfif" alt="">
+                        </div>
+                        <h2>Rudradeb Mitra<br><span>Senior UI Designer</span></h2>
+                    </div>
+                </div>
+                <div id="overlay4" class="overlay" onclick="off4()">
+                    <div class="row over">
+                        <div class="col-md-6 speaker-overlay">
+                            <img src="img/s2.jfif" alt="Avatar" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 speaker-overlay">
+                          <h2>John Doe</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function on4() {
+                      document.getElementById("overlay4").style.display = "block";
+                    }
+                    
+                    function off4() {
+                      document.getElementById("overlay4").style.display = "none";
+                    }
+                </script><div onclick="on5()" class="card">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="img/s2.jfif" alt="">
+                        </div>
+                        <h2>Anand Ponnusamy<br><span>Senior UI Designer</span></h2>
+                    </div>
+                </div>
+                <div id="overlay5" class="overlay" onclick="off5()">
+                    <div class="row over">
+                        <div class="col-md-6 speaker-overlay">
+                            <img src="img/s2.jfif" alt="Avatar" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 speaker-overlay">
+                          <h2>John Doe</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function on5() {
+                      document.getElementById("overlay5").style.display = "block";
+                    }
+                    
+                    function off5() {
+                      document.getElementById("overlay5").style.display = "none";
+                    }
+                </script>
+                <!-- <div onclick="on6()" class="card">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="img/s2.jfif" alt="">
+                        </div>
+                        <h2>John Doe<br><span>Senior UI Designer</span></h2>
+                    </div>
+                </div>
+                <div id="overlay6" class="overlay" onclick="off6()">
+                    <div class="row over">
+                        <div class="col-md-6 speaker-overlay">
+                            <img src="img/s2.jfif" alt="Avatar" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 speaker-overlay">
+                          <h2>John Doe</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
                 </div> -->
-              </div>
+                <script>
+                    function on6() {
+                      document.getElementById("overlay6").style.display = "block";
+                    }
+                    
+                    function off6() {
+                      document.getElementById("overlay6").style.display = "none";
+                    }
+                </script>
             </div>
         </div>
-      </section>
-      <!-- Register end -->
+        
+        <div class="col-md-6 day1 left">
+            <!-- <h1>Schedule</h1> -->
+            <h2>Schedule</h2>
+        </div>
+        <div class="col-md-6 day2 right">
+            <h2>Coming Soon</h2>
+        </div>
 
-      <!-- Contact start -->
-      <section id="faqs">
-        <div class="faqs"></div>
-        <div class="container faqs-text">
-          <div class="heading">
-            <h2>FAQs</h2>
-            <p>FAQS</p>
-          </div>
-          <div style="height: 20vh;"></div>
-          <div class="scroll-faq">
-            <div class="row" style="width: 98vw;">
-              <div class="col-md-6 quiz-col-left">
-                <div class="QandA">
-                  <p class="question">How do I register for the Ideathon?</p>
-                  <p class="answer">You have to fill a google form by clicking on register now on the home page.</p>
-                </div>
-                <div class="QandA">
-                  <p class="question">Are there any entry fees for the ideathon?</p>
-                  <p class="answer">There is no entry fee for registering in the ideathon.</p>
-                </div>
-                <div class="QandA">
-                  <p class="question">Is it a team or an individual event?</p>
-                  <p class="answer">It is a team event but you can participate individually also. A team can have maximum five participants.</p>
-                </div>
-              </div>
-              <div class="col-md-6 quiz-col-right">
-                <div class="QandA">
-                  <p class="question">How do I get regular updates about the competition?</p>
-                  <p class="answer">Team leader will be getting regular mails of all the important updates.</p>
-                </div>
-                <div class="QandA">
-                  <p class="question">Are there any prerequisites?</p>
-                  <p class="answer">No, There is no prerequisite as no coding is needed. The main thing you would  need  is  a  stable  internet  connectionaswell  as  a  Laptop for  the  final round.</p>
-                </div>
-                <div class="QandA">
-                  <p class="question">Will we be guided during the ideathon?</p>
-                  <p class="answer">A guide will be allotted to each team selected in final round.</p>
-                </div>
-                <div class="QandA">
-                  <p class="question">What is the deadline for registering?</p>
-                  <p class="answer">The last date for registration is 3<sup>rd</sup> January 2021.</p>
-                </div>
-              </div>
-            </div>
+        <div class="content col-md-6 h right">
+            <div class="teamimg">
+                <img src="img/hand-shakes.jpg">
           </div>
         </div>
-      </section>
-      <!-- Contact end -->
-    </section>
+        <div class="content col-md-6 sponsor h left">
+            <h1>Sponsors</h1>
+            <p>Cheers to the industrialists who partnered with us..! They not only invested in us, but also believed that we can make a difference, an impact in the community and educate future generations.</p>
+            <a href="sponsors.html">More... <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        
+        <div class="content col-md-6 team h right">
+            <h1>Our Team</h1>
+            <p>An organization is incomplete without a team. Here is our team, who worked hard to make this conclave what it is. They are the supporting pillars and backbone of the conclave.</p>
+            <a href="team.html">Meet the Team <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        <div class="content col-md-6 h left">
+            <div class="teamimg">
+                  <img src="img/marvin-meyer-SYTO3xs06fU-unsplash.jpg">
+            </div>
+        </div>
+        
+        <div class="content col-md-12 faq left">
+            <h1>FAQs</h1>
 
-    <!-- footer -->
-    <!-- <div class="w3-container w3-center w3-light-grey w3-xlarge" style="padding-top: 10px;padding-bottom: 10px;">
-      <i class="fa fa-facebook-official w3-hover-opacity"><a href="#"></a></i>
-      <i class="fa fa-instagram w3-hover-opacity"><a href="#"></a></i>
-      <i class="fa fa-youtube w3-hover-opacity"><a href="#"></a></i>
-      <i class="fa fa-linkedin w3-hover-opacity"><a href="#"></a></i>
-    </div> -->
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
-    <!-- JavaScript -->
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="collapsible">Open Section 1</div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+        
+        <div class="content col-md-12 footer left"></div>
+    </div>
+
     <script>
-      var acc = document.getElementsByClassName("question");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          /* Toggle between adding and removing the "active" class,
-          to highlight the button that controls the panel */
-          this.classList.toggle("ac");
-
-          /* Toggle between hiding and showing the active panel */
-          var answer = this.nextElementSibling;
-          if (answer.style.display === "block") {
-            answer.style.display = "none";
-          } else {
-            answer.style.display = "block";
-          }
-        });
-      }
+        var preloader = document.getElementById('loading');
+        setTimeout(function loader() {
+            preloader.style.display = 'none';
+        },5000);                                          
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/vanta.net.min.js"></script>
-    <script>
-    VANTA.NET({
-      el: ".home",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x0,
-      backgroundColor: 0xbdbdbd,
-      points: 11.00
-    })
-    </script>
-
-    <!-- <script src="js/vanta.waves.min.js"></script>
-    <script>
-    VANTA.WAVES({
-      el: ".about",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x2c3b2c,
-      waveHeight: 20.00,
-      waveSpeed: 0.80,
-      zoom: 0.7
-    })
-    </script> -->
-
-    <!-- <script src="js/vanta.rings.min.js"></script>
-    <script>
-    VANTA.RINGS({
-      el: ".judges",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      backgroundColor: 0xffffff,
-      color: 0x97ea2d
-    })
-    </script> -->
-
-    <script src="js/vanta.halo.min.js"></script>
-    <script>
-    VANTA.HALO({
-      el: ".ideathon",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      xOffset: 0.32,
-      yOffset: -0.15
-    })
-    </script>
-
-    <!-- <script src="js/p5.min.js"></script>
-    <script src="js/vanta.trunk.min.js"></script>
-    <script>
-    VANTA.TRUNK({
-      el: ".faqs",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xf0f0f0,
-      backgroundColor: 0x2838b6,
-      spacing: 10.00,
-      chaos: 8.00
-    })
-    </script> -->
-
-    <!-- <script src="js/vanta.globe.min.js"></script>
-    <script>
-    VANTA.GLOBE({
-      el: ".register",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xf7d700,
-      color2: 0xfe00,
-      size: 0.5,
-      backgroundColor: 0x5c0000
-    })
-    </script> -->
-
-    <script src="js/vanta.birds.min.js"></script>
-    <script>
-    VANTA.BIRDS({
-      el: ".register",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      backgroundColor: 0x0,
-      color1: 0xff0000,
-      color2: 0xf7f7f7,
-      colorMode: "varianceGradient",
-      birdSize: 1.00,
-      wingSpan: 30.00,
-      speedLimit: 4.00,
-      separation: 80.00,
-      alignment: 60.00,
-      cohesion: 20.00,
-      quantity: 4.00
-    })
-    </script>
-  </body>
+</body>
 </html>
