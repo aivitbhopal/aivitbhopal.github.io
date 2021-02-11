@@ -420,6 +420,14 @@ body::-webkit-scrollbar{
     padding-top: 0.5vh;
     margin-bottom: 5vh;
 }
+.keylist{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 3%;
+}
 .list{
     margin-left: 15vw;
     margin-right: 15vw;
@@ -1111,6 +1119,14 @@ body::-webkit-scrollbar{
         padding-bottom: 1vh;
         padding-top: 0.5vh;
         margin-bottom: 5vh;
+    }
+    .keylist{
+        margin-left: 7vw;
+        margin-right: 5vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 0 2.5%;
     }
     .list{
         margin-left: 7vw;
