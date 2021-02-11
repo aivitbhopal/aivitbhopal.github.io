@@ -252,7 +252,7 @@ body::-webkit-scrollbar{
 .content{
     min-width: 50vw;
     height: 100vh;
-    background-color:rgb(0, 195, 255);
+    background-color:rgb(9, 12, 43);
     padding: 0 !important;
     margin: 0 !important;
     overflow: hidden !important;
@@ -412,24 +412,24 @@ body::-webkit-scrollbar{
     font-size: 1.5em;
     font-weight: 600;
     background-color: #00d9ffcb;
-    width: 23vw;
+    width: 45vw;
     padding-bottom: 1vh;
     padding-top: 0.5vh;
     margin-bottom: 5vh;
 }
 .list{
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     grid-template-rows: auto;
-    grid-gap: 0 10%;
+    grid-gap: 0 5%;
 }
 .card
   {
     position: relative;
-    width: 13vw;
-    height: 15vw;
+    width: 14.5vw;
+    height: 17vw;
     background: #fff;
     box-shadow: 0 20px 50px rgba(0,0,0,.1);
     border-radius: 10px;
@@ -526,7 +526,7 @@ body::-webkit-scrollbar{
 }
 .over {
     /* border: 5px dotted #bbb; */
-    width: 80%;
+    /* width: 80%; */
     border-radius: 15px; /* Rounded border */
     margin: 0 auto; /* Center the coupon */
     max-width: 600px;
@@ -542,15 +542,19 @@ body::-webkit-scrollbar{
 .speaker-overlay {
     /* padding: 2px 16px; */
     background-color: #f1f1f1;
+    height: auto;
     /* width: 300px; */
 }
 
 .speaker-overlay p{
-    font-size: 0.5em;
+    font-size: 0.3em;
+    text-align: justify;
 }
-
+.speaker-overlay img{
+    padding-top: 25%;
+}
 .speaker-overlay h2{
-    font-size: 1em;
+    font-size: 0.5em;
 }
 .day1{
     color: seashell;
@@ -573,7 +577,7 @@ body::-webkit-scrollbar{
     font-size: 1.5em;
     font-weight: 600;
     background-color: #00d9ffcb;
-    width: 20vw;
+    width: 2=50vw;
     padding-bottom: 1vh;
     padding-top: 0.5vh;
 }
@@ -702,7 +706,7 @@ body::-webkit-scrollbar{
 .faq{
     background-color: rgb(9, 12, 43);
     height: auto;
-    min-width: 100vw;   
+    min-width: 100vw; 
 }
 
 .faq h1{
@@ -718,19 +722,20 @@ body::-webkit-scrollbar{
     margin-bottom: 5vh;
 }
 .collapsible {
-    background-color: #777;
+    background-color: transparent;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    /* width: 100%; */
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
+    padding-left: 10vh;
   }
   
   .active, .collapsible:hover {
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .answer {
@@ -739,6 +744,9 @@ body::-webkit-scrollbar{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    font-size: 0.6em;
+    padding-left: 10vh;
+    padding-right: 10vh;
   }
 .footer{
     background-color: rgb(0, 0, 0);
