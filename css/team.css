@@ -95,6 +95,14 @@ body::-webkit-scrollbar{
     margin-bottom: 5vh;
     margin-left: -2vh;
 }
+.facultylist{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 5%;
+}
 .list{
     margin-left: 10vw;
     margin-right: 10vw;
@@ -106,8 +114,8 @@ body::-webkit-scrollbar{
 .card
   {
     position: relative;
-    width: 14.8vw;
-    height: 15vw;
+    width: 15vw;
+    height: 17vw;
     background: #fff;
     box-shadow: 0 20px 50px rgba(0,0,0,.1);
     border-radius: 10px;
@@ -177,8 +185,8 @@ body::-webkit-scrollbar{
 
 }
 .chip-list{
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
     grid-template-rows: auto;
@@ -215,6 +223,30 @@ body::-webkit-scrollbar{
 
 .footer{
     background-color: rgb(0, 0, 0);
-    height: 10vh;
+    height: auto;
     min-width: 100vw;
+    color: #f1f1f1;
+}
+
+.footer h1{
+    padding-right: 10vh;
+    margin-top: 5vh;
+    font-size: 1em;
+    font-weight: 600;
+    /* float: right; */
+    color: black;
+    width: 28vw;
+    padding-left: 2vw;
+    background-color: #f1f1f1;
+    /* margin-bottom: 15vh; */
+    padding-bottom: 1vh;
+    padding-top: 0.5vh;
+}
+.footer p{
+    margin-left: 5vh;
+    margin-right: 2vh;
+    text-align: justify;
+    /* margin-top: 4vh; */
+    font-size: 0.5em;
+    font-weight: 700;
 }
