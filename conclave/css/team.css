@@ -173,6 +173,7 @@ body::-webkit-scrollbar{
     padding-bottom: 1vh;
     padding-top: 0.5vh;
     margin-bottom: 5vh;
+    margin-left: -2vh;
 
 }
 .chip-list{
