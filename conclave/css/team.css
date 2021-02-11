@@ -158,7 +158,7 @@ body::-webkit-scrollbar{
 
   .volunteers{
     background-color: rgb(9, 12, 43);
-    height: 55vh;
+    height: 85vh;
     min-width: 100vw;
     /* margin-left: vw; */
 }
@@ -179,10 +179,10 @@ body::-webkit-scrollbar{
 .chip-list{
     margin-left: 10vw;
     margin-right: 10vw;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
     grid-template-rows: auto;
-    grid-gap: 20% 3%;
+    grid-gap: 20% 3%; */
 }
 .chip {
   display: inline-block;
@@ -192,6 +192,7 @@ body::-webkit-scrollbar{
   line-height: 50px;
   border-radius: 5vh;
   background-color: #f1f1f1;
+  margin: 1vw;
 }
 .chip:hover {
     transform: scale(1.5);
