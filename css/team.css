@@ -253,7 +253,10 @@ body::-webkit-scrollbar{
     font-size: 0.5em;
     font-weight: 700;
 }
-
+.fr{
+    text-align: right !important;
+    /* width: 50vh; */
+}
 @media screen and (max-width: 900px) {
     .showcase .images{
         display: none;
