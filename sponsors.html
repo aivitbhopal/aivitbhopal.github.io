@@ -18,7 +18,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-
+    <div class="navbar topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="#register">Register</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="team.html">Our Team</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+      </script>
     <div class="showcase">
         <div class="images">
             <a href="https://vitbhopal.ac.in/"><img class="img1" src="img/logow.png" alt=""></a>
@@ -30,38 +48,50 @@
             <a href="https://vitbhopal.ac.in/ai/"><img class="img3" src="img/aiml.png" alt=""></a>
             <a href="index.html"><img class="img2" src="img/aic.png" alt=""></a>
         </div>
-    </div>    
-        <div class="content col-md-12 speakers right">
-            <h1>Community Partners</h1>
-            <div class="list">
-                <div class="card">
-                    <div class="box1">
-                        <div class="img">
-                            <img src="img/sponsors/logo-2.png" alt="">
-                        </div>
+    </div>
+    <div class="content col-md-12 speakers right">
+        <h1>Industry Partners</h1>
+        <div class="list">
+            <div class="card">
+                <div class="box1">
+                    <div class="img">
+                        <img src="img/sponsors/Hk-Logo.png" alt="" style="width: 9vw;">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content col-md-12 speakers right">
-            <h1>Edtech Partners</h1>
-            <div class="list2">
-                <div class="card">
-                    <div class="box1">
-                        <div class="img">
-                            <img src="img/sponsors/1924364_1549340295279017_431270050086875384_n (3).png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box1">
-                        <div class="img">
-                            <img src="img/sponsors/cblogo.png" alt="">
-                        </div>
+    </div>
+    <div class="content col-md-12 speakers right">
+        <h1>Community Partners</h1>
+        <div class="list">
+            <div class="card">
+                <div class="box1">
+                    <div class="img">
+                        <img src="img/sponsors/logo-2.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="content col-md-12 speakers right">
+        <h1>Edtech Partners</h1>
+        <div class="list2">
+            <div class="card">
+                <div class="box1">
+                    <div class="img">
+                        <img src="img/sponsors/1924364_1549340295279017_431270050086875384_n (3).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box1">
+                    <div class="img">
+                        <img src="img/sponsors/cblogo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- <div class="content col-md-12 footer left">
         <h1>Contact Us</h1>
