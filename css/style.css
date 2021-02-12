@@ -290,7 +290,7 @@ body::-webkit-scrollbar{
     /* width: 100%; */
 }
 .reg{
-    top: 45vh;
+    bottom: -7vh;
     font-weight: 1.5em;
 }
 .showcase-top h6 {
