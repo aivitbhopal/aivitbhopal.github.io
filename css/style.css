@@ -57,10 +57,11 @@ body::-webkit-scrollbar{
     /* background-color: white !important; */
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.671);
     overflow: hidden;
     z-index: 20;
-    position: relative;
+    position: absolute;
+    width: 100vw;
     /* height: 7vh; */
   }
   
@@ -70,16 +71,18 @@ body::-webkit-scrollbar{
     display: block;
     color: #f2f2f2;
     text-align: center;
+    width: 24vw;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     margin: 0;
+    font-size: 0.7em;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+      color: #14dcff;
+    font-weight: 600;
   }
   
   /* Add an active class to highlight the current page */
@@ -94,16 +97,21 @@ body::-webkit-scrollbar{
   }
   @media screen and (max-width: 900px) {
     .topnav a:not(:first-child) {display: none;}
+    .topnav a {width: 84vw; text-align: left;}
     .topnav a.icon {
       float: right;
       display: block;
+      width: 15vw;
+      right: 0;
+      top: 0;
+      text-align: center !important;
       /* height: auto; */
     }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: absolute;}
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -116,7 +124,7 @@ body::-webkit-scrollbar{
     }
   }
 .showcase {
-    top: -7vh;
+    /* top: -7vh; */
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -184,7 +192,7 @@ body::-webkit-scrollbar{
 }
 .showcase-top {
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 0vh;
     /* background-color: rgb(0, 25, 54); */
     background: transparent;
     align-items: center;
@@ -274,10 +282,23 @@ body::-webkit-scrollbar{
     padding: 0.5%;
 } */
 .showcase-top p {
-    margin-top: 30vh;
+    margin-top: 28vh;
     color: yellow;
     word-wrap: break-word;
     position: relative;
+    /* font-weight: 350; */
+    /* width: 100%; */
+}
+.reg{
+    top: 45vh;
+    font-weight: 1.5em;
+}
+.showcase-top h6 {
+    margin-top: 0vh;
+    color: yellow;
+    word-wrap: break-word;
+    position: absolute;
+    z-index: 20;
     /* font-weight: 350; */
     /* width: 100%; */
 }
@@ -881,7 +902,7 @@ body::-webkit-scrollbar{
         overflow: scroll;
     } */
     .showcase {
-        top: -2vh;
+        /* top: 2vh; */
         background: url('../gif/1409.gif');
         background-repeat: repeat;
         background-size: cover;
