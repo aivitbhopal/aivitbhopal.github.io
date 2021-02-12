@@ -19,6 +19,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body onload="loader()">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <div class="navbar topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+      </script>
     <div class="showcase check" id="hm" align="center">
         <video autoplay muted loop id="myVideo">
             <source src="vid/200129-01-Plexus-human-body-whit.mp4" type="video/mp4">
@@ -45,7 +87,7 @@
             <h1>VIT&nbsp;&nbsp;&nbsp;Bhopal&nbsp;&nbsp;&nbsp;University&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;AI&nbsp;&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;ML&nbsp;&nbsp;&nbsp;Division</h1>
             <h2>A R T I F I C I A L&nbsp;&nbsp;&nbsp;I N T E L L I G E N C E</h2>
             <h3>C O N C L A V E&nbsp;&nbsp;&nbsp;2 0 2 1</h3>
-            <p class="btn btn-xl">Feburary&nbsp;26&nbsp;-&nbsp;27</p>
+            <p class="btn btn-xl">Feburary&nbsp;26&nbsp;-&nbsp;27,&nbsp;2021&nbsp;|&nbsp;Virtual&nbsp;Mode</p>
         </div>
 
         <div class="time">
@@ -92,8 +134,8 @@
                 <br>
                 <table width=100%>
                     <tr>
-                        <td align="center"><a>10+</a></td>
-                        <td align="center"><a>1000+</a></td>
+                        <td align="center"><a>13+</a></td>
+                        <td align="center"><a>6+</a></td>
                         <td align="center"><a>2</a></td>
                     </tr>
                     <tr>
@@ -101,7 +143,7 @@
                             <p2>Speakers from the industry</p2>
                         </td>
                         <td align="center">
-                            <p2>Participants across India</p2>
+                            <p2>Sessions</p2>
                         </td>
                         <td align="center">
                             <p2>Days of technical brilliance</p2>
@@ -119,7 +161,7 @@
                         <div class="img">
                             <img src="img/speakers/xavier-fernando.png" alt="">
                         </div>
-                        <h2>Dr. Xavier Fernando<br><span>Professor, Ryerson University, USA</span></h2>
+                        <h2>Dr. Xavier Fernando<br><span>Professor, Ryerson University, Canada</span></h2>
                     </div>
                 </div>
                 <div id="overlay1" class="overlay" onclick="off1()">
@@ -180,7 +222,7 @@
                         <div class="img">
                             <img src="img/speakers/shailesh-kumar.jfif" alt="">
                         </div>
-                        <h2>Dr. Shailesh Kumar<br><span>Chief Data Scientist, Jio</span></h2>
+                        <h2>Dr. Shailesh Kumar<br><span>Chief Data Scientist, Centre of Excellence in AIML, Jio</span></h2>
                     </div>
                 </div>
                 <div id="overlay3" class="overlay" onclick="off3()">
@@ -210,7 +252,7 @@
                         <div class="img">
                             <img src="img/speakers/rudradeb.jfif" alt="">
                         </div>
-                        <h2>Mr. Rudradeb Mitra<br><span>CEO and Founder, Omdena</span></h2>
+                        <h2>Mr. Rudradeb Mitra<br><span>CEO and Founder, Omdena, USA</span></h2>
                     </div>
                 </div>
                 <div id="overlay4" class="overlay" onclick="off4()">
@@ -318,7 +360,7 @@
                         <div class="img">
                             <img src="img/speakers/rahul.png" alt="">
                         </div>
-                        <h2>Rahul Kishan M<br><span>Professor, Ryerson University, USA</span></h2>
+                        <h2>Rahul Kishan M<br><span>Software Engineer, PayPal</span></h2>
                     </div>
                 </div>
                 <div class="card">
@@ -334,7 +376,7 @@
                         <div class="img">
                             <img src="img/speakers/muthupavithran.png" alt="">
                         </div>
-                        <h2>Muthupavithran Selvam<br><span>Researcher, De Montfort University</span></h2>
+                        <h2>Muthupavithran Selvam<br><span>Researcher, De Montfort University, London</span></h2>
                     </div>
                 </div>
                 <div class="card">
@@ -350,7 +392,7 @@
                         <div class="img">
                             <img src="img/speakers/anand.png" alt="">
                         </div>
-                        <h2>Anand Ponnusamy<br><span>Senior Technical Specialist, Microsoft</span></h2>
+                        <h2>Anand Ponnusamy<br><span>Senior Technical Specialist, Microsoft Corporation</span></h2>
                     </div>
                 </div>
                 <div class="card">
@@ -367,7 +409,7 @@
         <!-- <div class="col-md-6 day1 left"> -->
         <div class="day1">
             <!-- <h1>Schedule</h1> -->
-            <h2>Registrations open soon...</h2>
+            <h2><marquee>Schedule and Registrations coming soon...</marquee></h2>
         </div>
         <!-- <div class="col-md-6 day2 right">
             <h2>Coming Soon</h2>
@@ -467,12 +509,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <p class="fr">Faculty - Dr Sountharrajan S</p>
-                    <p class="fr">Ph no - +91 97860 66776</p>
+                    <!-- <p class="fr">Ph no - +91 97860 66776</p> -->
                     <p class="fr">Email - s.sountharrajan@vitbhopal.ac.in</p>
                 </div>
                 <div class="col-md-6">
                     <p class="fl">Student - Om Krishna Yadav</p>
-                    <p class="fl">Ph no - +91 86963 27204</p>
+                    <!-- <p class="fl">Ph no - +91 86963 27204</p> -->
                     <p class="fl">Email - om.krishnayadav2019@vitbhopal.ac.in</p>
                 </div>
             </div>
