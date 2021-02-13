@@ -700,6 +700,9 @@ body::-webkit-scrollbar{
 .s2{
     height: 8.6vw;
 }
+.v{
+    height: 10vh;
+}
 .sectop{
     width: 40vw;
     height: 4.3vw;
@@ -1490,6 +1493,7 @@ body::-webkit-scrollbar{
     .day1{
         color: seashell;
         background-color: rgb(9, 12, 43);
+        height: auto;
     }
     
     /* .day1 h1{
@@ -1508,44 +1512,137 @@ body::-webkit-scrollbar{
         font-size: 1em;
         font-weight: 600;
         background-color: #00d9ffcb;
-        width: 2=50vw;
+        width: 70vw;
         padding-bottom: 1vh;
         padding-top: 0.5vh;
     }
-    .day1 p{
+    /* .day1 p{
         margin-left: 10vh;
         margin-right: 5vh;
         text-align: justify;
         margin-top: 4vh;
         font-size: 0.8em;
-    }
+    } */
     
     .day2{
         color: seashell;
         background-color: #00d9ffcb;
+        height: auto;
     }
     
     .day2 h2{
         padding-right: 10vh;
         margin-top: 5vh;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 600;
         /* float: right; */
-        width: 20vw;
-        padding-left: 2vw;
+        width: 70vw;
+        padding-left: 10vw;
         background-color: rgb(9, 12, 43);
         /* margin-bottom: 15vh; */
         padding-bottom: 1vh;
         padding-top: 0.5vh;
     }
-    .day2 p{
+    /* .day2 p{
         margin-left: 5vh;
         margin-right: 10vh;
         text-align: justify;
         margin-top: 4vh;
         font-size: 0.8em;
+    } */
+    .schedule{
+        width: 90vw;
+        height: 28vw;
+        background-color: #f1f1f1;
+        border-radius: 2vw;
+        margin-left: 9vw;
+        color: #141414;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
-    
+    .s1{
+        height: 30vw;
+    }
+    .s2{
+        height: 26vw;
+    }
+    .v{
+        height: 0;
+    }
+    .sectop{
+        width: 90vw;
+        height: 10vw;
+        background-color: rgb(2, 175,212);
+        border-radius: 2vw;
+        /* margin-left: 6vw; */
+        color: #141414;
+        position: absolute;
+    }
+    .sectop2{
+        width: 90vw;
+        height: 10vw;
+        background-color: rgb(9, 12, 43);
+        border-radius: 2vw;
+        /* margin-left: 6vw; */
+        color: #141414;
+        position: absolute;
+    }
+    .date{
+        width: 43vw;
+        height: 2.5vw;
+        /* background-color: #0d97af; */
+        margin-left: 46vw;
+        margin-top: 2vw;
+        position: absolute;
+        color: #f1f1f1;
+    }
+    .date p{
+        font-size: 0.5em;
+        font-weight: 600;
+        text-align: center;
+    }
+    .session{
+        width: 45vw;
+        /* height: 3vw; */
+        /* background-color: #b5e509; */
+        margin-left: 1vw;
+        margin-top: 2vw;
+        position: absolute;
+        color: #f1f1f1;
+    }
+    .session p{
+        font-size: 0.5em;
+        font-weight: 600;
+        text-align: center;
+    }
+    .desc{
+        width: 60vw;
+        /* height: 3vw; */
+        /* background-color: #e509c0; */
+        margin-left: 1vw;
+        margin-top: 11.5vw;
+        position: absolute;
+    }
+    .desc p{
+        font-size: 0.4em;
+        font-weight: 600;
+        text-align: center;
+    }
+    .regbutton{
+        width: 30vw;
+        /* height: 8vw; */
+        /* background-color: #b5e509; */
+        margin-left: 63vw;
+        margin-top: 10vw;
+        position: absolute;
+    }
+    .regbutton a{
+        font-size: 0.4em;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        color: #e50914;
+    }
     .team{
         color: seashell;
         background-color: rgb(9, 12, 43);
