@@ -697,10 +697,13 @@ body::-webkit-scrollbar{
 .s1{
     height: 11vw;
 }
+.s2{
+    height: 8.6vw;
+}
 .sectop{
     width: 40vw;
     height: 4.3vw;
-    background-color: #00d9ffcb;
+    background-color: rgb(2, 175,212);
     border-radius: 0.5vw;
     /* margin-left: 6vw; */
     color: #141414;
@@ -769,6 +772,7 @@ body::-webkit-scrollbar{
     font-weight: 600;
     text-align: center;
     text-decoration: none;
+    color: #e50914;
 }
 .day1 h2{
     padding-left: 10vh;
