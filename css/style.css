@@ -685,23 +685,109 @@ body::-webkit-scrollbar{
     padding-bottom: 1vh;
     padding-top: 0.5vh;
 } */
+.schedule{
+    width: 40vw;
+    height: 10vw;
+    background-color: #f1f1f1;
+    border-radius: 0.5vw;
+    margin-left: 6vw;
+    color: #141414;
+    margin-top: 1vh;
+}
+.s1{
+    height: 11vw;
+}
+.sectop{
+    width: 40vw;
+    height: 4.3vw;
+    background-color: #00d9ffcb;
+    border-radius: 0.5vw;
+    /* margin-left: 6vw; */
+    color: #141414;
+    position: absolute;
+}
+.sectop2{
+    width: 40vw;
+    height: 4.3vw;
+    background-color: rgb(9, 12, 43);
+    border-radius: 0.5vw;
+    /* margin-left: 6vw; */
+    color: #141414;
+    position: absolute;
+}
+.date{
+    width: 18vw;
+    height: 2.5vw;
+    /* background-color: #0d97af; */
+    margin-left: 21vw;
+    margin-top: 1vw;
+    position: absolute;
+    color: #f1f1f1;
+}
+.date p{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+}
+.session{
+    width: 20vw;
+    /* height: 3vw; */
+    /* background-color: #b5e509; */
+    margin-left: 1vw;
+    margin-top: 1vw;
+    position: absolute;
+    color: #f1f1f1;
+}
+.session p{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+}
+.desc{
+    width: 20vw;
+    /* height: 3vw; */
+    /* background-color: #e509c0; */
+    margin-left: 1vw;
+    margin-top: 5vw;
+    position: absolute;
+}
+.desc p{
+    font-size: 0.5em;
+    font-weight: 600;
+    text-align: center;
+}
+.regbutton{
+    width: 12vw;
+    /* height: 8vw; */
+    /* background-color: #b5e509; */
+    margin-left: 25vw;
+    margin-top: 5.5vw;
+    position: absolute;
+}
+.regbutton a{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
 .day1 h2{
     padding-left: 10vh;
     margin-top: 5vh;
     font-size: 1.5em;
     font-weight: 600;
     background-color: #00d9ffcb;
-    width: 2=50vw;
+    width: 22vw;
     padding-bottom: 1vh;
     padding-top: 0.5vh;
 }
-.day1 p{
+/* .day1 p{
     margin-left: 10vh;
     margin-right: 5vh;
     text-align: justify;
     margin-top: 4vh;
     font-size: 0.8em;
-}
+} */
+
 
 .day2{
     color: seashell;
@@ -721,13 +807,13 @@ body::-webkit-scrollbar{
     padding-bottom: 1vh;
     padding-top: 0.5vh;
 }
-.day2 p{
+/* .day2 p{
     margin-left: 5vh;
     margin-right: 10vh;
     text-align: justify;
     margin-top: 4vh;
     font-size: 0.8em;
-}
+} */
 
 .team{
     color: seashell;
@@ -780,7 +866,28 @@ body::-webkit-scrollbar{
     color: seashell;
     background-color: rgb(9, 12, 43);
 }
+.list2{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18vw, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 5%;
+}
 
+.logo{
+    position: relative;
+    width: 20vw;
+    height: 10vw;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.logo-img{
+    height: 1vw;
+    width: 5vw;
+}
 .sponsor h1{
     padding-right: 10vh;
     margin-top: 5vh;
