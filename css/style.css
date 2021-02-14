@@ -777,12 +777,12 @@ body::-webkit-scrollbar{
     width: 12vw;
     /* height: 8vw; */
     /* background-color: #b5e509; */
-    margin-left: 25vw;
+    margin-left: 27vw;
     margin-top: 5.5vw;
     position: absolute;
 }
 .regbutton a{
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
