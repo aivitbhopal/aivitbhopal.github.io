@@ -165,7 +165,7 @@ body::-webkit-scrollbar{
     position: relative;
     align-self: center;
     z-index: 2;
-    margin-top: 0vh;
+    margin-top: 2vh;
     margin-left: 5vw;
     /* margin-right: 5vw; */
 }
@@ -178,7 +178,7 @@ body::-webkit-scrollbar{
     margin-left: 5vw;
     margin-right: 5vw;
     z-index: 2;
-    margin-top: 0vh;
+    margin-top: 2vh;
 }
 .showcase .images .img3{
     /* height: 20%; */
@@ -186,7 +186,7 @@ body::-webkit-scrollbar{
     position: relative;
     align-self: center;
     z-index: 2;
-    margin-top: 0vh;
+    margin-top: 2vh;
     /* margin-left: 5vw; */
     margin-right: 5vw;
 }
@@ -810,6 +810,7 @@ body::-webkit-scrollbar{
 .day2{
     color: seashell;
     background-color: #00d9ffcb;
+    height: auto !important;
 }
 
 .day2 h2{
