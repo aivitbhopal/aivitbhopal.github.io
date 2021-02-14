@@ -136,7 +136,7 @@ body::-webkit-scrollbar{
     margin-left: 5vw;
     margin-right: 5vw;
     z-index: 2;
-    margin-top: 0vh;
+    margin-top: 2vh;
 }
 .showcase .images .img3{
     /* height: 20%; */
@@ -304,6 +304,7 @@ body::-webkit-scrollbar{
 .footer h1{
     padding-right: 10vh;
     margin-top: 5vh;
+    margin-left: -2vw;
     font-size: 1em;
     font-weight: 600;
     /* float: right; */
@@ -324,7 +325,7 @@ body::-webkit-scrollbar{
     font-weight: 700;
 }
 .fr{
-    text-align: right !important;
+    text-align: center !important;
     /* width: 50vh; */
 }
 @media screen and (max-width: 900px) {
