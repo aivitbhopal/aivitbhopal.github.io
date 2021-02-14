@@ -529,10 +529,10 @@ body::-webkit-scrollbar{
     margin-bottom: 5vh;
 }
 .keylist{
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-right: 10vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-template-rows: auto;
     grid-gap: 0 3%;
 }
@@ -810,7 +810,7 @@ body::-webkit-scrollbar{
 .day2{
     color: seashell;
     background-color: #00d9ffcb;
-    height: auto !important;
+    /* height: auto !important; */
 }
 
 .day2 h2{
