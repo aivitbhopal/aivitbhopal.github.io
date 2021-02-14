@@ -1646,6 +1646,12 @@ body::-webkit-scrollbar{
         font-weight: 600;
         text-align: center;
     }
+    .desc h6{
+        font-size: 0.43em;
+        font-weight: 700;
+        text-align: center;
+        color: rgb(9, 12, 43);
+    }
     .regbutton{
         width: 30vw;
         /* height: 8vw; */
