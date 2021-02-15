@@ -3,7 +3,7 @@ const second = 1000,
             hour = minute * 60,
             day = hour * 24;
 
-        let countDown = new Date('Feb 26, 2021 09:30:00').getTime(),
+        let countDown = new Date('Feb 26, 2021 8:30:00').getTime(),
             x = setInterval(function() {
 
             let now = new Date().getTime(),
@@ -17,9 +17,7 @@ const second = 1000,
             // do something later when date is reached
             if (distance < 0) {
              clearInterval(x);
-             "Conclave has begun";
+             document.getElementById("time").innerHTML = "<li><span>Conclave has begun</span></li>";
             }
 
             }, second)
-
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
