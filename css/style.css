@@ -678,6 +678,7 @@ body::-webkit-scrollbar{
 .day1{
     color: seashell;
     background-color: rgb(9, 12, 43);
+    height: auto !important;
 }
 
 /* .day1 h1{
@@ -699,14 +700,8 @@ body::-webkit-scrollbar{
     color: #141414;
     margin-top: 1vh;
 }
-.s1{
-    height: 11vw;
-}
-.s2{
-    height: 8.6vw;
-}
 .v{
-    height: 10vh;
+    height: 3vh;
 }
 .sectop{
     width: 40vw;
@@ -810,7 +805,7 @@ body::-webkit-scrollbar{
 .day2{
     color: seashell;
     background-color: #00d9ffcb;
-    /* height: auto !important; */
+    height: auto !important;
 }
 
 .day2 h2{
