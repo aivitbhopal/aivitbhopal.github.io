@@ -726,12 +726,12 @@ body::-webkit-scrollbar{
     height: 2.5vw;
     /* background-color: #0d97af; */
     margin-left: 21vw;
-    margin-top: 1vw;
+    margin-top: 1.2vw;
     position: absolute;
     color: #f1f1f1;
 }
 .date p{
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 600;
     text-align: center;
 }
