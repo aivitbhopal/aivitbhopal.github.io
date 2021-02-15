@@ -228,8 +228,9 @@ body::-webkit-scrollbar{
     font-size: 20px;
     color: #262626;
   }
-
-
+  .spimg{
+    width: 9vw !important;
+  }
 .footer{
     margin-top: 5vh;
     background-color: rgb(0, 0, 0);
@@ -389,7 +390,9 @@ body::-webkit-scrollbar{
         font-size: 20px;
         color: #262626;
       }
-    
+      .spimg{
+        width: 27vw !important;
+      }
     
       .footer{
         background-color: rgb(0, 0, 0);
