@@ -248,18 +248,18 @@ body::-webkit-scrollbar{
     -webkit-text-fill-color: transparent;
     color: #14dcff;
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 10vh;
     z-index: 2;
 }
 .showcase-top h3{
-    width: 60%;
-    margin-left: 19%;
-    background: linear-gradient(to left,#ffff66,#fc6e22,#c246f6,#e50914);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* width: 60%; */
+    /* margin-left: 19%; */
+    /* background: linear-gradient(to left,#ffff66,#fc6e22,#c246f6,#e50914); */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     margin-top: 13vh;
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
 }
 /* .showcase-top a:hover{
     padding-left: 35vw;
@@ -337,7 +337,7 @@ body::-webkit-scrollbar{
     display: inline-block;
     font-size: 0.8em;
     list-style-type: none;
-    padding: 1em;
+    padding: 2vh;
     color: white;
     height: 18vh;
     /* width: 10vw; */
@@ -346,7 +346,7 @@ body::-webkit-scrollbar{
   
 .time li span {
     display: block;
-    font-size: 1.2em;
+    font-size: 5h;
 }
 .time {
     color: #333;
