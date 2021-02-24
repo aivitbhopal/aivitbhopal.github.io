@@ -693,12 +693,12 @@ body::-webkit-scrollbar{
 } */
 .schedule{
     width: 40vw;
-    height: 10vw;
+    height: 9vw;
     background-color: #f1f1f1;
     border-radius: 0.5vw;
     margin-left: 6vw;
     color: #141414;
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 .v{
     height: 3vh;
@@ -750,7 +750,7 @@ body::-webkit-scrollbar{
     text-align: center;
 }
 .desc{
-    width: 20vw;
+    width: 38vw;
     /* height: 3vw; */
     /* background-color: #e509c0; */
     margin-left: 1vw;
@@ -774,6 +774,7 @@ body::-webkit-scrollbar{
     /* background-color: #b5e509; */
     margin-left: 27vw;
     margin-top: 5.5vw;
+    /* padding: 0%; */
     position: absolute;
 }
 .regbutton a{
@@ -1625,7 +1626,7 @@ body::-webkit-scrollbar{
     } */
     .schedule{
         width: 90vw;
-        height: 28vw;
+        height: 25vw;
         background-color: #f1f1f1;
         border-radius: 2vw;
         margin-left: 9vw;
@@ -1684,12 +1685,12 @@ body::-webkit-scrollbar{
         color: #f1f1f1;
     }
     .session p{
-        font-size: 0.5em;
+        font-size: 0.45em;
         font-weight: 600;
         text-align: center;
     }
     .desc{
-        width: 60vw;
+        width: 85vw;
         /* height: 3vw; */
         /* background-color: #e509c0; */
         margin-left: 1vw;
