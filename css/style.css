@@ -876,7 +876,66 @@ body::-webkit-scrollbar{
     opacity: 1;
     right: 0;
   }
+.session-video{
+    height: auto;
+}
+.session-video h2{
+    color: #f1f1f1;
+    padding-left: 10vh;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #00d9ffcb;
+    width: 22vw;
+    padding-bottom: 1vh;
+    padding-top: 0.5vh;
+}
 
+.vidlist{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 1%;
+}
+.vidcard{
+    position: relative;
+    width: 22vw;
+    height: 17vw;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 50px rgba(0,0,0,.1);
+    /* border-radius: 10px; */
+    transition: 0.5s;
+    margin-bottom: 5vh;
+}
+.vidcard:hover{
+    box-shadow: 0 12px 30px rgba(247, 247, 247, 0.658);
+}
+.vidcard .box1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.vidcard .box1 h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #262626;
+}
+.vidcard .box1 h4 span{
+    margin-top: 1vh;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    /* border-radius: 15px; */
+}
 .team{
     color: seashell;
     background-color: rgb(9, 12, 43);
@@ -1723,6 +1782,64 @@ body::-webkit-scrollbar{
         text-decoration: none;
         color: #e50914;
     }
+    .session-video{
+        height: auto;
+    }
+    .session-video h2{
+        padding-left: 5vh;
+        margin-top: 5vh;
+        font-size: 1em;
+        font-weight: 600;
+        background-color: #00d9ffcb;
+        width: 70vw;
+        padding-bottom: 1vh;
+        padding-top: 0.5vh;
+    }    
+    .vidlist{
+        margin-left: 9vw;
+        margin-right: 5vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 0 0%;
+    }
+    .vidcard{
+        position: relative;
+        width: 90vw;
+        height: 75vw;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 20px 50px rgba(0,0,0,.1);
+        /* border-radius: 10px; */
+        transition: 0.5s;
+        margin-bottom: 5vh;
+    }
+    .vidcard:hover{
+        box-shadow: 0 12px 30px rgba(247, 247, 247, 0.658);
+    }
+    .vidcard .box1{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .vidcard .box1 h4{
+        font-size: 20px;
+        font-weight: 600;
+        color: #262626;
+    }
+    .vidcard .box1 h4 span{
+        margin-top: 1vh;
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        display: inline-block;
+        padding: 4px 10px;
+        /* border-radius: 15px; */
+    }
     .team{
         color: seashell;
         background-color: rgb(9, 12, 43);
@@ -1731,7 +1848,6 @@ body::-webkit-scrollbar{
     .h{
         height: 50vh;
     }
-    
     .team h1{
         padding-left: 5vh;
         margin-top: 5vh;
