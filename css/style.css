@@ -206,20 +206,7 @@ body::-webkit-scrollbar{
     color: white;
     display: none;
 }
-.showcase-top a {
-    width: 100%;
-    position: absolute;
-    display: inline-block;
-    color: chartreuse;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s;
-    margin-top: 50vh;
-    text-align: center;
-    z-index: 2;
-}
+
 
 .showcase-top h1 {
     white-space: nowrap;
@@ -306,6 +293,15 @@ body::-webkit-scrollbar{
     z-index: 2;
     margin-top: -7vh;
     margin-bottom: 1vh;
+}
+.showcase-top a {
+    color: chartreuse;
+    text-decoration: none;
+}
+.showcase-top a:hover {
+    color: rgba(65, 129, 0, 0.603);
+    font-weight: 900;
+    text-decoration: none;
 }
 .showcase-top p:hover {
     color: yellow;
@@ -877,7 +873,7 @@ body::-webkit-scrollbar{
     right: 0;
   }
 .session-video{
-    height: auto;
+    /* height: auto; */
 }
 .session-video h2{
     color: #f1f1f1;
@@ -889,6 +885,7 @@ body::-webkit-scrollbar{
     width: 22vw;
     padding-bottom: 1vh;
     padding-top: 0.5vh;
+    margin-bottom: 6vh;
 }
 
 .vidlist{
@@ -1255,11 +1252,20 @@ body::-webkit-scrollbar{
         position: absolute;
         color: red;
         font-weight: 800;
-        font-size: 0.55em;
+        font-size: 0.8em;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         z-index: 2;
         margin-top: -6vh;
         margin-bottom: 1vh;
+    }
+    .showcase-hidden a {
+        color: chartreuse;
+        text-decoration: none;
+    }
+    .showcase-hidden a:hover {
+        color: rgba(65, 129, 0, 0.603);
+        font-weight: 900;
+        text-decoration: none;
     }
     .showcase-top p:hover {
         color: yellow;
@@ -1301,19 +1307,19 @@ body::-webkit-scrollbar{
       
     .time li span {
         display: block;
-        font-size: 1.8em;
+        font-size: 1.2em;
         width: 10vw;
     }
     .time {
         color: #333;
         position: absolute;
         width: 100%;
-        margin-top: 2vh;
+        margin-top: 4vh;
         margin-bottom: 10%;
         align-content: center;
         text-align: center;
         z-index: 2;
-        margin-left: -5vw;
+        margin-left: -47vw;
       }
     
     .content{
