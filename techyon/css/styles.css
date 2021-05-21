@@ -203,10 +203,11 @@ body {
         padding: 5vh;
         text-align: center;
       }
+      .events h1{
+        font-size: 2.2em;
+    }
 }
-  .events{
 
-  }
   .events h1{
       font-family: code;
   }
@@ -289,6 +290,7 @@ body {
         height: 88vh;
         width: 100vw;
         padding: 0vh;
+        padding-top: 5vh;
         text-align: center;
         color: rgb(255, 255, 255);
         animation: ease-in 4s;
@@ -307,6 +309,12 @@ body {
           font-weight: 800;
           color: aquamarine;
       }
+      .img{
+          width: 90vw;
+      }
+}
+.img{
+    width: 25vw;
 }
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
 @font-face {
@@ -330,6 +338,7 @@ body {
 .webevent{
     color: aliceblue;
     padding: 5vw;
+    overflow: hidden;
 }
 .webevent h1{
     font-family: circuitboard;
@@ -361,6 +370,11 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     padding: 1em;
+}
+@media screen and (max-width: 600px) {
+    .webevent h3{
+        font-size: em;
+    }
 }
 /*---------------------------------------
    Footer section              
