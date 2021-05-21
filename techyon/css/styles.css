@@ -54,7 +54,11 @@ body {
   
   @media screen and (max-width: 600px) {
       .topnav{
-          width: 90vw;
+          width: 100vw;
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+      .topnav a {
+        font-size: 1.3em;
       }
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -64,7 +68,7 @@ body {
   }
   
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: absolute;}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -100,7 +104,11 @@ body {
     /* background-color: #ffffff; */
     padding: 0;
 }
-
+.slide{
+    background-color: white;
+    transform: skewX(-8deg);
+    width: 40vw;
+}
 /* Slideshow container */
 .slideshow-container {
     position: relative;
@@ -176,16 +184,21 @@ body {
     /* transform: skewX(-8deg); */
   }
   @media screen and (max-width: 600px) {
+    .slide{
+        background-color: white;
+        transform: skewX(-0deg);
+        width: 100vw;
+    }
     .webinar{
         height: 88vh;
-        width: 47vw;
+        width: 100vw;
         background-color:blanchedalmond;
         padding: 5vh;
         text-align: center;
       }
       .coding{
         height: 88vh;
-        width: 47vw;
+        width: 100vw;
         background-color: blanchedalmond;
         padding: 5vh;
         text-align: center;
@@ -220,7 +233,6 @@ body {
     width: auto;
     transition: all 0.5s;
     cursor: pointer;
-
   }
   
   .button span {
@@ -432,4 +444,88 @@ footer .copyright-text {
 
 .social-icon li a:hover {
     background: #ffffff;
+}
+@media screen and (max-width: 600px) {
+    footer {
+        background: #000000;
+        color: #ffffff;
+        padding: 1rem;
+        padding-left: 3em;
+        padding-right: 3em;
+        /* height: 50vh; */
+    }
+    
+    footer p{
+        color: #707070;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.4px;
+        text-decoration: none !important;
+        outline: none;
+        font-family: 'Lora', sans-serif
+    }
+    
+    footer .col-md-5 {
+        position: relative;
+        left: 100px;
+    }
+    
+    footer .col-md-5 div {
+        padding-top: 10px;
+    }
+    
+    footer h4 {
+        margin-top: 0px;
+        color: #999;
+        letter-spacing: 2px;
+        margin-top: 22px;
+        font-family: 'Lora', sans-serif
+    }
+    
+    footer .copyright-text {
+        padding-top: 30px;
+        text-align: center;
+        color: #707070;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .copyright-text a:hover {
+        color: #ffffff;
+    }
+    
+    .logos{
+        margin-left: -10vw;
+    }
+    /*---------------------------------------
+       Social icon             
+    -----------------------------------------*/
+    
+    .social-icon {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .social-icon li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    .social-icon li a {
+        color: #999;
+        border-radius: 100px;
+        font-size: 70px;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .social-icon li a:hover {
+        background: #ffffff;
+    }
 }
