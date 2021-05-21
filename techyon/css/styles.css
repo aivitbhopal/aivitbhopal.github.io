@@ -284,6 +284,9 @@ body {
       font-family: code;
       /* letter-spacing: 0.2em; */
   }
+  .img{
+    width: 25vw;
+}
   @media screen and (max-width: 600px) {
     .main{
         position: relative;
@@ -313,9 +316,7 @@ body {
           width: 90vw;
       }
 }
-.img{
-    width: 25vw;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
 @font-face {
     font-family: android;
@@ -373,7 +374,7 @@ body {
 }
 @media screen and (max-width: 600px) {
     .webevent h3{
-        font-size: em;
+        font-size: 1.7em;
     }
 }
 /*---------------------------------------
