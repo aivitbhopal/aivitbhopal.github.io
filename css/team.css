@@ -169,12 +169,12 @@ body::-webkit-scrollbar{
     margin-left: -2vh;
 }
 .facultylist{
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 42.5vw;
+    margin-right: 42.5vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     grid-template-rows: auto;
-    grid-gap: 0 5%;
+    grid-gap: 0;
 }
 .list{
     margin-left: 10vw;
