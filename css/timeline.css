@@ -1,0 +1,317 @@
+.timeline-container{
+    padding:1rem;
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.timeline-contents{
+    min-height: 22rem;
+    width: 40%;
+    align-self: flex-start;
+    color: white;
+    position: sticky;
+    top: 0;
+     
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* border:2px solid pink; */
+}
+
+.timeline-contents h3{
+    color: #EE81EE;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+}
+.timeline-contents h2{
+   font-size: 3rem;
+}
+.timeline-contents p{
+    line-height: 1.5;
+    color: #9897A4;
+    opacity: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.rocket{
+
+  padding-left: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rocket img{
+  
+
+  height: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.timeline-main{
+    /* border:2px solid blue; */
+
+}
+
+.timeline-main > .column > .row {
+  display: flex;
+
+  margin-bottom: 1rem;
+}
+
+.timeline-main > .column > .row > .text:nth-last-of-type(1){
+  background: linear-gradient(135deg,#eea849,#f46b45);
+ 
+}
+
+.timeline_main > h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  .timeline-main > .column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem;
+  }
+  
+  .timeline-main > .column::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 1px solid rgba(49, 49, 49, 0.5);
+    height: calc(100% / 5 * 4);
+    z-index: -1;
+  }
+  
+  .timeline-main > .column > .row {
+    display: flex;
+   
+  }
+  
+  /* row text */
+  .timeline-main > .column > .row > .text {
+    flex: 1 1 calc(50% - 50px);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    background: linear-gradient(135deg,#60b4ec,#0a76e2);
+
+  }
+  .timeline-main > .column > .row h3 {
+    color: #fff;
+
+    padding: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .timeline-main > .column > .row p {
+    padding: 1rem;
+    color: rgba(51, 51, 51, 0.5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* row icon */
+  .timeline-main > .column > .row > .icon {
+    flex: 1 1 80px;
+  }
+  
+  .timeline-main > .column > .row > .icon > div {
+    width: 50px;
+    height: 50px;
+   
+    display:flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+    background: #fff;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    position: relative;
+    text-align: center;
+  }
+  .timeline-main > .column > .row > .icon > div h1{
+    
+ 
+    padding: 0;
+   
+  }
+  
+  .timeline-main > .column > .row > div i {
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(0, 85, 255);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* row time */
+  .timeline-main > .column > .row > .time {
+    flex: 1 1 calc(50% - 50px);
+    padding-top: 1rem;
+    color:white;
+  }
+  
+  .timeline-main > .column > .row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .timeline-main > .column > .row:nth-child(even) > div:last-child {
+    text-align: end;
+  }
+  
+  .timeline-main > .column > .row:nth-child(even) h3::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    border-right-color: black;
+  }
+  .timeline-main > .column > .row:nth-child(odd) h3::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    border-left-color: black;
+  }
+  
+  
+  /* mobile version */
+  @media screen and (max-width: 768px) {
+    .timeline-main > .column::before {
+      left: 50px;
+      height: calc(100% / 5 * 4);
+      top: 50px;
+    }
+  
+    .timeline-main > .column > .row {
+      flex-flow: column wrap;
+      height: 250px;
+    }
+  
+    .timeline-main > .column > .row:nth-child(even) {
+      flex-direction: column;
+    }
+  
+    .timeline-main > .column > .row:nth-child(even) > .time:last-child {
+      text-align: start;
+    }
+
+    .timeline-main > .column > .row h3::before {
+       display:none;
+    }
+  
+    .timeline-main > .column > .row > .icon {
+      order: 1;
+      flex: 1 1 100%;
+      padding-top: 50px;
+      width: 100px;
+    }
+  
+    .timeline-main > .column > .row > .time {
+      order: 2;
+      flex: 1 1 50px;
+      width: calc(100% - 100px);
+    }
+  
+    .timeline-main > .column > .row > .text {
+      order: 3;
+      
+      flex: 1 1 calc(100% - 50px);
+      width: calc(100% - 100px);
+    }
+  
+    .timeline-main > .column > .row:nth-child(odd) h3::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      border: 10px solid rgba(0, 0, 0, 0);
+      border-right-color: black;
+    }
+    .timeline-main > .column > .row:nth-child(odd) h3::after {
+      border: none;
+    }
+  }
+  /*.......... end timeline-main style ..........*/
+
+  
+@media screen and (max-width: 780px) {
+    .timeline-main{
+        height:80vh;
+      overflow:scroll;
+    }
+  .rocket{
+    display:none;
+  }
+    .timeline-container{
+        flex-direction: column;
+
+    }
+    .timeline-contents{
+      position: relative;
+      width:100%;
+      min-height: 15rem;
+    }
+    .timeline-contents h3{
+      font-size: 1.5rem;
+    }
+    .timeline-contents h2{
+      font-size: 2rem;
+   }
+   .timeline-contents p{
+    line-height: 1.5;
+    color: #9897A4;
+    opacity: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.timeline-main > .column > .row > .time{
+        display:none;
+    }
+    
+}
+
+/* @media screen and (max-width: 500px) {
+    .timeline-main > .column > .row > .text {
+        order: 3;
+        flex: 1 1 calc(100% - 50px);
+        width: calc(100% - 10px);
+      }
+} */
+
+@media screen and (max-width: 980px) {
+    .timeline-main > .column > .row > .time{
+        display:none;
+    }
+    .timeline-main{
+        width: 100%;
+    }
+    .timeline-main > .column > .row > .icon {
+        width: 50px;
+    }
+}
