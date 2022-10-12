@@ -99,7 +99,18 @@ Custom classes
     margin-bottom: 100px;
 } */
 
+.highlight{
+    color: white;
+    font-weight: 600;
+}
 
+.bg-orange{
+    background: linear-gradient(135deg,#eea849,#f46b45);
+}
+.bg-blue{
+    background: linear-gradient(135deg,#60b4ec,#0a76e2);
+
+}
 @media screen and (max-width: 780px) {
     body{
         display:flex;
