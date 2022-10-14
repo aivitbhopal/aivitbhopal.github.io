@@ -95,7 +95,9 @@
   margin-bottom:1.5rem;
 }
 
-
+.hidenav a svg{
+  color:#393F62;
+}
 
 
 
@@ -130,7 +132,7 @@
     visibility: visible;
   }
  #cir{
-    position: absolute;
+    position: fixed;
     
     height: 50px;
     width: 50px;
