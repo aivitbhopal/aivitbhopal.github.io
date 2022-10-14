@@ -19,7 +19,7 @@ body {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-
+    z-index: -1;
 }
 
 .back {
@@ -50,6 +50,7 @@ nav{
     margin-left: 1rem;
     position:fixed;
     height: 100%;
+    z-index:2;
 }
 
 /*
@@ -57,6 +58,7 @@ Custom classes
 */
 
 .body-container{
+   
     width: 90%;
     
     margin: auto;
@@ -65,6 +67,10 @@ Custom classes
 }
 
 .theme-container{
+ 
+
+    
+    
     border-radius: 20px;
     width:100%;
     background: rgba(36, 31, 60, 0.8);
