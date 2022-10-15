@@ -95,8 +95,11 @@
   margin-bottom:1.5rem;
 }
 
-.hidenav a svg{
-  color:#393F62;
+.hidenav a img{
+  /* color:#393F62; */
+  margin-top:10px;
+  height: 2.5rem;
+  width: 1.5rem;
 }
 
 
