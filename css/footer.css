@@ -1,0 +1,125 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+        height: 40vh;
+    width: 100vw;
+    background: rgba(36, 31, 60, 0.8);
+}
+.footer-heading{
+   
+    color: white;
+}
+.footer-heading h1{
+  font-size: 3rem;
+  line-height: 5rem;
+
+}
+.footer-heading p{
+   font-size: 1.5rem;
+   opacity: 75%;
+
+}
+.footer-links{
+  
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    
+}
+
+/* .footer-link{
+  
+} */
+
+.footer-link h1{
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.social-links{
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.social-links a{
+    color: white;
+}
+
+
+
+.footer-address{
+  
+    padding: 1rem;
+}
+.footer-address h1{
+    font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.footer-address p{
+    opacity: 80%;
+    cursor: pointer;
+}
+.footer-address p:hover{
+    opacity: 100%;
+}
+.footer-address p:nth-of-type(1){
+    margin-bottom: 0.5rem;
+}
+
+
+
+.footer-resources{
+
+    padding: 1rem;
+}
+.footer-resources p a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-resources h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+.footer-resources p{
+    opacity: 80%;
+    cursor: pointer;
+}
+.footer-resources p:hover{
+    opacity: 100%;
+}
+.footer-resources p:nth-of-type(1){
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .footer-container{
+        height: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .footer-heading h1{
+        line-height: 30px;
+        font-size: 1.7rem;
+    }
+    .footer-heading p{
+        font-size: 1rem;
+        padding-top: 0.5rem;
+    }
+    .footer-links{
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-links{
+        margin-bottom: 2rem;
+    }
+}
