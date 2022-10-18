@@ -119,6 +119,7 @@
   
   .timeline-main > .column > .row {
     display: flex;
+
     /* width: 90%; */
    
    
@@ -135,19 +136,24 @@
     padding-bottom: 1.5rem;
 
   }
-  .timeline-main > .column > .row h3 {
+  .timeline-main > .column > .row .text h2 {
     color: #fff;
 
     padding: 1rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-weight:400;
   }
   
+  .timeline-main > .column > .row p span {
+    font-weight:400;
+  }
   .timeline-main > .column > .row p {
     padding: 1rem;
     color: rgba(51, 51, 51, 0.5);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    
   }
   
   /* row icon */
