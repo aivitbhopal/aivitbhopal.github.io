@@ -86,3 +86,23 @@ button.primary.ghost {
 #speakers{
 padding: 50px;
 }
+.speaker-container h2{
+	color: #231E39;
+    background-color: #FEBB0B;
+    border-radius: 3px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+	right: 30px;
+}
+@media screen and (max-width: 780px) {
+	.speaker-container .pro {
+		left: 14px;
+	}
+	.speaker-container h2{
+		right: 14px;
+		font-size: 1em;
+	}
+}
