@@ -69,7 +69,7 @@
 
 .timeline-main{
     /* border:2px solid blue; */
-
+width: 86.6%;
 }
 
 .timeline-main > .column > .row {
@@ -149,7 +149,7 @@ letter-spacing: 1px;
     font-weight:450;
     font-family: gilroy;
     line-height: 2px;
-    font-size: 14.71px;
+    font-size: 16.7px;
   }
   .timeline-main > .column > .row p {
     padding: 1rem;
