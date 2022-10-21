@@ -39,6 +39,10 @@
 	top: 30px;
 	left: 30px;
 }
+.hos{
+	left: 5px !important;
+	top: 10px !important;
+}
 
 .speaker-container .round {
 	border: 1px solid #03BFCB;
@@ -46,6 +50,9 @@
 	padding: 7px;
 }
 
+button.primary:hover {
+	cursor: pointer;
+}
 button.primary {
 	background-color: #03BFCB;
 	border: 1px solid #03BFCB;
@@ -86,11 +93,14 @@ button.primary.ghost {
 #speakers{
 padding: 50px;
 }
+.speaker-container .hos h2{
+	top: 10px !important; 
+}
 .speaker-container h2{
 	color: #231E39;
     background-color: #FEBB0B;
     border-radius: 3px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     padding: 3px 7px;
     position: absolute;
@@ -99,10 +109,16 @@ padding: 50px;
 }
 @media screen and (max-width: 780px) {
 	.speaker-container .pro {
-		left: 14px;
+		left: 10px;
+		top: 10px;
+		font-size: 11px;
 	}
 	.speaker-container h2{
+		top: 10px;
 		right: 14px;
-		font-size: 1em;
+		font-size: 0.7em;
+	}
+	.speaker-container .round{
+		height: 110px;
 	}
 }
