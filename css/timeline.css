@@ -138,15 +138,18 @@
   }
   .timeline-main > .column > .row .text h2 {
     color: #fff;
-
+letter-spacing: 1px;
     padding: 1rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-weight:400;
+    font-weight:500;
   }
   
   .timeline-main > .column > .row p span {
-    font-weight:400;
+    font-weight:450;
+    font-family: gilroy;
+    line-height: 2px;
+    font-size: 14.71px;
   }
   .timeline-main > .column > .row p {
     padding: 1rem;
