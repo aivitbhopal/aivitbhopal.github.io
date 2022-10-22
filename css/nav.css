@@ -137,9 +137,9 @@
  #cir{
     position: fixed;
     
-    height: 50px;
-    width: 50px;
-    margin-left: 14px;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
     background-color:#3d4463;
     display: none;
     border-radius: 50%;
@@ -155,17 +155,18 @@
     border: 0;
     background: transparent;
     border-radius: 0;
-    height: 70px;
+    height: 62px;
     width: 30px;
     cursor: pointer;
     pointer-events: auto;
-    margin-left: 25px;
+    margin-left: 19px;
     touch-action: manipulation;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* border: 2px solid black; */
   }
   .icon-bar {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 2px;
     background:white;
     transition: .3s;

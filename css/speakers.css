@@ -1,9 +1,10 @@
+.speaker-container{
 
-
-
+}
 
 .speakers .speaker-container h3 {
 	margin: 10px 0;
+	color: white;
 }
 
 .speakers .speaker-container h6 {
@@ -36,18 +37,21 @@
 	font-weight: bold;
 	padding: 3px 7px;
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 20px;
+	left: 20px;
 }
+
 .hos{
-	left: 5px !important;
+	left: 10px !important;
 	top: 10px !important;
 }
 
 .speaker-container .round {
+	width: 150px;
 	border: 1px solid #03BFCB;
 	border-radius: 50%;
-	padding: 7px;
+	padding: 4px;
+	
 }
 
 button.primary:hover {
@@ -57,7 +61,7 @@ button.primary {
 	background-color: #03BFCB;
 	border: 1px solid #03BFCB;
 	border-radius: 3px;
-	color: #231E39;
+	color: white;
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
 	padding: 10px 25px;
@@ -69,24 +73,42 @@ button.primary.ghost {
 }
 
 .skills {
+
 	background-color: #1F1A36;
 	text-align: left;
-	padding: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 	margin-top: 30px;
 }
+.buttons a button{
+	color: white; 
 
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+
+	opacity: 100%; 
+	border-radius: 3px; 
+	padding: 3px; 
+	width: 30px; 
+	height: 30px;
+	font-size: 20px;
+}
 .skills ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0.5rem 0;
 }
 
 .skills ul li {
-	border: 1px solid #2D2747;
+	color: white !important;
+	text-align: center;
 	border-radius: 2px;
 	display: inline-block;
-	font-size: 12px;
-	margin: 0 7px 7px 0;
+	font-size: 20px;
+	
 	padding: 7px;
 }
 
@@ -104,8 +126,8 @@ padding: 50px;
     font-weight: bold;
     padding: 3px 7px;
     position: absolute;
-    top: 30px;
-	right: 30px;
+    top: 20px;
+	right: 20px;
 }
 @media screen and (max-width: 780px) {
 	.speaker-container .pro {

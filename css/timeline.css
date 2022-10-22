@@ -60,13 +60,6 @@
 
 
 
-
-
-
-
-
-
-
 .timeline-main{
     /* border:2px solid blue; */
 width: 86%;
@@ -163,21 +156,28 @@ letter-spacing: 1px;
     
   }
   .timinig1{
-    color: rgb(85, 67, 67);
-    font-size: 19px;
-    margin-left: 55px;
+   
+    color: #3a3f65;
+    opacity: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
     /* margin-top: -px; */
   }
   .timinig2{
-    color: rgb(85, 67, 67);
-    font-size: 19px;
-    margin-left: 55px;
+    color: #3a3f65;
+    opacity: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
     /* margin-top: -px; */
   }
   .timinig3{
-    color: rgb(85, 67, 67);
-    font-size: 19px;
-    margin-left: 55px;
+    color: #3a3f65;
+    opacity: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
     /* margin-top: -px; */
   }
   #oo{
@@ -185,10 +185,11 @@ letter-spacing: 1px;
 
   }
   .timinig4{
-    margin-left: 95px;
-    letter-spacing: 1px;
-    color: rgb(85, 67, 67);
-    font-size: 22px;
+    color: #3a3f65;
+    opacity: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
 
   }
   /* row icon */
@@ -263,11 +264,11 @@ letter-spacing: 1px;
 
     .timinig1{
       margin-left: 10px;
-      font-size: 17px;
+      font-size: 1rem;
     }
     .timinig2{
-      margin-left: 10px;
-      font-size: 17px;
+   
+      font-size: 1rem ;
 
     }
     .timinig3{
