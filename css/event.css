@@ -135,7 +135,7 @@
   
   .events .card .box .content h3 {
     font-size: 1.8rem;
-    font-size: clamp();
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     color: #fff;
     z-index: 1;
     transition: 0.5s;
@@ -144,6 +144,7 @@
   
   .events .card .box .content p {
     font-size: 1rem;
+    font-size: clamp(0.8rem,2vw, 1.2rem);
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
     z-index: 1;
@@ -175,10 +176,10 @@
       height:300px;
     }
     .events .card .box .content p{
-      font-size:0.6rem;
+      /* font-size:0.6rem; */
     }
     .events .card .box .content h3{
-       font-size:1rem;
+       /* font-size:1rem; */
     }
     .event_container{
       /* height:80vh;
