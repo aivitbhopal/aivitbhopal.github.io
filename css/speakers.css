@@ -82,7 +82,7 @@
 
 .speaker-container .round {
 	width: 150px;
-	height: 150px;
+	height: 150px !important;
 	border: 1px solid #03BFCB;
 	border-radius: 50%;
 	padding: 4px;
@@ -116,6 +116,7 @@ button.primary.ghost {
 	flex-direction: column;
 	margin-top: 30px;
 	width:100%;
+	align-self: flex-end;
 }
 
 .buttons a button{
