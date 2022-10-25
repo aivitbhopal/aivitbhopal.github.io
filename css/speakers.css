@@ -57,17 +57,23 @@
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
-
-	padding:10px;
+	justify-content: space-between;	
 	padding-top: 30px;
 }
 
-.speaker-container .pro {
+.speaker-container .card-info{
+	padding:10px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	height:80%;
+}
+
+.speaker-container .card-top .pro {
 	color: #231E39;
 	background-color: #FEBB0B;
 	border-radius: 3px;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-weight: bold;
 	padding: 3px 7px;
 	position: absolute;
@@ -157,7 +163,7 @@ button.primary.ghost {
 	top: 10px !important; 
 }
 
-.speaker-container h2{
+.speaker-container .card-top h2{
 	color: #231E39;
     background-color: #FEBB0B;
     border-radius: 3px;
@@ -167,6 +173,12 @@ button.primary.ghost {
     position: absolute;
     top: 10px;
 	right: 10px;
+}
+
+.card-top{
+	position: absolute;
+	width:100%;
+	top:0px;
 }
 
 @media screen and (max-width: 780px) {
