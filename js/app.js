@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
 console.log("running");
 
 const header = document.querySelector('.hero-main-heading');
@@ -52,6 +53,23 @@ t1.from(
     },
     "<0.1"
 );
+
+show_hide_nav();
+
+function show_hide_nav(){
+    const show_hide_nav = gsap.from(bottomBar, {
+        xPercent: 100,
+        duration: 0.5,
+        ease: "sine.out",
+
+    });
+    ScrollTrigger.create({
+        onUpdate: (self)=>{
+            if(self.direction === -1) show_hide_nav.play();
+            else show_hide_nav.reverse();
+        }
+    })
+};
 
 gsap.from(".body-container", {
     duration: 1, 
@@ -252,19 +270,23 @@ gsap.from("#time4", {
     }
 });
 
-gsap.from("#rocket-img",{
-    opacity: 0,
-    y: -1500,
+// ROCKET ANIMATION ---------------------------------------------------------------------
+// ROCKET ANIMATION ---------------------------------------------------------------------
+// ROCKET ANIMATION ---------------------------------------------------------------------
+gsap.to("#rocket-img",{
+    opacity: 1,
+    y: -100,
     // ease: "elastic.out(1, 0.3)",
     pin: true,
     scrollTrigger:{
         trigger: "#rocket-img",
-        markers: false,
-        start: "top center",
+        markers: true,
+        start: "top center+=250",
         scrub: 1,
         toggleActions: "play none none reverse",
     }
-});
+}
+);
 
 
 gsap.from(".event_container .container_heading", {
@@ -324,65 +346,68 @@ gsap.from("#speakers .speakers .speaker-container", {
     }
 });
 
-gsap.from("#sponsors", {
-    duration: 1.3, 
-    x: 400,
-    opacity: 0,
-    ease: "power4.inOut",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#sponsors",
-        markers: false,
-        start: "top-=50 bottom",
-        toggleActions: "play none none reverse",
-    }
-});
+// gsap.from("#sponsors", {
+//     duration: 1.3, 
+//     x: 400,
+//     opacity: 0,
+//     ease: "power4.inOut",
+//     pin: true,
+//     scrollTrigger:{
+//         trigger: "#sponsors",
+//         markers: false,
+//         start: "top-=50 bottom",
+//         toggleActions: "play none none reverse",
+//     }
+// });
 
-let t2 = gsap.timeline({ 
-    scrollTrigger: {
-        trigger: ".footer-container",
-        start: "top-=100 bottom", // when the top of the trigger hits the top of the viewport
-        end: "bottom-=300 bottom", // end after scrolling 500px beyond the start
-        // markers: true,
-        pin: true,
-        toggleActions: "play none none reverse",
-    }
- });
+// let t2 = gsap.timeline({ 
+//     scrollTrigger: {
+//         trigger: ".footer-container",
+//         start: "top-=100 bottom", // when the top of the trigger hits the top of the viewport
+//         end: "bottom-=300 bottom", // end after scrolling 500px beyond the start
+//         // markers: true,
+//         pin: true,
+//         toggleActions: "play none none reverse",
+//     }
+//  });
 
-t2.from(
-    ".footer-container",
-    {
-    duration: 1.3, 
-    y: 400,
-    opacity: 0,
-    ease: "power4.inOut",
-    pin: true
-}).from(
-    ".footer-heading",
-    {
-        duration: 0.5,
-        ease: "power4.out",
-        x: -1000,
-    },
-    ">"
-).from(
-    ".footer-img",
-    {
-        y: 100,
-        opacity: 0,
-        ease: "power4.inOut",
-    }
-).from(
-    ".footer-links div",
-    {
-        stagger: 0.1,
-        y: 100,
-        opacity: 0,
-        ease: "power4.inOut",
-    },
-    "<0.1"
-);
+// t2.from(
+//     ".footer-container",
+//     {
+//     duration: 1.3, 
+//     y: 400,
+//     opacity: 0,
+//     ease: "power4.inOut",
+//     pin: true
+// }).from(
+//     ".footer-heading",
+//     {
+//         duration: 0.5,
+//         ease: "power4.out",
+//         x: -1000,
+//     },
+//     ">"
+// ).from(
+//     ".footer-img",
+//     {
+//         y: 100,
+//         opacity: 0,
+//         ease: "power4.inOut",
+//     }
+// ).from(
+//     ".footer-links div",
+//     {
+//         stagger: 0.1,
+//         y: 100,
+//         opacity: 0,
+//         ease: "power4.inOut",
+//     },
+//     "<0.1"
+// );
 
 // ScrollTrigger.create({
     
 // })
+
+
+
