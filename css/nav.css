@@ -64,10 +64,19 @@
 }
 
 .item svg{
-  
     height:23px;
     opacity: 0.5;
     transition: all ease-out 200ms;
+}
+
+.home-button {
+  text-decoration: none;
+}
+
+.home-button i{
+  font-size: 30px;
+  border-radius: none;
+  color: #213653;
 }
 
 .item:hover svg{
@@ -263,11 +272,12 @@
   }
   .hidearbnav {
     opacity: 0;
+    display: none;
    
   }
   .showarb {
     opacity: 1;
-  
+    display: block;
   }
   
   @media only screen and (max-width: 600px)  {

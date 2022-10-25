@@ -135,6 +135,7 @@
   
   .events .card .box .content h3 {
     font-size: 1.8rem;
+    font-size: clamp();
     color: #fff;
     z-index: 1;
     transition: 0.5s;
