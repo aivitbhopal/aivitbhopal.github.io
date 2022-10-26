@@ -12,6 +12,7 @@ html{
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     /* background: url(../img/components.png); */
@@ -70,6 +71,7 @@ Custom classes
     
     margin: auto;
    padding: 1rem;
+   overflow-x: hidden;
    
 }
 
