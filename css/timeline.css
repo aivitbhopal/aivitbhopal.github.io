@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  rotate: 180deg;
+  /* rotate: 180deg; */
   /* visibility: hidden; */
   /* opacity: 0; */
   z-index: 999;
