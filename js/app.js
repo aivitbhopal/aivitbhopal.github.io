@@ -273,14 +273,14 @@ gsap.from("#time4", {
 // ROCKET ANIMATION ---------------------------------------------------------------------
 // ROCKET ANIMATION ---------------------------------------------------------------------
 // ROCKET ANIMATION ---------------------------------------------------------------------
-gsap.to("#rocket-img",{
+gsap.from("#rocket-img",{
     opacity: 1,
-    y: -100,
+    y: -1500,
     // ease: "elastic.out(1, 0.3)",
     pin: true,
     scrollTrigger:{
         trigger: "#rocket-img",
-        markers: true,
+        markers: false,
         start: "top center+=250",
         scrub: 1,
         toggleActions: "play none none reverse",
