@@ -91,8 +91,8 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    overflow-x: hidden!important;
-    overflow-y: scroll;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 .main-bottom img{

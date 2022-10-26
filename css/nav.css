@@ -76,7 +76,8 @@
 .home-button i{
   font-size: 30px;
   border-radius: none;
-  color: #213653;
+  /* color: #213653; */
+  color: white;
 }
 
 .item:hover svg{
