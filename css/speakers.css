@@ -2,6 +2,10 @@
 
 } */
 
+.absolute {
+	position: absolute;
+}
+
 .speakers-section{
 	
 	display:flex;
@@ -35,6 +39,7 @@
 .speakers .speaker-container h6 {
 	margin: 5px 0;
 	text-transform: uppercase;
+	font-size: 0.8rem;
 }
 
 .speakers .speaker-container p {
@@ -86,13 +91,31 @@
 	top: 10px !important;
 }
 
+.small-title {
+	font-size: 1rem;
+}
+
 .speaker-container .round {
+	position: relative;
 	width: 150px;
 	height: 150px !important;
 	border: 1px solid #03BFCB;
 	border-radius: 50%;
 	padding: 4px;
 	margin-top: 30px;
+	z-index: 50;
+}
+
+.secondary-speaker {
+	width: 120px;
+	height: 120px !important;
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 4px;
+	margin-top: 30px;
+	right: 50px;
+	top: 20px;
+	z-index: 10;
 }
 
 button.primary:hover {
