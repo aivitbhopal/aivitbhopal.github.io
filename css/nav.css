@@ -256,6 +256,7 @@
     width:25px;
     margin-right:1rem;
     margin-left:1.5rem;
+    fill: white;
   }
   
   #nav-content li a:hover {
