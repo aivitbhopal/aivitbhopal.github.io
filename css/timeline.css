@@ -356,7 +356,7 @@ letter-spacing: 0px;
   }
     .timeline-main{
         height:80vh;
-      overflow:scroll;
+      overflow-x:hidden;
     }
   .rocket{
     display:none;
