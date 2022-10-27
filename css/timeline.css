@@ -63,9 +63,9 @@
 }
 
 
-
 .timeline-main{
     /* border:2px solid blue; */
+    overflow-x: hidden;
 width: 86%;
 }
 
