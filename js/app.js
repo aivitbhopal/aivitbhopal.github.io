@@ -112,163 +112,178 @@ gsap.from([".timeline-contents div"], {
     }
 },">0.5");
 
-gsap.from("#card1", {
-    duration: 1.2,
-    x: -200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row1",
-        // markers: true,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#icon1", {
-    duration: 1.2,
-    y: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row1",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#time1", {
-    duration: 1.2,
-    x: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row1",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
+function timeline_main_animations() {
+    var mobile_view = window.matchMedia('(max-width: 600px)').matches;
 
-gsap.from("#card2", {
-    duration: 1.2,
-    x: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row2",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
+    console.log(mobile_view);
+
+    if (!mobile_view){
+        gsap.from("#card1", {
+            duration: 1.2,
+            x: -200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row1",
+                // markers: true,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#icon1", {
+            duration: 1.2,
+            y: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row1",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#time1", {
+            duration: 1.2,
+            x: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row1",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        
+        gsap.from("#card2", {
+            duration: 1.2,
+            x: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row2",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#icon2", {
+            duration: 1.2,
+            y: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row2",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#time2", {
+            duration: 1.2,
+            x: -200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row2",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#card3", {
+            duration: 1.2,
+            x: -200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row3",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#icon3", {
+            duration: 1.2,
+            y: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row3",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#time3", {
+            duration: 1.2,
+            x: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row3",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#card4", {
+            duration: 1.2,
+            x: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row4",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#icon4", {
+            duration: 1.2,
+            y: 200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row4",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        gsap.from("#time4", {
+            duration: 1.2,
+            x: -200,
+            opacity: 0,
+            ease: "power4.out",
+            pin: true,
+            scrollTrigger:{
+                trigger: "#row4",
+                markers: false,
+                start: "top 90%",
+                toggleActions: "play none none reverse",
+            }
+        });
+        
     }
-});
-gsap.from("#icon2", {
-    duration: 1.2,
-    y: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row2",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#time2", {
-    duration: 1.2,
-    x: -200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row2",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#card3", {
-    duration: 1.2,
-    x: -200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row3",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#icon3", {
-    duration: 1.2,
-    y: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row3",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#time3", {
-    duration: 1.2,
-    x: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row3",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#card4", {
-    duration: 1.2,
-    x: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row4",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#icon4", {
-    duration: 1.2,
-    y: 200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row4",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from("#time4", {
-    duration: 1.2,
-    x: -200,
-    opacity: 0,
-    ease: "power4.out",
-    pin: true,
-    scrollTrigger:{
-        trigger: "#row4",
-        markers: false,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-    }
-});
+}
+
+window.addEventListener('onload', timeline_main_animations)
+
+window.addEventListener("resize", timeline_main_animations)
+
+timeline_main_animations()
 
 // ROCKET ANIMATION ---------------------------------------------------------------------
 // ROCKET ANIMATION ---------------------------------------------------------------------
