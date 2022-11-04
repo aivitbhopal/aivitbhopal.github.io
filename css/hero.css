@@ -75,7 +75,7 @@ body{
 }
 
 .main-bottom {
-  
+
     position: absolute;
     bottom: 20px;
     right:0px;
@@ -95,7 +95,15 @@ body{
     overflow-y: hidden !important;
 }
 
+.custom-width{
+
+    width: 15%;
+    height: 90px !important;
+}
+
+
 .main-bottom img{
+
     height: 70px;
 }
 

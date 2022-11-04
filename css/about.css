@@ -3,8 +3,14 @@
     overflow-y: scroll;
 } */
 
+.about-container img{
+    height: 50%;
+    width: 30%;
+}
+
+
 .about-container{
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
 
     color: white;
     display: flex;
