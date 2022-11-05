@@ -36,3 +36,7 @@
      height: 5rem;
      margin-bottom: 1rem;
  }
+
+.golden-title h2{
+    background-image: -webkit-linear-gradient(135deg,rgba(35,31,31,0),#f7a031);
+}
