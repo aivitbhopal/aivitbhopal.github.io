@@ -93,13 +93,7 @@ body{
     align-items: center;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
-}
-
-.custom-width{
-
-    width: 15%;
-    height: 90px !important;
-}
+} 
 
 
 .main-bottom img{

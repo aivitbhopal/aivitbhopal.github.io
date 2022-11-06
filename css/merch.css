@@ -58,7 +58,15 @@
     line-height: 1.5;
 }
 
-.merch-card-container_contents p:nth-of-type(2){
+.merch-card-container_contents p:nth-of-type(2) {
+    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.merch-card-container_contents p:nth-of-type(3){
     color: rgb(232, 232, 39);
     font-size: clamp(1rem, 2.5vw, 1.8rem);
 }

@@ -113,8 +113,8 @@
 	border-radius: 50%;
 	padding: 4px;
 	margin-top: 30px;
-	right: 50px;
-	top: 20px;
+	left: 80px;
+	top: -20px;
 	z-index: 10;
 }
 
@@ -204,6 +204,19 @@ button.primary.ghost {
 	top:0px;
 }
 
+.coming-soon {
+	filter: blur(5px);
+  	-webkit-filter: blur(5px);
+	z-index: 2;
+}
+
+.temp-card h1{
+	color: white;
+	z-index: 3;
+	top: 50%;
+	left: 25%;
+}
+
 @media screen and (max-width: 780px) {
 	.speaker-container .pro {
 		left: 10px;
@@ -236,7 +249,7 @@ button.primary.ghost {
 		align-items: center;
 	}
 
-	.speaker-container {
+	.speaker-container, .temp-card {
 		background-color: #231E39;
 		border-radius: 5px;
 		box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
@@ -247,5 +260,9 @@ button.primary.ghost {
 		max-width: 100%;
 		text-align: center;
 		margin:0 auto;
+	}
+
+	.temp-card h1 {
+		left: 15%;
 	}
 }
