@@ -33,8 +33,11 @@
  }
  .sponsor_container-contents img, svg{
  
-     height: 5rem;
+     height: 6rem;
      margin-bottom: 1rem;
+ }
+ .talktoseniors img{
+    height: 8rem !important;
  }
 
 .golden-title h2{
