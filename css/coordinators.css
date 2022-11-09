@@ -1,0 +1,272 @@
+/* .speaker-container{
+
+} */
+
+.absolute {
+	position: absolute;
+}
+
+.speakers-section{
+	
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px !important;
+}
+
+.speaker-box{
+	margin-top: 3rem;
+	width:100%;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.session_heading{
+	width:100%;
+	color: white;
+	font-size: 2.6rem;
+	margin-top: 3rem;
+	text-align: left;
+}
+
+.speakers .speaker-container h3 {
+	margin: 10px 0;
+	color: white;
+}
+
+.speakers .speaker-container h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.speakers .speaker-container p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.speaker-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+	margin:0 auto;
+	min-height: 400px;
+
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;	
+	padding-top: 30px;
+}
+
+.speaker-container .card-info{
+	padding:10px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	height:80%;
+}
+
+.speaker-container .card-top .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.hos{
+	left: 10px !important;
+	top: 10px !important;
+}
+
+.small-title {
+	font-size: 1rem;
+}
+
+.speaker-container .round {
+	position: relative;
+	width: 150px;
+	height: 150px !important;
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 4px;
+	margin-top: 30px;
+	z-index: 50;
+}
+
+.secondary-speaker {
+	width: 120px;
+	height: 120px !important;
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 4px;
+	margin-top: 30px;
+	left: 80px;
+	top: -20px;
+	z-index: 10;
+}
+
+button.primary:hover {
+	cursor: pointer;
+}
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+button.disabled:hover {
+	cursor: default;
+}
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 30px;
+	width:100%;
+	align-self: flex-end;
+}
+
+.buttons a button{
+	color: white; 
+
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+
+	opacity: 100%; 
+	border-radius: 3px; 
+	padding: 3px; 
+	width: 30px; 
+	height: 30px;
+	font-size: 20px;
+}
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0.5rem 0;
+}
+
+.skills ul li {
+	color: white !important;
+	text-align: center;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 20px;
+	
+	padding: 7px;
+}
+
+#speakers{
+	padding: 50px;
+}
+
+.speaker-container .hos h2{
+	top: 10px !important; 
+}
+
+.speaker-container .card-top h2{
+	color: #231E39;
+    background-color: #FEBB0B;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 10px;
+	right: 10px;
+}
+
+.card-top{
+	position: absolute;
+	width:100%;
+	top:0px;
+}
+
+.coming-soon {
+	filter: blur(5px);
+  	-webkit-filter: blur(5px);
+	z-index: 2;
+}
+
+.temp-card h1{
+	color: white;
+	z-index: 3;
+	top: 50%;
+	left: 25%;
+}
+
+@media screen and (max-width: 780px) {
+	.speaker-container .pro {
+		left: 10px;
+		top: 10px;
+		font-size: 11px;
+	}
+	.speaker-container h2{
+		top: 10px;
+		right: 14px;
+		font-size: 0.7em;
+	}
+	.speaker-container .round{
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	.speakers-section{	
+		padding: 20px !important;
+	}
+
+	.speaker-box{
+		margin-top: 3rem;
+		width:100%;
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.speaker-container, .temp-card {
+		background-color: #231E39;
+		border-radius: 5px;
+		box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+		color: #B3B8CD;
+		padding-top: 30px;
+		position: relative;
+		width: 350px;
+		max-width: 100%;
+		text-align: center;
+		margin:0 auto;
+	}
+
+	.temp-card h1 {
+		left: 15%;
+	}
+}
