@@ -136,6 +136,10 @@ button.primary.ghost {
 	color: #02899C;
 }
 
+button.disabled {
+	cursor: default !important;
+}
+
 .skills {
 	background-color: #1F1A36;
 	text-align: left;
