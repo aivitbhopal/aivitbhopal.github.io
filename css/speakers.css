@@ -136,8 +136,8 @@ button.primary.ghost {
 	color: #02899C;
 }
 
-button.disabled {
-	cursor: default !important;
+button.disabled:hover {
+	cursor: default;
 }
 
 .skills {
