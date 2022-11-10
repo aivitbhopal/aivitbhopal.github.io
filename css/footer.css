@@ -63,6 +63,13 @@
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+.footer-address a{
+    text-decoration: none;
+}
+.footer-address a p{
+    color: white;
+    text-decoration: none;
+}
 .footer-address p{
     opacity: 80%;
     cursor: pointer;
