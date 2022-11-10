@@ -22,16 +22,24 @@ body{
     top: 30px;
     width: auto;
     height: auto;
-    border-radius: 50%;
-    border: 3px solid rgb(0, 0, 0);
-    background-color:#FEBB0B;
     font-weight: 500;
+    background-color:#373E63;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: auto;
     padding:10px;
-
+    display: flex;
+    padding-left:-10px ;
+    border-radius:20px ;
+    box-shadow: 3px 3px 1px rgb(71, 77, 80);
+}
+.popup p{
+    color: #caaf4c;
+    padding-left:5px;
+}
+.popup img{
+    height: 3rem;
 }
 .main {
    /* border:2px solid red; */
@@ -154,6 +162,10 @@ main {
     }
     .popup{
         font-size:10px;
+        right: 30px;
+    top: 30px;
+    width: auto;
+    height: auto;
     }
 }
 
