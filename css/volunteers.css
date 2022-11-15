@@ -1,0 +1,69 @@
+
+.volunteers-container{
+    padding: 1rem 0;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.volunteers-container h1{
+    color: white;
+    border-bottom: 2px solid white;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem !important ;
+    letter-spacing: 1.2px;
+    width: 100%;
+   padding-bottom: 1rem;
+}
+.volunteers-content{
+        margin-top: 3rem;
+        width:100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    
+}
+.volunteers-content .volunteers-details{
+    text-align:center;
+    justify-content:center;
+}
+.volunteers-content .volunteers-details .volunteers-name{
+    border: 2px solid white;
+    position: relative;
+    background:#03BFCB;
+    z-index: -1;
+    border-radius:20px;
+    width: 70%;
+    margin: auto;
+    margin-top:1rem;
+}
+.volunteers-content .volunteers-details .volunteers-name p{
+    color: white;
+}
+.volunteers-content .volunteers-details .volunteers-name{
+    opacity:0;
+}
+.volunteers-content .volunteers-details:hover .volunteers-name{
+    opacity:1;
+    z-index: 3;
+}
+.volunteers-content .volunteers-details img{
+    height:6rem;
+    border-radius:50%;
+}
+.volunteers-content .volunteers-details .volunteers-name .shape{
+    position: absolute;
+    width: 20px;
+    height:20px;
+    border: 2px solid white;
+    transform: rotate(45deg);
+    top: -12px;
+    left: 48%;
+    border-right:none;
+    border-bottom:none;
+    background:#03BFCB;
+    z-index: -1;
+}
