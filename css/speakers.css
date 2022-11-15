@@ -118,9 +118,29 @@
 	z-index: 10;
 }
 
+.buttons a button{
+	color: white; 
+
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+
+	opacity: 100%; 
+	border-radius: 3px; 
+	padding: 3px; 
+	width: 30px; 
+	height: 30px;
+	font-size: 20px;
+}
+
 button.primary:hover {
 	cursor: pointer;
 }
+
+a button.primary:hover {
+	text-decoration: none;
+}
+
 button.primary {
 	background-color: #03BFCB;
 	border: 1px solid #03BFCB;
@@ -131,12 +151,34 @@ button.primary {
 	padding: 10px 25px;
 }
 
+a button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px !important;
+	font-size: 15px !important;
+	width: auto !important;
+	height: auto !important;
+}
+
 button.primary.ghost {
 	background-color: transparent;
 	color: #02899C;
 }
 
+a button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
 button.disabled:hover {
+	cursor: default;
+}
+
+a button.disabled:hover {
 	cursor: default;
 }
 
@@ -152,20 +194,6 @@ button.disabled:hover {
 	align-self: flex-end;
 }
 
-.buttons a button{
-	color: white; 
-
-	background-color: transparent;
-	border: 0;
-	cursor: pointer;
-
-	opacity: 100%; 
-	border-radius: 3px; 
-	padding: 3px; 
-	width: 30px; 
-	height: 30px;
-	font-size: 20px;
-}
 .skills ul {
 	list-style-type: none;
 	margin: 0;
