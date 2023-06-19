@@ -131,6 +131,72 @@ Custom classes
     font-size: 1.3rem !important;
 
 }
+h1{
+    bottom: 200px;
+}
+.glitch__container {
+    font-family: 'Oswald';
+    position: relative;
+    margin: 0 auto;
+    width: 84vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* top: 0; */
+  }
+  .glitch__text {
+    padding: 0 1vw;
+    color: #fff;
+    text-align: center;
+    bottom: 100px;
+  }
+  .glitch__text__title {
+    display: inline-block;
+    font-size: 2.1vw;
+    white-space: nowrap;
+  }
+  .glitch__text__title.glitch-effect {
+    position: relative;
+    display: inline-block;
+  }
+  .glitch__text__title.glitch-effect.slice::after {
+    content: '';
+    background-color: #fff;
+    height: 5%;
+    width: 110%;
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    z-index: 1;
+  }
+  .glitch__text__title.glitch-effect.slice::before {
+    content: '';
+    background-color: #fff;
+    height: 10%;
+    width: 110%;
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    z-index: 1;
+  }
+  .glitch__text__title.glitch-effect span {
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: -1;
+  }
+  .glitch__text__title.glitch-effect span.glitch-effect-text-clr1 {
+    color: rgba(255, 0, 255, 0.9);
+    left: -4px;
+  }
+  .glitch__text__title.glitch-effect span.glitch-effect-text-clr2 {
+    color: rgba(0, 255, 250, 0.9);
+    right: -4px;
+  }
+  .glitch__text__title.glitch-effect.active span {
+    display: inline-block;
+  }
 
 .bg-orange {
     background: linear-gradient(135deg, #eea849, #f46b45);
