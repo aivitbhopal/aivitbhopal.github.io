@@ -24,6 +24,7 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <Style>
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -45,10 +46,115 @@
     font-family: 'Roboto', sans-serif;
 
   }
+  .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background:  rgba(47, 10, 79, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        z-index: 10;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .swiper-button-prev:hover,
+      .swiper-button-next:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .swiper-scrollbar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 50;
+        width: 5px;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .swiper-scrollbar-drag {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+      }
+      .swiper-scrollbar-cursor {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .swiper-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        transition-property: transform;
+        box-sizing: content-box;
+      }
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        margin-right: 10px;
+      }
+      .speaker-container {
+        background-color: #030d23;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .card-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .pro {
+        background-color: #f2c94c;
+        color: #1000150e;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+
 </Style>
 
 <body>
-  <div class="back"></div>
+  <div class="back">
+    <div class="element-class">
+      <!-- <video autoplay muted loop>
+        <source src="img/bg.mp4" type="video/mp4">
+      </video> -->
+    </div>
+  </div>
 
   <div id="cir"></div>
   <div id="nav-container">
@@ -58,8 +164,16 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </div>
+    
+    
     <div id="nav-content" tabindex="0">
-      <h2>AI Conclave 2.0</h2>
+      <div id="app">
+        <div id="wrapper">
+          <h1>AI Conclave 2.0</h1>
+          <!-- <span class="sub">EFFECT</span> -->
+        </div>
+      </div>
+      
       <ul>
         <li><a href="#home"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
               <path
@@ -195,13 +309,23 @@
   <div class="popup">
     <img src="./img/Shop_Merchandise1.png" alt=""><p>Shop Merchandise</p></div>
 </a>
+
+
   <div id="home" class="hero">
-    
-    <div data-aos="fade-right" class="main">
-      <h1 class="heading hero-main-heading">AI Conclave 2.0</h1>
-      <p class="sub-head hero-main-sub">18th-21st November, 2022</p>
-      <p class="tags hero-main-tags">LEARN | BUILD | INNOVATE</p>
-    </div>
+    <!-- <div data-aos="fade-right" class="main"> -->
+
+      <div class="title">
+        <p class="glitch">
+          <span aria-hidden="true">AI Conclave </span>
+          AI Conclave
+          <span aria-hidden="true">AI Conclave</span>
+        </p>
+      </div>
+      <div style="margin-top: 3%;">
+        <p class="sub-head hero-main-sub">18th-21st November, 2022</p>
+        <p class="tags hero-main-tags">LEARN | BUILD | INNOVATE</p>
+      </div>
+    <!-- </div> -->
     <div class="main-bottom bottom-bar">
       <img src="./img/aic 2.png" alt="">
       <img src="./img/aiml 1.png" alt="">
@@ -352,9 +476,9 @@
               </div>
             </div>
 
-            <div class="rocket">
-              <img src="./img/rocket.png" id="rocket-img" alt="">
-            </div>
+            <!-- <div class="rocket"> -->
+              <!-- <img src="./img/rocket.png" id="rocket-img" alt="">
+            </div> -->
           </div>
         </div>
       </div>
@@ -438,80 +562,89 @@
     <!-- Event End  -->
 
     <!-- Speakers Start -->
-    <div data-aos="fade-out" class="theme-container">
-      <div id="speakers" class="container speakers speakers-section">
-        <h2 class="container_heading">Speakers</h2>
-        <h3 class="session_heading"  id="keynote" >Keynote Sessions</h3>
-        <div class="speakers speaker-box">
-          <!-- remove "comming-soon" to remove blur and remove temp-card div -->
-
-          <div class="speaker-container margin-bottom">
-            <div class="card-top">
-              <span class="pro">KEYNOTE 01</span>
-              <h2>Offline</h2>
-            </div>
-            <img class="round" src="./img/amitabhtewari.jpeg" alt="user" />
-            <h3>Amitabh Tewari</h3>
-            <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 9:30 am - 12:00 pm</h6>
-            <p>Center Head at TCS</p>
-            <div class="buttons">
-              <a href="http://linkedin.com/in/amitabhtewari">
-                <button><i class="fa fa-linkedin"></i></button></a>
-              <br>
-              <br>
-              </a>
-              <a href="https://forms.gle/imaXs6rLcWjtjPN18">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              <!-- <button class="primary ghost">
+    
+<div data-aos="fade-out" class="theme-container">
+	<div id="speakers" class="container speakers speakers-section">
+		<h2 class="container_heading">Speakers</h2>
+		<h3 class="session_heading" id="keynote">Keynote Sessions</h3>
+		<div class="speakers speaker-box">
+			<div class="swiper">
+			<!-- remove "comming-soon" to remove blur and remove temp-card div -->
+        <div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-top">
+							<span class="pro">KEYNOTE 01</span>
+							<h2>Offline</h2>
+						</div>
+						<img class="round" src="./img/amitabhtewari.jpeg" alt="user" />
+						<h3>Amitabh Tewari</h3>
+						<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 9:30 am - 12:00 pm</h6>
+						<p>Center Head at TCS</p>
+						<div class="buttons">
+							<a href="http://linkedin.com/in/amitabhtewari">
+								<button><i class="fa fa-linkedin"></i></button>
+							</a>
+							<br />
+							<br />
+							<!--</a>-->
+							<a href="https://forms.gle/imaXs6rLcWjtjPN18">
+								<button class="primary">
+									Register
+								</button>
+							</a>
+							<!-- <button class="primary ghost">
                 Following
               </button> -->
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Inaugural Speech</li>
-              </ul>
-            </div>
-          </div>
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>Inaugural Speech</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-top">
+							<span class="pro">KEYNOTE 02</span>
+							<h2>Offline</h2>
+						</div>
+						<img class="round" src="./img/rahulmishra.jpeg" alt="user" />
+						<h3>Rahul Mishra</h3>
+						<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 3:00 pm - 4:30 pm</h6>
+						<p>
+							Head of Growth - Concept Campus<br />
+							(India & Canada)
+						</p>
+						<div class="buttons">
+							<a href="https://www.linkedin.com/in/rahulmishracc">
+								<button><i class="fa fa-linkedin"></i></button>
+							</a>
+							<br />
+							<br />
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-top">
-              <span class="pro">KEYNOTE 02</span>
-              <h2>Offline</h2>
-            </div>
-            <img class="round" src="./img/rahulmishra.jpeg" alt="user" />
-            <h3>Rahul Mishra</h3>
-            <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 3:00 pm - 4:30 pm</h6>
-            <p>Head of Growth - Concept Campus<br>(India & Canada)</p>
-            <div class="buttons">
-              <a href="https://www.linkedin.com/in/rahulmishracc">
-                <button><i class="fa fa-linkedin"></i></button></a>
-              <br>
-              <br>
-
-              </a>
-              <a href="https://forms.gle/DFj5wJqbEoxwc3Nr6">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              <!-- <button class="primary ghost">
+							<!--</a>-->
+							<a href="https://forms.gle/DFj5wJqbEoxwc3Nr6">
+								<button class="primary">
+									Register
+								</button>
+							</a>
+							<!-- <button class="primary ghost">
                 Following
               </button> -->
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Discussion & Analysis of AI Powered HRTech Product Startup Scenarios</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- <div class="temp-card relative">
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>Discussion & Analysis of AI Powered HRTech Product Startup Scenarios</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="temp-card relative">
             <h1 class="absolute">Coming Soon!</h1>
             <div class="speaker-container margin-bottom coming-soon">
               <div class="card-info">
@@ -543,7 +676,7 @@
             </div>
           </div> -->
 
-          <!-- <div class="speaker-container margin-bottom">
+				<!-- <div class="speaker-container margin-bottom">
             <div class="card-info">
               <div class="card-top">
                 <span class="pro">KEYNOTE 02</span>
@@ -574,296 +707,338 @@
             </div>
           </div> -->
 
-          
-
-          <div class="speaker-container margin-bottom">
-            <div class="card-top">
-              <span class="pro">KEYNOTE 03</span>
-              <h2>Online</h2>
-            </div>
-            <img class="round" src="./img/kheira.jpg" alt="user" />
-            <h3>Kheira Lakhdari</h3>
-            <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 11:00 am - 12:30 pm</h6>
-            <p>Researcher at STIC laboratory Teacher, <br />  Mentor and Omdena Algeria Chapter Lead</p>
-            <div class="buttons">
-              <a href="https://www.linkedin.com/in/kheira-lakhdari/">
-                <button><i class="fa fa-linkedin"></i></button></a>
-              </a>
-              <br>
-              <br>
-              <a href="https://forms.gle/PFrrRxFkNzkQ29xQA">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              <!-- <button class="primary ghost">
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-top">
+							<span class="pro">KEYNOTE 03</span>
+							<h2>Online</h2>
+						</div>
+						<img class="round" src="./img/kheira.jpg" alt="user" />
+						<h3>Kheira Lakhdari</h3>
+						<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 11:00 am - 12:30 pm</h6>
+						<p>
+							Researcher at STIC laboratory Teacher, <br />
+							Mentor and Omdena Algeria Chapter Lead
+						</p>
+						<div class="buttons">
+							<a href="https://www.linkedin.com/in/kheira-lakhdari/">
+								<button><i class="fa fa-linkedin"></i></button>
+							</a>
+							<!--</a>-->
+							<br />
+							<br />
+							<a href="https://forms.gle/PFrrRxFkNzkQ29xQA">
+								<button class="primary">
+									Register
+								</button>
+							</a>
+							<!-- <button class="primary ghost">
                 Following
               </button> -->
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Integration of IoT and AI in Agritech</li>
-              </ul>
-            </div>
-          </div>
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>Integration of IoT and AI in Agritech</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 04</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/johan.png" alt="user" />
-              <h3>Johan Steyn</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 1:30 pm - 3:00 pm</h6>
-              <p> Founder of AIforBusiness.net.<br /> Faculty of Woxsen Uni</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/johanosteyn">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/PuxuXUJpC6qMPMCN7">
-                  <button class="primary">
-                    Register
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>The Benefits and Pitfalls of AI in Business</li>
-              </ul>
-            </div>
-          </div>
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-info">
+							<div class="card-top">
+								<span class="pro">Keynote 04</span>
+								<h2>Online</h2>
+							</div>
+							<img class="round" src="./img/johan.png" alt="user" />
+							<h3>Johan Steyn</h3>
+							<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 1:30 pm - 3:00 pm</h6>
+							<p>
+								Founder of AIforBusiness.net.<br />
+								Faculty of Woxsen Uni
+							</p>
+							<div class="buttons">
+								<a href="https://www.linkedin.com/in/johanosteyn">
+									<button><i class="fa fa-linkedin"></i></button>
+								</a>
+								<br />
+								<br />
+								<a href="https://forms.gle/PuxuXUJpC6qMPMCN7">
+									<button class="primary">
+										Register
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>The Benefits and Pitfalls of AI in Business</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 05</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/supriya.jpg" alt="user" />
-              <h3>Supriya Bhuwalka</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 3:30 pm - 5:00 pm</h6>
-              <p>Founder, Coding and More</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/supriya-bhuwalka-9b962790">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/fQKcWZwyCfWE6H6Z6">
-                  <button class="primary">
-                    Register
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>AI in EdTech + Women in Tech</li>
-              </ul>
-            </div>
-          </div>
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-info">
+							<div class="card-top">
+								<span class="pro">Keynote 05</span>
+								<h2>Online</h2>
+							</div>
+							<img class="round" src="./img/supriya.jpg" alt="user" />
+							<h3>Supriya Bhuwalka</h3>
+							<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 3:30 pm - 5:00 pm</h6>
+							<p>Founder, Coding and More</p>
+							<div class="buttons">
+								<a href="https://www.linkedin.com/in/supriya-bhuwalka-9b962790">
+									<button><i class="fa fa-linkedin"></i></button>
+								</a>
+								<br />
+								<br />
+								<a href="https://forms.gle/fQKcWZwyCfWE6H6Z6">
+									<button class="primary">
+										Register
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>AI in EdTech + Women in Tech</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 06</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/thom.jpg" alt="user" />
-              <h3>Dr. Thomas Ives</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:00 am - 11:30 am</h6>
-              <p>Founder, Integrated AI and ML,<br />Sr. Data scientist at echo global logistics</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/thomives/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/faienzBL1vZgTtyZ7">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>How Basic ML Development Pipelines helps Build better Real World Projects?</li>
-              </ul>
-            </div>
-          </div>
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-info">
+							<div class="card-top">
+								<span class="pro">Keynote 06</span>
+								<h2>Online</h2>
+							</div>
+							<img class="round" src="./img/thom.jpg" alt="user" />
+							<h3>Dr. Thomas Ives</h3>
+							<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:00 am - 11:30 am</h6>
+							<p>
+								Founder, Integrated AI and ML,<br />
+								Sr. Data scientist at echo global logistics
+							</p>
+							<div class="buttons">
+								<a href="https://www.linkedin.com/in/thomives/">
+									<button><i class="fa fa-linkedin"></i></button>
+								</a>
+								<br />
+								<br />
+								<a href="https://forms.gle/faienzBL1vZgTtyZ7">
+									<button class="primary">
+										Register
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>How Basic ML Development Pipelines helps Build better Real World Projects?</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 07</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/rosana.jpg" alt="user" />
-              <h3>Rosana de Oliveira Gomes</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 4:00 pm - 5:30 pm</h6>
-              <p>Sr. Data Scientist;<br>Founder, AI wonder girls</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/rosanaogomes/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/JfMGHxhiLMcz75cK6">
-                  <button class="primary">
-                    Register
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>AI for Good</li>
-              </ul>
-            </div>
-          </div>
+				<div class="swiper-slide">
+					<div class="speaker-container margin-bottom">
+						<div class="card-info">
+							<div class="card-top">
+								<span class="pro">Keynote 07</span>
+								<h2>Online</h2>
+							</div>
+							<img class="round" src="./img/rosana.jpg" alt="user" />
+							<h3>Rosana de Oliveira Gomes</h3>
+							<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 4:00 pm - 5:30 pm</h6>
+							<p>
+								Sr. Data Scientist;<br />
+								Founder, AI wonder girls
+							</p>
+							<div class="buttons">
+								<a href="https://www.linkedin.com/in/rosanaogomes/">
+									<button><i class="fa fa-linkedin"></i></button>
+								</a>
+								<br />
+								<br />
+								<a href="https://forms.gle/JfMGHxhiLMcz75cK6">
+									<button class="primary">
+										Register
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="skills">
+							<h6>Topic</h6>
+							<ul>
+								<li>AI for Good</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="swiper-pagination"></div>
 
-        </div>
-        <h3 class="session_heading"  id="Online-workshops" >Online Workshops</h3>
-        <div class="speakers speaker-box">
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 01</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/rich_gregson.png" alt="user" />
-              <h3>Rich Gregson</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 6:30 pm - 8:00 pm</h6>
-              <p>Data Scientist</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/rich-g-144bb7aa">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/c5VjhZkG1UY4oc4bA">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Predicting Road Traffic Collision severity for the improvement of Highways</li>
-              </ul>
-            </div>
-          </div>
+        <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+  </div>
+</div>
+	<h3 class="session_heading" id="Online-workshops">Online Workshops</h3>
+	<div class="speakers speaker-box">
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 01</span>
+					<h2>Online</h2>
+				</div>
+				<img class="round" src="./img/rich_gregson.png" alt="user" />
+				<h3>Rich Gregson</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 6:30 pm - 8:00 pm</h6>
+				<p>Data Scientist</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/rich-g-144bb7aa">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/c5VjhZkG1UY4oc4bA">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Predicting Road Traffic Collision severity for the improvement of Highways</li>
+				</ul>
+			</div>
+		</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 02</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/narimane.jpg" alt="user" />
-              <h3>Narimane Hennouni</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 6:30 pm - 8:00 pm</h6>
-              <p>Generation Google Scholar and WTM ambassador, Research Engineer at<br> Instadeep
-              </p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/narimane-hennouni-380900194">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/QgP4DZrWTQ5LHSxu7">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Getting Started with Reinforcement Learning</li>
-              </ul>
-            </div>
-          </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 02</span>
+					<h2>Online</h2>
+				</div>
+				<img class="round" src="./img/narimane.jpg" alt="user" />
+				<h3>Narimane Hennouni</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 6:30 pm - 8:00 pm</h6>
+				<p>
+					Generation Google Scholar and WTM ambassador, Research Engineer at<br />
+					Instadeep
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/narimane-hennouni-380900194">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/QgP4DZrWTQ5LHSxu7">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Getting Started with Reinforcement Learning</li>
+				</ul>
+			</div>
+		</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 03</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/salman_khaliq.jpg" />
-              <h3>Salman Khaliq</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 6:00 pm - 8:00 pm</h6>
-              <p>Learning and Development Lead,<br /> Omdena</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/salmankhaliq22">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/LZzKz37LXMtxsZFL9">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Face Detection using CNN, OpenCV and Transfer Learning</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <h3 class="session_heading" id="Offline-workshops">Offline Workshops</h3>
-        <div class="speakers speaker-box">
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 01, 04</span>
-                <h2>Offline</h2>
-              </div>
-              <img class="round" src="./img/Rahul_Mandviya.jpg" alt="user" />
-              <h3>Rahul Mandviya</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 2:00 pm - 4:00 pm</h6>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 4:30 pm - 6:00 pm</h6>
-              <p>Data scientist at <br>TruefeedBack Information Technologies <br> President at AI Club <br> Research Experience in Apiculture</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/rahul-mandviya/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/HWyUYac5bsVwwCdm7">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Intro to Statistics, Building the first Hypothesis</li>
-              </ul>
-            </div>
-          </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 03</span>
+					<h2>Online</h2>
+				</div>
+				<!--<img class="round" src="./img/salman_khaliq.jpg" />-->
+				<h3>Salman Khaliq</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 6:00 pm - 8:00 pm</h6>
+				<p>
+					Learning and Development Lead,<br />
+					Omdena
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/salmankhaliq22">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/LZzKz37LXMtxsZFL9">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Face Detection using CNN, OpenCV and Transfer Learning</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<h3 class="session_heading" id="Offline-workshops">Offline Workshops</h3>
+	<div class="speakers speaker-box">
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 01, 04</span>
+					<h2>Offline</h2>
+				</div>
+				<img class="round" src="./img/Rahul_Mandviya.jpg" alt="user" />
+				<h3>Rahul Mandviya</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 2:00 pm - 4:00 pm</h6>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 4:30 pm - 6:00 pm</h6>
+				<p>
+					Data scientist at <br />
+					TruefeedBack Information Technologies <br />
+					President at AI Club <br />
+					Research Experience in Apiculture
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/rahul-mandviya/">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/HWyUYac5bsVwwCdm7">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Intro to Statistics, Building the first Hypothesis</li>
+				</ul>
+			</div>
+		</div>
 
-          <!-- <div class="speaker-container margin-bottom">
+		<!-- <div class="speaker-container margin-bottom">
             <div class="card-info">
               <div class="card-top">
                 <span class="pro">Hands-on Workshop 02, 03</span>
@@ -872,7 +1047,7 @@
               <div class="image-div relative">
                 <img class="round" src="./img/abhinavgadhagil.png" alt="user" />
                 <!-- <img class="absolute secondary-speaker" src="./img/yash.jpg" alt="user" /> -->
-              <!-- </div>
+		<!-- </div>
               <h3>Abhinav Gadgil</h3>
               <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 4:30 pm - 6:00 pm</h6>
               <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 10:30 am - 12:00 pm</h6>
@@ -896,176 +1071,193 @@
                 <li>First Step towards ML, Exploratory Data Analysis</li>
               </ul>
             </div>
-          </div> --> 
+          </div> -->
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 02, 03</span>
-                <h2>Offline</h2>
-              </div>
-              <div class="image-div relative">
-                <!-- <img class="round" src="./img/Rahul_Mandviya.jpg" alt="user" /> -->
-                <img class="round" src="./img/yash.jpg" alt="user" />
-              </div>
-              <h3>Yash Sharma</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 4:30 pm - 6:00 pm</h6>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 10:30 am - 12:00 pm</h6>
-              <p>Open Source Collaborator at Omdena <br>Microsoft Engage'22 <br> Member at Hexaberry Data Science Community</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/yash-sharma-3b60041a7">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/T4xkvQmLZgzsZW6R8">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>First Step towards ML, Exploratory Data Analysis</li>
-              </ul>
-            </div>
-          </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 02, 03</span>
+					<h2>Offline</h2>
+				</div>
+				<div class="image-div relative">
+					<!-- <img class="round" src="./img/Rahul_Mandviya.jpg" alt="user" /> -->
+					<img class="round" src="./img/yash.jpg" alt="user" />
+				</div>
+				<h3>Yash Sharma</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-1, 4:30 pm - 6:00 pm</h6>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 10:30 am - 12:00 pm</h6>
+				<p>
+					Open Source Collaborator at Omdena <br />
+					Microsoft Engage'22 <br />
+					Member at Hexaberry Data Science Community
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/yash-sharma-3b60041a7">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/T4xkvQmLZgzsZW6R8">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>First Step towards ML, Exploratory Data Analysis</li>
+				</ul>
+			</div>
+		</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 05</span>
-                <h2>Offline</h2>
-              </div>
-              <div class="image-div relative">
-                <img class="round" src="./img/rithuraj.jpeg" alt="user" />
-              </div>
-              <h3>Rithuraj Nambiar</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:30 am - 12:00 pm</h6>
-              <p>ML Intern at Bluepen, Ex-DS Intern at AI India Innovation Center,<br> Technical Lead at AI Club</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/rithuraj-nambiar/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/csRc7hGVRyD3XcZ89">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Introduction to GANs - Own an image generator</li>
-              </ul>
-            </div>
-          </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 05</span>
+					<h2>Offline</h2>
+				</div>
+				<div class="image-div relative">
+					<img class="round" src="./img/rithuraj.jpeg" alt="user" />
+				</div>
+				<h3>Rithuraj Nambiar</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:30 am - 12:00 pm</h6>
+				<p>
+					ML Intern at Bluepen, Ex-DS Intern at AI India Innovation Center,<br />
+					Technical Lead at AI Club
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/rithuraj-nambiar/">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/csRc7hGVRyD3XcZ89">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Introduction to GANs - Own an image generator</li>
+				</ul>
+			</div>
+		</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 05</span>
-                <h2>Offline</h2>
-              </div>
-              <div class="image-div relative">
-                <img class="round" src="./img/argish.jpeg" alt="user" />
-              </div>
-              <h3>Argish Abhangi</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:30 am - 12:00 pm</h6>
-              <p>Lead ML Engineer at Omdena,<br> Editorial Team Lead at AI Club</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/argish">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/csRc7hGVRyD3XcZ89">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Introduction to GANs - Own an image generator</li>
-              </ul>
-            </div>
-          </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 05</span>
+					<h2>Offline</h2>
+				</div>
+				<div class="image-div relative">
+					<img class="round" src="./img/argish.jpeg" alt="user" />
+				</div>
+				<h3>Argish Abhangi</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:30 am - 12:00 pm</h6>
+				<p>
+					Lead ML Engineer at Omdena,<br />
+					Editorial Team Lead at AI Club
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/argish">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/csRc7hGVRyD3XcZ89">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Introduction to GANs - Own an image generator</li>
+				</ul>
+			</div>
+		</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 06</span>
-                <h2>Offline</h2>
-              </div>
-              <img class="round" src="./img/sakalya.jpeg" alt="user" />
-              <h3>Sakalya Mitra</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 2:00 pm - 3:30 pm</h6>
-              <p>Data Science Intern At Scaler <br> Ex- AI ML Intern at NinjaStudy <br> Google HashCode college rank 1</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/sakalya-mitra/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/nVuey4Sy3vxh5nAz6">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Neural Networks, like a PRO</li>
-              </ul>
-            </div>
-          </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 06</span>
+					<h2>Offline</h2>
+				</div>
+				<img class="round" src="./img/sakalya.jpeg" alt="user" />
+				<h3>Sakalya Mitra</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 2:00 pm - 3:30 pm</h6>
+				<p>
+					Data Science Intern At Scaler <br />
+					Ex- AI ML Intern at NinjaStudy <br />
+					Google HashCode college rank 1
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/sakalya-mitra/">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/nVuey4Sy3vxh5nAz6">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Neural Networks, like a PRO</li>
+				</ul>
+			</div>
+		</div>
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Hands-on Workshop 07, 08</span>
-                <h2>Offline</h2>
-              </div>
-              <img class="round" src="./img/aryan.jpeg" alt="user" />
-              <h3>Aryan Ahuja</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 2:00 pm - 3:30 pm</h6>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 4:30 pm - 6:00 pm</h6>
-              <p>GWOC top contributor (Data Science),<br> Amazon ML Summer School, ML Engineer at Omdena</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/aryan-ahuja/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/RMLJteC5zpPzcBow5">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Stepping Into The Big Game- Open Source</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+		<div class="speaker-container margin-bottom">
+			<div class="card-info">
+				<div class="card-top">
+					<span class="pro">Hands-on Workshop 07, 08</span>
+					<h2>Offline</h2>
+				</div>
+				<img class="round" src="./img/aryan.jpeg" alt="user" />
+				<h3>Aryan Ahuja</h3>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 2:00 pm - 3:30 pm</h6>
+				<h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 4:30 pm - 6:00 pm</h6>
+				<p>
+					GWOC top contributor (Data Science),<br />
+					Amazon ML Summer School, ML Engineer at Omdena
+				</p>
+				<div class="buttons">
+					<a href="https://www.linkedin.com/in/aryan-ahuja/">
+						<button><i class="fa fa-linkedin"></i></button>
+					</a>
+					<br />
+					<br />
+					<a href="https://forms.gle/RMLJteC5zpPzcBow5">
+						<button class="primary">
+							Register
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h6>Topic</h6>
+				<ul>
+					<li>Stepping Into The Big Game- Open Source</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+ <!--</div> -->
+    
+ 
 
   <!-- Speakers End -->
 
@@ -1219,5 +1411,28 @@
   integrity="sha512-vu190Nx0a7ou580W/UkzpqxOf5lHJaMcsJZC8RGv5TYQh9xlKdsQvMCeREbL1PqbK/k6jh3Cf/VBiurWwP/kHA=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/app.js"></script>
+
+ <!-- <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+  // Initialize Swiper carousel
+var swiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  }
+});
+
+</script>
+
 
 </html>
