@@ -6,9 +6,10 @@
     flex-wrap: wrap;
     border-radius: 20px;
     flex-direction: column;
+    background: #002730;
 }
 .events .card {
-
+  
     position: relative;
    width:320px;
    height:440px;
@@ -75,10 +76,10 @@
     background: #0a76e2;
   }
   .events .card:nth-child(4) .box {
-      background: linear-gradient(135deg,#eea849,#f46b45);
+      background: linear-gradient(135deg,#9b51bd,#9445b9);
   }
   .events .card:nth-child(5) .box .content a {
-    background: #F47646;
+    background: #9b51bd;
   }
   .events .card:nth-child(5) .box {
       background: linear-gradient(135deg,#60b4ec,#0a76e2);

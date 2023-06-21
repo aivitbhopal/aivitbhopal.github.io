@@ -2,19 +2,19 @@
 
 .nav{
  
-   padding: 2.5rem 0.5rem;
-   
-    z-index: 2;
+  padding: 2.5rem 0.5rem;
+  
+   z-index: 2;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
 
-    gap: 1.5rem;
+   gap: 1.5rem;
 
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 50px;
+   background-color: rgba(0, 0, 0, 0.8);
 
     background: var(--nav-color);
     box-shadow: 0px 4px 11px 6px rgba(0, 0, 0, 0.25);
@@ -43,26 +43,26 @@
 
 .item{
 
-   
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  
+   height: 50px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
 }
 /* .item a img{
-  height: 25px;
-  width: 30px;
+ height: 25px;
+ width: 30px;
 } */
 
 .item i{
-  color: white;
+ color: white;
 
 
-  display: flex;
-  align-items: center;
+ display: flex;
+ align-items: center;
 }
 
 .item svg{
@@ -72,41 +72,41 @@
 }
 
 .home-button {
-  text-decoration: none;
+ text-decoration: none;
 }
 
 .home-button i{
-  font-size: 30px;
-  border-radius: none;
-  /* color: #213653; */
-  color: white;
+ font-size: 30px;
+ border-radius: none;
+ /* color: #213653; */
+ color: white;
 }
 
 .item:hover svg{
-    opacity: 1;
+   opacity: 1;
 }
 
 .item:hover .pop{
-    display: flex;
-    transform: translateX(60px);
+   display: flex;
+   transform: translateX(60px);
 
-    
+   
 }
 .nav-button .item{
-    /* border: 2px solid black; */
-    position: absolute;
-    left: 0.4rem;
+   /* border: 2px solid black; */
+   position: absolute;
+   left: 0.4rem;
 }
 
 .hidenav a img{
-  /* color:#393F62; */
-  margin-top:10px;
-  height: 2.5rem;
-  width: 1.5rem;
+ /* color:#393F62; */
+ margin-top:10px;
+ height: 2.5rem;
+ width: 1.5rem;
 }
 
 #arbazbtn{
-  transition: all 0.5s ease;
+ transition: all 0.5s ease;
 }
 
 
@@ -231,65 +231,65 @@
   #nav-content ul {
     margin-top: 2rem;
 
-    height: 100%;
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    font-size: 20px;
+   height: 100%;
+   display: flex;
+   list-style-type: none;
+   flex-direction: column;
+   font-size: 20px;
 
-    gap: 1.5rem;
-  }
-  
-  #nav-content li a {
+   gap: 1.5rem;
+ }
+ 
+ #nav-content li a {
 
-    /* padding:  32px 0; */
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size:20px;
-    transition: color .1s;
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-  }
-  #nav-content li a svg {
-    /* border:2px solid pink; */
-    width:25px;
-    margin-right:1rem;
-    margin-left:1.5rem;
-    fill: white;
-  }
+   /* padding:  32px 0; */
+   display: block;
+   text-decoration: none;
+   color: white;
+   font-size:20px;
+   transition: color .1s;
+   display:flex;
+   align-items:center;
+   justify-content:flex-start;
+ }
+ #nav-content li a svg {
+   /* border:2px solid pink; */
+   width:25px;
+   margin-right:1rem;
+   margin-left:1.5rem;
+   fill: white;
+ }
+ 
+ #nav-content li a:hover {
+   color: rgb(136, 204, 250);
+ }
+ 
+ /* #nav-content li:not(.small) + .small {
+   margin-top: auto;
+ } */
+ #nav-container:focus-within #nav-content {
+   transform: none;
+ }
+ #nav-container{
+   display: none;
+ }
+ .hidearbnav {
+   opacity: 0;
+   display: none;
+   transition: all 0.5s ease ;
   
-  #nav-content li a:hover {
-    color: rgb(136, 204, 250);
-  }
-  
-  /* #nav-content li:not(.small) + .small {
-    margin-top: auto;
-  } */
-  #nav-container:focus-within #nav-content {
-    transform: none;
-  }
-  #nav-container{
-    display: none;
-  }
-  .hidearbnav {
-    opacity: 0;
-    display: none;
-    transition: all 0.5s ease ;
-   
-  }
-  .showarb {
-    opacity: 1;
-    display: block;
-    transition: all 0.5s ease ;
-  }
-  
-  @media only screen and (max-width: 600px)  {
-    #nav-container{
-      display: block;
-    }
-    #cir{
-        display: block;
-    }
-  }
+ }
+ .showarb {
+   opacity: 1;
+   display: block;
+   transition: all 0.5s ease ;
+ }
+ 
+ @media only screen and (max-width: 600px)  {
+   #nav-container{
+     display: block;
+   }
+   #cir{
+       display: block;
+   }
+ }
