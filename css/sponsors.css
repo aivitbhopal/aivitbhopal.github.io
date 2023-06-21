@@ -17,7 +17,7 @@
      border-radius: 20px;
      font-size: 2rem;
      padding: 1.5rem ;
-     background-image: -webkit-linear-gradient(135deg,rgba(35,31,31,0),rgba(131,205,221,.6));
+     background-image: -webkit-linear-gradient(135deg,rgba(35,31,31,0),var(--primary));
     color: white;
  
      
@@ -41,5 +41,5 @@
  }
 
 .golden-title h2{
-    background-image: -webkit-linear-gradient(135deg,rgba(35,31,31,0),#f7a031);
+    background-image: -webkit-linear-gradient(135deg,rgba(35,31,31,0),var(--secondary));
 }
