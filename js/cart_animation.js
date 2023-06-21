@@ -5,9 +5,6 @@
 const overlay = document.getElementById('overlay');
 const checkoutContainer = document.getElementById('checkoutContainer');
 const exitButton = document.getElementById("exit-checkout");
-
-console.log(cartButton);
-
 var checkout = false; // State that checks if the checkout menu is open or not
 
 // Define the animation timeline

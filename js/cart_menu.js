@@ -193,7 +193,6 @@ function addToCart ( id ) {
   } ));
 
   cartLength.textContent = cartItems.length;
-  console.log(cartLength.textContent);
 
   if (cartItems.length > 0) {
     cartButton.style.display = "block";
@@ -208,7 +207,6 @@ function removeFromCart ( id ) {
   }
 
   cartLength.textContent = cartItems.length;
-  console.log(cartLength.textContent);
 
   if (cartItems.length == 0) {
     cartButton.style.display = "none"
