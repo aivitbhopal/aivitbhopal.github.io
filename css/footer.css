@@ -7,7 +7,7 @@
     padding-right: 5rem;
     /* height: 40vh; */
     width: 100vw;
-    background: var(--container-bg);
+    background: rgba(36, 31, 60, 0.8);
 }
 .footer-heading{
    

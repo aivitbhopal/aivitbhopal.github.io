@@ -48,7 +48,7 @@
 }
 
 .speaker-container {
-	background-color: var(--card-bg);
+	background-color: #231E39;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #B3B8CD;
@@ -75,8 +75,8 @@
 }
 
 .speaker-container .card-top .pro {
-	color: #ffffff;
-	background-color: var(--secondary-variant);
+	color: #231E39;
+	background-color: #FEBB0B;
 	border-radius: 3px;
 	font-size: 0.9em;
 	font-weight: bold;
@@ -142,23 +142,18 @@ a button.primary:hover {
 }
 
 button.primary {
-	background-color: var(--secondary);
-	border: none;
-	border-radius: 5px;
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
 	color: white;
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
 	padding: 10px 25px;
 }
 
-button.primary:hover {
-	background-color: var(--primary);
-	transition: all ease-in-out 0.3s;
-}
-
 a button.primary {
-	background-color: var(--secondary);
-	/* border: 1px solid #03BFCB; */
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
 	border-radius: 3px;
 	color: white;
 	font-family: Montserrat, sans-serif;
@@ -188,7 +183,7 @@ a button.disabled:hover {
 }
 
 .skills {
-	background-color: var(--card-bottom);
+	background-color: #1F1A36;
 	text-align: left;
 	display: flex;
 	justify-content: center;
@@ -224,8 +219,8 @@ a button.disabled:hover {
 }
 
 .speaker-container .card-top h2{
-	color: #ffffff;
-    background-color: var(--secondary-variant);
+	color: #231E39;
+    background-color: #FEBB0B;
     border-radius: 3px;
     font-size: 1em;
     font-weight: bold;
