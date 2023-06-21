@@ -16,7 +16,7 @@
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.8);
 
-    background: var(--nav-color);
+    background: #213653;
     box-shadow: 0px 4px 11px 6px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
 
@@ -37,7 +37,7 @@
     /* left:50px; */
     transition: all ease-out 1000ms;
     transition-delay: 300ms;
-    font-family: 'Alef'; 
+    font-family: 'Alef';
     font-style: normal;
 }
 
@@ -67,7 +67,7 @@
 
 .item svg{
     height:23px;
-    opacity: 1;
+    opacity: 0.5;
     transition: all ease-out 200ms;
 }
 
@@ -115,32 +115,32 @@
 
 #nav-container {
   height:100vh;
-  position: fixed;
+    position: fixed;
 
-  width: 100%;
-  pointer-events: none;
-  z-index:2;
-}
-#nav-container .bg {
-
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 70px);
-  visibility: hidden;
-  opacity: 0;
-  transition: .3s;
-  background: transparent;
-}
-#nav-container:focus-within .bg {
-  visibility: visible;
-  opacity: .6;
-}
-#nav-container * {
+    width: 100%;
+    pointer-events: none;
+    z-index:2;
+  }
+  #nav-container .bg {
   
-  visibility: visible;
-}
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    background: transparent;
+  }
+  #nav-container:focus-within .bg {
+    visibility: visible;
+    opacity: .6;
+  }
+  #nav-container * {
+    
+    visibility: visible;
+  }
  #cir{
     position: fixed;
     
