@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./img/club_logo.png">
   <title>AI Conclave 2.0</title>
+  <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/timeline.css">
@@ -18,6 +19,7 @@
   <link rel="stylesheet" href="./css/about.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/merch.css">
+  <link rel="stylesheet" href="./css/cart.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -25,7 +27,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<Style>
+<style>
   /* Hide scrollbar for Chrome, Safari and Opera */
   body::-webkit-scrollbar {
     display: none;
@@ -45,9 +47,45 @@
     font-family: 'Roboto', sans-serif;
 
   }
-</Style>
+</style>
 
 <body>
+
+  <div id="cartButton" class="cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <div id="cart-length" class="in-cart-num"></div>
+  </div>
+
+  <div id="overlay"></div>
+  <div id="checkoutContainer">
+    <!-- checkout content here -->
+    <div id="exit-checkout" class="exit-button">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="order-summary">
+        <div id="orders" class="order-table">
+          <div class="order-row col-head">
+            <div class="serial-no">
+              <div>S.No.</div>
+            </div>
+            <div class="event-name">
+              <div>Event Name</div>
+            </div>
+            <div class="price">
+              <div>Price</div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    <div class="checkout-section">
+      <div class="checkout-container">
+        <button id="cancel-button" class="cancel-button">Cancel</button>
+        <button id="checkout-button" class="submit-button">Checkout</button>
+      </div>
+    </div>
+  </div>
+
   <div class="back"></div>
 
   <div id="cir"></div>
@@ -426,6 +464,62 @@
               </div>
             </div>
           </div>
+
+          <div class="event_row">
+            <div class=" event_column card margin-bottom">
+              <div class="box">
+                <div class="content">
+                  <h2>01</h2>
+                  <h3  >Keynote Sessions</h3>
+                  <p>Learn from the best! Expert Speakers will share their experience and knowledge in an Interactive
+                    Session.</p>
+                  <a href="#keynote">Register</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="  double-column card margin-bottom">
+              <div class="box">
+                <div class="content">
+                  <h2>02</h2>
+                  <h3>Ideathon</h3>
+                  <p>Train your brain. Do it again and again. Develop unique solutions to real-world problems. Winners
+                    get to convert their idea into an Open-Source Project!</p>
+                  <a href="http://ideathon.aivit.tech/">Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="event_row">
+            <div class=" double-column card margin-bottom">
+              <div class="box">
+                <div class="content">
+                  <h2>03</h2>
+                  <h3>Debate Competition</h3>
+                  <p>Clash of Concepts. What is definite, what appears to be definite, what isn't definite, battle it
+                    out and squeeze the truth.</p>
+                  <a href="#">Register</a>
+                </div>
+              </div>
+            </div>
+
+            <div class=" event_column card margin-bottom">
+              <div class="box">
+                <div class="content">
+                  <h2>04</h2>
+                  <h3  >Hands-on workshop</h3>
+                  <p>Learn from the best! Expert Speakers will share their experience and knowledge in an Interactive
+                    Session.</p>
+                  <a href="#hands-on">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
@@ -442,10 +536,10 @@
       <div id="speakers" class="container speakers speakers-section">
         <h2 class="container_heading">Speakers</h2>
         <h3 class="session_heading"  id="keynote" >Keynote Sessions</h3>
-        <div class="speakers speaker-box">
+        <div id="speaker-section" class="speakers speaker-box">
           <!-- remove "comming-soon" to remove blur and remove temp-card div -->
 
-          <div class="speaker-container margin-bottom">
+          <!-- <div id="1" class="speaker-container margin-bottom">
             <div class="card-top">
               <span class="pro">KEYNOTE 01</span>
               <h2>Offline</h2>
@@ -465,19 +559,22 @@
                   Register
                 </button>
               </a>
+              <button id="addCart" class="primary">
+                Add to Cart
+              </button>
               <!-- <button class="primary ghost">
                 Following
               </button> -->
-            </div>
+            <!-- </div>
             <div class="skills">
               <h6>Topic</h6>
               <ul>
                 <li>Inaugural Speech</li>
               </ul>
             </div>
-          </div>
+          </div> -->
 
-
+<!-- 
           <div class="speaker-container margin-bottom">
             <div class="card-top">
               <span class="pro">KEYNOTE 02</span>
@@ -498,18 +595,18 @@
                 <button class="primary">
                   Register
                 </button>
-              </a>
+              </a> -->
               <!-- <button class="primary ghost">
                 Following
               </button> -->
-            </div>
+            <!-- </div>
             <div class="skills">
               <h6>Topic</h6>
               <ul>
                 <li>Discussion & Analysis of AI Powered HRTech Product Startup Scenarios</li>
               </ul>
             </div>
-          </div>
+          </div>   -->
 
           <!-- <div class="temp-card relative">
             <h1 class="absolute">Coming Soon!</h1>
@@ -576,161 +673,7 @@
 
           
 
-          <div class="speaker-container margin-bottom">
-            <div class="card-top">
-              <span class="pro">KEYNOTE 03</span>
-              <h2>Online</h2>
-            </div>
-            <img class="round" src="./img/kheira.jpg" alt="user" />
-            <h3>Kheira Lakhdari</h3>
-            <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 11:00 am - 12:30 pm</h6>
-            <p>Researcher at STIC laboratory Teacher, <br />  Mentor and Omdena Algeria Chapter Lead</p>
-            <div class="buttons">
-              <a href="https://www.linkedin.com/in/kheira-lakhdari/">
-                <button><i class="fa fa-linkedin"></i></button></a>
-              </a>
-              <br>
-              <br>
-              <a href="https://forms.gle/PFrrRxFkNzkQ29xQA">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              <!-- <button class="primary ghost">
-                Following
-              </button> -->
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>Integration of IoT and AI in Agritech</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 04</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/johan.png" alt="user" />
-              <h3>Johan Steyn</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 1:30 pm - 3:00 pm</h6>
-              <p> Founder of AIforBusiness.net.<br /> Faculty of Woxsen Uni</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/johanosteyn">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/PuxuXUJpC6qMPMCN7">
-                  <button class="primary">
-                    Register
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>The Benefits and Pitfalls of AI in Business</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 05</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/supriya.jpg" alt="user" />
-              <h3>Supriya Bhuwalka</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-2, 3:30 pm - 5:00 pm</h6>
-              <p>Founder, Coding and More</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/supriya-bhuwalka-9b962790">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/fQKcWZwyCfWE6H6Z6">
-                  <button class="primary">
-                    Register
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>AI in EdTech + Women in Tech</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 06</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/thom.jpg" alt="user" />
-              <h3>Dr. Thomas Ives</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 10:00 am - 11:30 am</h6>
-              <p>Founder, Integrated AI and ML,<br />Sr. Data scientist at echo global logistics</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/thomives/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/faienzBL1vZgTtyZ7">
-                <button class="primary">
-                  Register
-                </button>
-              </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>How Basic ML Development Pipelines helps Build better Real World Projects?</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="speaker-container margin-bottom">
-            <div class="card-info">
-              <div class="card-top">
-                <span class="pro">Keynote 07</span>
-                <h2>Online</h2>
-              </div>
-              <img class="round" src="./img/rosana.jpg" alt="user" />
-              <h3>Rosana de Oliveira Gomes</h3>
-              <h6><i class="fa-solid fa-clock"></i> &nbsp; Day-3, 4:00 pm - 5:30 pm</h6>
-              <p>Sr. Data Scientist;<br>Founder, AI wonder girls</p>
-              <div class="buttons">
-                <a href="https://www.linkedin.com/in/rosanaogomes/">
-                  <button><i class="fa fa-linkedin"></i></button>
-                </a>
-                <br>
-                <br>
-                <a href="https://forms.gle/JfMGHxhiLMcz75cK6">
-                  <button class="primary">
-                    Register
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="skills">
-              <h6>Topic</h6>
-              <ul>
-                <li>AI for Good</li>
-              </ul>
-            </div>
-          </div>
+          
 
         </div>
         <h3 class="session_heading"  id="Online-workshops" >Online Workshops</h3>
@@ -1219,5 +1162,7 @@
   integrity="sha512-vu190Nx0a7ou580W/UkzpqxOf5lHJaMcsJZC8RGv5TYQh9xlKdsQvMCeREbL1PqbK/k6jh3Cf/VBiurWwP/kHA=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/app.js"></script>
-
+<!-- Cart Menu -->
+<script src="./js/cart_menu.js"></script>
+<script src="./js/cart_animation.js"></script>
 </html>

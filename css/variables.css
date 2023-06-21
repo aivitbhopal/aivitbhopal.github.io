@@ -1,0 +1,13 @@
+:root {
+    --cart-button:rgb(42, 42, 46);
+    --container-bg: rgb(36, 35, 41);
+    --hero-bg: black;
+    --card-bg: rgb(47, 47, 53);
+    --card-bottom: rgb(41, 41, 46);
+    --nav-color: #34383d;
+    --primary: #8AB2FF;
+    --secondary: #E42F45;
+    --secondary-variant: #B42B3F;
+    --blue-gradient: linear-gradient(135deg, #8AB2FF, #0366ca);
+    --red-gradient: linear-gradient(135deg, #e66f6f, #f02f2f);
+}
