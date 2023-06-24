@@ -307,7 +307,7 @@ gsap.from("#rocket-img",{
 gsap.from(".event_container .container_heading", {
     duration: 1, 
     y: 300,
-    opacity: 0,
+    opacity: 1,
     ease: "power4.inOut",
     pin: true,
     scrollTrigger:{
@@ -317,7 +317,7 @@ gsap.from(".event_container .container_heading", {
         toggleActions: "play none none reverse",
     }
 });
-gsap.from(".event_container .sub-container .card", {
+gsap.from(".event_container .sub-container .event_row .card", {
     duration: 0.3, 
     y: 300,
     opacity: 0,
@@ -362,67 +362,67 @@ gsap.from("#speakers .speakers .speaker-container", {
 });
 // glitch effect js
   
-const glitch = document.querySelector('.glitch-effect');
-const tl = new TimelineMax({
-  id: 'getGlitch',
-  repeat: -1,
-  repeatDelay: 3
-});
-tl.fromTo(glitch, 0.1, {
-  x: 0
-}, {
-  x: 5,
-  ease: SteppedEase.config(2),
-  className: '+=active'
-}).fromTo(glitch, 0.5, {
-  y: 0
-}, {
-  y: -5,
-  ease: Linear.easeNone
-}).fromTo(glitch, 0.5, {
-  y: -5
-}, {
-  y: 0,
-  ease: Linear.easeNone
-}).set(glitch, {
-  className: '+=slice'
-}).to(glitch, 0.2, {
-  x: -5,
-  ease: SteppedEase.config(1)
-}).set(glitch, {
-  className: '-=slice'
-}).to(glitch, 0.2, {
-  x: 5,
-  ease: SteppedEase.config(1)
-}).to(glitch, 0.5, {
-  x: 0,
-  ease: SteppedEase.config(1)
-}).fromTo(glitch, 0.5, {
-  x: 0
-}, {
-  x: 2,
-  ease: SteppedEase.config(2),
-  className: '-=active'
-}).fromTo(glitch, 0.2, {
-  x: 0
-}, {
-  x: 2,
-  ease: SteppedEase.config(2),
-  delay: 1,
-  className: '+=active'
-}).set(glitch, {
-  className: '-=active'
-}).fromTo(glitch, 0.2, {
-  x: 0
-}, {
-  x: 2,
-  ease: SteppedEase.config(2),
-  repeat: 1,
-  delay: 1,
-  className: '+=active'
-}).set(glitch, {
-  className: '-=active'
-});
+// const glitch = document.querySelector('.glitch-effect');
+// const tl = new TimelineMax({
+//   id: 'getGlitch',
+//   repeat: -1,
+//   repeatDelay: 3
+// });
+// tl.fromTo(glitch, 0.1, {
+//   x: 0
+// }, {
+//   x: 5,
+//   ease: SteppedEase.config(2),
+//   className: '+=active'
+// }).fromTo(glitch, 0.5, {
+//   y: 0
+// }, {
+//   y: -5,
+//   ease: Linear.easeNone
+// }).fromTo(glitch, 0.5, {
+//   y: -5
+// }, {
+//   y: 0,
+//   ease: Linear.easeNone
+// }).set(glitch, {
+//   className: '+=slice'
+// }).to(glitch, 0.2, {
+//   x: -5,
+//   ease: SteppedEase.config(1)
+// }).set(glitch, {
+//   className: '-=slice'
+// }).to(glitch, 0.2, {
+//   x: 5,
+//   ease: SteppedEase.config(1)
+// }).to(glitch, 0.5, {
+//   x: 0,
+//   ease: SteppedEase.config(1)
+// }).fromTo(glitch, 0.5, {
+//   x: 0
+// }, {
+//   x: 2,
+//   ease: SteppedEase.config(2),
+//   className: '-=active'
+// }).fromTo(glitch, 0.2, {
+//   x: 0
+// }, {
+//   x: 2,
+//   ease: SteppedEase.config(2),
+//   delay: 1,
+//   className: '+=active'
+// }).set(glitch, {
+//   className: '-=active'
+// }).fromTo(glitch, 0.2, {
+//   x: 0
+// }, {
+//   x: 2,
+//   ease: SteppedEase.config(2),
+//   repeat: 1,
+//   delay: 1,
+//   className: '+=active'
+// }).set(glitch, {
+//   className: '-=active'
+// });
 // gsap.from("#sponsors", {
 //     duration: 1.3, 
 //     x: 400,

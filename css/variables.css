@@ -1,8 +1,9 @@
 :root {
     --cart-button:rgb(42, 42, 46);
-    --container-bg: rgb(36, 35, 41);
+    --container-bg: rgba(36, 35, 41, 0.548);
     --hero-bg: black;
     --card-bg: rgb(47, 47, 53);
+    --combo-card-bg: rgb(32, 32, 36);
     --card-bottom: rgb(41, 41, 46);
     --nav-color: #34383d;
     --primary: #8AB2FF;

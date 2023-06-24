@@ -28,7 +28,6 @@ elements.map(element => {
       const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
   
       if (isVisible && !element.isAnimated) {
-        element.on();
         element.isAnimated = true;
       } else if (!isVisible) {
         element.isAnimated = false;

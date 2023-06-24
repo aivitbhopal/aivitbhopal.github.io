@@ -47,6 +47,37 @@
 	line-height: 21px;
 }
 
+.combos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.combo-container {
+	background-color: var(--combo-card-bg);
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	position: relative;
+	text-align: center;
+	margin:0 auto;
+
+	display:flex;
+	align-items: center;
+	justify-content: space-between;	
+	flex-direction: column;
+	padding: 30px;
+	gap: 20px;
+}
+
+.combo-cards {
+	display:flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 20px;	
+}
+
 .speaker-container {
 	background-color: var(--card-bg);
 	border-radius: 5px;
@@ -287,9 +318,9 @@ a button.disabled:hover {
 	}
 
 	.speaker-container, .temp-card {
-		background-color: #231E39;
+		/* background-color: #231E39;
 		border-radius: 5px;
-		box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+		box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75); */
 		color: #B3B8CD;
 		padding-top: 30px;
 		position: relative;
@@ -297,6 +328,16 @@ a button.disabled:hover {
 		max-width: 100%;
 		text-align: center;
 		margin:0 auto;
+	}
+
+	.combo-container{
+		width: 100%;
+		
+	}
+
+	.combo-cards {
+		flex-direction: column;
+		width: 250px;
 	}
 
 	.temp-card h1 {

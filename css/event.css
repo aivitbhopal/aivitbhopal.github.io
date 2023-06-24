@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     border-radius: 20px;
     flex-direction: column;
-    background: #002730;
+    /* background: #002730; */
 }
 .events .card {
   

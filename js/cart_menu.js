@@ -75,6 +75,21 @@ const speakerDetails = [
   }
 ]
 
+const eventCombos = [
+  {
+    id: 7,
+    name: "Artificial Intelligence",
+    card_ids: [1,2],
+    discount: 0.3
+  },
+  {
+    id: 8,
+    name: "Deep Learning",
+    card_ids: [3,4],
+    discount: 0.4
+  }
+]
+
 // Single Card Component
 function hydrateCards ( props ) {
   return `
@@ -110,6 +125,8 @@ function hydrateCards ( props ) {
   `
 }
 
+let discount = 0;
+
 // Array of selected events get injected in the order-table div ( needs to rerender the div each time there is updatation in the order )
 function hydrateCart ( props ) {
 
@@ -133,6 +150,10 @@ function hydrateCart ( props ) {
     totalPrice += elem.price;
   });
 
+  discountPrice = totalPrice * discount
+
+  totalPrice -= discountPrice
+
   return `
   <div class="order-row col-head">
     <div class="serial-no">
@@ -151,7 +172,18 @@ function hydrateCart ( props ) {
       <div></div>
     </div>
     <div class="event-name total-price">
-      <div>Total Price</div>
+      <div>Discount:</div>
+    </div>
+    <div class="price">
+      <div>-${Math.ceil(discountPrice)}</div>
+    </div>
+  </div>
+  <div class="order-row">
+    <div class="serial-no">
+      <div></div>
+    </div>
+    <div class="event-name total-price">
+      <div>Total Price:</div>
     </div>
     <div class="price">
       <div>${totalPrice}</div>
@@ -160,12 +192,76 @@ function hydrateCart ( props ) {
   `;
 }
 
+function hydrateComboCard ( props ) {
+  return `
+  <div id="${props.id}" class="speaker-container margin-bottom">
+    <div class="card-top">
+      <span class="pro">${props.session}</span>
+      <h2>${props.mode}</h2>
+    </div>
+    <img class="round" src="${props.img}" alt="user" />
+    <h3>Amitabh Tewari</h3>
+    <h6><i class="fa-solid fa-clock"></i>${props.time}</h6>
+    <p>${props.detail}</p>
+    <div class="buttons">
+      <a href="${props.linkedIn}">
+        <button><i class="fa fa-linkedin"></i></button>
+      </a>
+    </div>
+    <div class="skills">
+      <h6>Topic</h6>
+      <ul>
+        <li>${props.topic}</li>
+      </ul>
+    </div>
+  </div>
+  `;
+}
+
+function hydrateComboCards ( props ) {
+
+
+  let cards = speakerDetails.filter(card => {
+    return props.card_ids.includes(card.id);
+  }).map(hydrateComboCard)
+
+  cards = cards.join(`
+  <div>
+    +
+  </div>
+  `);
+  
+  return `
+  <div id="${props.id}" class="combo-container">
+    <h3 class="combo-name">${props.name}</h3>
+    <div class="combo-cards">
+      ${cards}
+    </div>
+    <div class="combo-button">
+      <button id="addCart" class="primary">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+  `;
+}
+
+function hydrateCombo ( props ) {
+  let record = "";
+  props.forEach(combo => {
+    record+= hydrateComboCards(combo)
+  })
+
+  return record;
+}
+
 const speakerSection = document.getElementById("speaker-section");
 const orderTable = document.getElementById("orders");
 const cartButton = document.getElementById("cartButton");
 const cartLength = document.getElementById("cart-length");
 const cancelButton = document.getElementById("cancel-button");
 const checkOutButton = document.getElementById("checkout-button");
+const comboSection = document.getElementById("combo-section");
 let addButton = document.querySelectorAll("#addCart");
 let cartItems = [];
 
@@ -178,6 +274,10 @@ window.addEventListener("load", () => {
   
   speakerSection.innerHTML += records;
 
+  // console.log(hydrateCombo(eventCombos))
+
+  comboSection.innerHTML = hydrateCombo(eventCombos);
+
   addButton = document.querySelectorAll("#addCart");
 
   addButton.forEach((button)=>{
@@ -186,11 +286,26 @@ window.addEventListener("load", () => {
 })
 
 function addToCart ( id ) {
+  // Don't push duplicates
   if (cartItems.filter(item=> item.id == id).length > 0) return;
 
+  // Add if id is present in speakerDetails
   cartItems.push( ...speakerDetails.filter( (item) => {
     return item.id == id;
   } ));
+
+  if (eventCombos.filter(item => item.id == id).length > 0) {
+    cartItems.push( ...eventCombos.filter((item) => {
+      return item.id == id;
+    }).map(item=>{
+      return item.card_ids.map(id=>{
+        return speakerDetails.filter(elem=>{
+          return elem.id == id;
+        })
+      })
+    }).flat(Infinity));
+    discount += eventCombos.find(elem=> elem.id == id).discount
+  }
 
   cartLength.textContent = cartItems.length;
 
@@ -202,6 +317,12 @@ function addToCart ( id ) {
 function removeFromCart ( id ) {
   if (cartItems.filter(item=> item.id == id).length > 0) {
     cartItems = cartItems.filter(item=> item.id != id)
+  } if (eventCombos.filter(item=> item.id == id).length > 0) {
+    eventCombos.find(elem => elem.id == id).card_ids.forEach(id=>{
+      cartItems = cartItems.filter(elem=> elem.id != id)
+    });
+    discount -= eventCombos.find(elem=> elem.id == id).discount
+
   } else {
     console.log("It's not in the Cart!")
   }
