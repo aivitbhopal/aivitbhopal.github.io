@@ -152,47 +152,50 @@ function hydrateCart ( props ) {
       </div>
     </div>
     `
-    discountPrice = elem.discount? discountPrice + elem.discount : discountPrice;
-
-    totalPrice += elem.price;
   });
 
   return `
-  <div class="order-row col-head">
-    <div class="serial-no">
-      <div>S.No.</div>
-    </div>
-    <div class="event-name">
-      <div>Event Name</div>
-    </div>
-    <div class="price">
-      <div>Price</div>
-    </div>
-  </div>
   ${items}
-  <div class="order-row">
-    <div class="serial-no">
-      <div></div>
-    </div>
-    <div class="event-name total-price">
-      <div>Discount:</div>
-    </div>
-    <div class="price">
-      <div>-${Math.ceil(discountPrice)}</div>
-    </div>
-  </div>
-  <div class="order-row">
-    <div class="serial-no">
-      <div></div>
-    </div>
-    <div class="event-name total-price">
-      <div>Total Price:</div>
-    </div>
-    <div class="price">
-      <div>${totalPrice}</div>
-    </div>
-  </div>
   `;
+}
+
+function hydrateTotalSection ( props ) {
+
+  let discountPrice = 0;
+  let totalPrice = 0;
+
+  props.forEach(elem => {
+    discountPrice = elem.discount? discountPrice + elem.discount : discountPrice;
+    totalPrice += elem.price;
+  })
+
+  return `
+  <div class="total-table">
+    <hr>
+    <div class="order-row total-row">
+      <div class="serial-no">
+        <div></div>
+      </div>
+      <div class="event-name total-price">
+        <div>Discount:</div>
+      </div>
+      <div class="price">
+        <div>-${discountPrice}</div>
+      </div>
+    </div>
+    <div class="order-row total-row">
+      <div class="serial-no">
+        <div></div>
+      </div>
+      <div class="event-name total-price">
+        <div>Total Price:</div>
+      </div>
+      <div class="price">
+        <div>${totalPrice}</div>
+      </div>
+    </div>
+  </div>
+  `
 }
 
 function hydrateComboCard ( props ) {
@@ -263,6 +266,7 @@ const orderTable = document.getElementById("orders");
 const cartButton = document.getElementById("cartButton");
 const cartLength = document.getElementById("cart-length");
 const comboSection = document.getElementById("combo-section");
+const totalSection = document.getElementById("total-section");
 let addButton = document.querySelectorAll("#addCart");
 let cartItems = [];
 
@@ -330,7 +334,7 @@ function removeFromCart ( id ) {
 
     // const button = 
 
-  } if (eventCombos.filter(item=> item.id == id).length > 0) {
+  // } else if (eventCombos.filter(item=> item.id == id).length > 0) {
     // Fix Combos Later
     // eventCombos.find(elem => elem.id == id).card_ids.forEach(id=>{
     //   const button = Array.from(document.querySelectorAll("#removeCart")).find(elem => elem.id == id);
@@ -362,6 +366,7 @@ function handleAddClick(elem) {
   } )
 
   orderTable.innerHTML = hydrateCart(cartItems);
+  totalSection.innerHTML = hydrateTotalSection(cartItems);
 }
 
 function handleRemoveClick(elem) { 
@@ -372,6 +377,7 @@ function handleRemoveClick(elem) {
   elem.addEventListener('click',  (event) =>handleAddClick(event.target));
 
   orderTable.innerHTML = hydrateCart(cartItems);
+  totalSection.innerHTML = hydrateTotalSection(cartItems);
 }
 
 

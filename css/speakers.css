@@ -299,6 +299,11 @@ a button.disabled:hover {
 	.speaker-container .round{
 		height: 110px;
 	}
+
+	.combo-cards {
+		flex-direction: column;
+		width: 250px;
+	}
 }
 
 @media screen and (max-width: 450px) {

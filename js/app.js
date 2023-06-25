@@ -304,33 +304,33 @@ gsap.from("#rocket-img",{
 );
 
 
-gsap.from(".event_container .container_heading", {
-    duration: 1, 
-    y: 300,
-    opacity: 1,
-    ease: "power4.inOut",
-    pin: true,
-    scrollTrigger:{
-        trigger: ".event_container",
-        // markers: true,
-        start: "top bottom",
-        toggleActions: "play none none reverse",
-    }
-});
-gsap.from(".event_container .sub-container .event_row .card", {
-    duration: 0.3, 
-    y: 300,
-    opacity: 0,
-    stagger: 0.2,
-    ease: "power4.inOut",
-    pin: true,
-    scrollTrigger:{
-        trigger: ".event_container",
-        // markers: true,
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-    }
-});
+// gsap.from(".event_container .container_heading", {
+//     duration: 1, 
+//     y: 300,
+//     opacity: 0,
+//     ease: "power4.inOut",
+//     pin: true,
+//     scrollTrigger:{
+//         trigger: ".event_container",
+//         // markers: true,
+//         start: "top bottom",
+//         toggleActions: "play none none reverse",
+//     }
+// });
+// gsap.from(".event_container .sub-container .event_row .card", {
+//     duration: 0.3, 
+//     y: 300,
+//     opacity: 0,
+//     stagger: 0.2,
+//     ease: "power4.inOut",
+//     pin: true,
+//     scrollTrigger:{
+//         trigger: ".event_container",
+//         // markers: true,
+//         start: "top 80%",
+//         toggleActions: "play none none reverse",
+//     }
+// });
 
 
 gsap.from("#speakers .container_heading", {
