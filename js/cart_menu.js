@@ -78,15 +78,19 @@ const speakerDetails = [
 const eventCombos = [
   {
     id: 7,
-    name: "Artificial Intelligence",
+    name: "Combo 1: Artificial Intelligence",
+    sess_names: "Introduction to AI, Mordern uses of AI",
     card_ids: [1,2],
-    discount: 0.3
+    discount: 30,
+    price: 70,
   },
   {
     id: 8,
-    name: "Deep Learning",
+    name: "Combo 2: Deep Learning",
+    sess_names: "Artifical Neural Networks, CNNs",
     card_ids: [3,4],
-    discount: 0.4
+    discount: 20,
+    price: 80
   }
 ]
 
@@ -132,6 +136,7 @@ function hydrateCart ( props ) {
 
   let items = "";
   let totalPrice = 0;
+  let discountPrice = 0;
 
   props.forEach((elem, idx)=> {
     items += `
@@ -140,19 +145,17 @@ function hydrateCart ( props ) {
         <div>${idx+1}</div>
       </div>
       <div class="event-name">
-        <div>${elem.topic}</div>
+        <div>${elem.topic || elem.name + " - " + elem.sess_names}</div>
       </div>
       <div class="price">
         <div>${elem.price}</div>
       </div>
     </div>
     `
+    discountPrice = elem.discount? discountPrice + elem.discount : discountPrice;
+
     totalPrice += elem.price;
   });
-
-  discountPrice = totalPrice * discount
-
-  totalPrice -= discountPrice
 
   return `
   <div class="order-row col-head">
@@ -259,8 +262,6 @@ const speakerSection = document.getElementById("speaker-section");
 const orderTable = document.getElementById("orders");
 const cartButton = document.getElementById("cartButton");
 const cartLength = document.getElementById("cart-length");
-const cancelButton = document.getElementById("cancel-button");
-const checkOutButton = document.getElementById("checkout-button");
 const comboSection = document.getElementById("combo-section");
 let addButton = document.querySelectorAll("#addCart");
 let cartItems = [];
@@ -281,7 +282,7 @@ window.addEventListener("load", () => {
   addButton = document.querySelectorAll("#addCart");
 
   addButton.forEach((button)=>{
-    button.addEventListener('click', handleAddClick);
+    button.addEventListener('click', (event) =>handleAddClick(event.target));
   });
 })
 
@@ -295,19 +296,28 @@ function addToCart ( id ) {
   } ));
 
   if (eventCombos.filter(item => item.id == id).length > 0) {
-    cartItems.push( ...eventCombos.filter((item) => {
-      return item.id == id;
-    }).map(item=>{
-      return item.card_ids.map(id=>{
-        return speakerDetails.filter(elem=>{
-          return elem.id == id;
-        })
-      })
-    }).flat(Infinity));
-    discount += eventCombos.find(elem=> elem.id == id).discount
+    cartItems.push(eventCombos.find(elem => elem.id == id));
+    // Fix Combos later
+    // eventCombos.filter((item) => {
+    //   return item.id == id;
+    // }).map(item=>{
+    //   return item.card_ids.map(id=>{
+    //     const button = document.querySelector(`#${id} #addCart`);
+    //     handleAddClick(button);
+    //     return speakerDetails.filter(elem=>{
+    //       return elem.id == id;
+    //     })
+    //   })
+    // }).flat(Infinity).map(elem => {
+    //   addToCart(elem);
+
+    // });
+    // discount += eventCombos.find(elem=> elem.id == id).discount
   }
 
   cartLength.textContent = cartItems.length;
+
+  
 
   if (cartItems.length > 0) {
     cartButton.style.display = "block";
@@ -316,12 +326,18 @@ function addToCart ( id ) {
 
 function removeFromCart ( id ) {
   if (cartItems.filter(item=> item.id == id).length > 0) {
-    cartItems = cartItems.filter(item=> item.id != id)
+    cartItems = cartItems.filter(item=> item.id != id);
+
+    // const button = 
+
   } if (eventCombos.filter(item=> item.id == id).length > 0) {
-    eventCombos.find(elem => elem.id == id).card_ids.forEach(id=>{
-      cartItems = cartItems.filter(elem=> elem.id != id)
-    });
-    discount -= eventCombos.find(elem=> elem.id == id).discount
+    // Fix Combos Later
+    // eventCombos.find(elem => elem.id == id).card_ids.forEach(id=>{
+    //   const button = Array.from(document.querySelectorAll("#removeCart")).find(elem => elem.id == id);
+    //   handleRemoveClick(button);
+    //   removeFromCart(id);
+    // });
+    // discount -= eventCombos.find(elem=> elem.id == id).discount
 
   } else {
     console.log("It's not in the Cart!")
@@ -334,33 +350,33 @@ function removeFromCart ( id ) {
   }
 }
 
-function handleAddClick(event) {
-  addToCart(event.target.parentElement.parentElement.id);
-  event.target.textContent = "Remove";
-  event.target.id = "removeCart";
-  event.target.removeEventListener('click', handleAddClick)
+function handleAddClick(elem) {
+  addToCart(elem.parentElement.parentElement.id);
+  elem.textContent = "Remove";
+  elem.id = "removeCart";
+  elem.removeEventListener('click', (event) =>handleAddClick(event.target))
   
   const rmvButton = document.querySelectorAll("#removeCart");
   rmvButton.forEach ( (button) =>{
-    button.addEventListener ( 'click' , handleRemoveClick)
+    button.addEventListener ( 'click' , (event) =>handleRemoveClick(event.target))
   } )
 
   orderTable.innerHTML = hydrateCart(cartItems);
 }
 
-function handleRemoveClick(event) { 
-  event.target.removeEventListener('click', handleRemoveClick)
-  removeFromCart(event.target.parentElement.parentElement.id);
-  event.target.textContent = "Add to Cart";
-  event.target.id = "addCart";
-  event.target.addEventListener('click', handleAddClick);
+function handleRemoveClick(elem) { 
+  elem.removeEventListener('click',  (event) =>handleRemoveClick(event.target))
+  removeFromCart(elem.parentElement.parentElement.id);
+  elem.textContent = "Add to Cart";
+  elem.id = "addCart";
+  elem.addEventListener('click',  (event) =>handleAddClick(event.target));
 
   orderTable.innerHTML = hydrateCart(cartItems);
 }
 
 
 // addButton.addEventListener("click", function(event) {
-//   console.log(event.target.parentElement.parentElement.id);
+//   console.log(elem.parentElement.parentElement.id);
 // })
 
 

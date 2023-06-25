@@ -5,6 +5,7 @@
 const overlay = document.getElementById('overlay');
 const checkoutContainer = document.getElementById('checkoutContainer');
 const exitButton = document.getElementById("exit-checkout");
+const cancelButton = document.getElementById("cancel-button");
 var checkout = false; // State that checks if the checkout menu is open or not
 
 // Define the animation timeline
@@ -40,4 +41,11 @@ exitButton.addEventListener("click", () => {
         checkout = false;
         timeline.reverse();
     }
+});
+
+cancelButton.addEventListener("click", () => {
+  if (checkout) {
+      checkout = false;
+      timeline.reverse();
+  }
 });
