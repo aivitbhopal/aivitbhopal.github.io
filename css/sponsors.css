@@ -40,6 +40,12 @@
     height: 9rem !important;
  }
 
+ @media screen and (max-width: 780px){
+    .talktoseniors img{
+        height: 7rem !important;
+     }
+}
+
 .golden-title h2{
     background-image: -webkit-linear-gradient(135deg,rgba(35,31,31,0),var(--secondary));
 }
