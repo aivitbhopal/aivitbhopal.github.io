@@ -1,0 +1,186 @@
+ .competition-card-conatiner{
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .competition-card-conatiner > span{
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  overflow: auto;
+  padding-inline: 10px ; 
+  width: fit-content; 
+  display: block; 
+  border-radius: 12px; 
+  list-style: none; 
+  color: #fff; 
+  font-size: 5rem; 
+  font-family: "Space Mono", monospace; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+  margin-block: 15px; 
+  transition-duration: 0.4s; 
+  cursor: pointer;
+ }
+
+ .competition_card_content-body{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+
+ .competition-card-conatiner-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .competition-logo{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-top: 2rem;
+  border-radius: 100%;
+  height: 8rem;
+  width: 8rem;
+ }
+
+ 
+ .competition-reward{
+  margin: 2rem;
+  display: flex;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div > i{
+ font-size: 4rem;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div > span{
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.5;
+  padding-top: 0.75rem;
+  text-align: center;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div:nth-child(2) > i{
+padding-top: 6rem;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div:nth-child(1) > i{
+  padding-top: 6rem;
+  }
+
+  .competition-card-conatiner-left > .competition-reward > div:nth-child(3) > i{
+    padding-top: 6rem;
+    }
+
+ .competition-card-conatiner-left > .competition-reward > div:nth-child(2) {
+  margin-top: -8rem;
+  border-bottom: #fff solid 225px;
+  margin-left: 1rem;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div:nth-child(1) {
+  margin-top: -2rem;
+  border-bottom: #fff solid 125px;
+ }
+
+ .competition-card-conatiner-left > .competition-reward > div:nth-child(3) {
+  border-bottom: #fff solid 100px;
+  margin-left: 1rem;
+ }
+
+ .competition-card-conatiner-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+  .competition-card-conatiner-right > .competition-card-conatiner-right-content-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .competition-card-conatiner-right-content{
+    line-height: 1.5;
+    color: #9897A4;
+    opacity: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .competition-card-conatiner-right-content > ul {
+    padding: 1rem;
+  }
+
+  .competition-card-conatiner-right-content > ul > li {
+    padding: 0.2rem;
+  }
+
+ .reg-btn {
+  background: var(--secondary);
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 10px 20px rgba(219, 65, 65, 0.2);
+  transition: 0.5s;
+  /* animation-name: heartFadeInOut; 
+  animation-iteration-count: infinite;
+  animation-duration: 2s; */
+ }
+
+ .reg-btn:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.664);
+  background: #382727;
+  color: #ffffff;
+ }
+
+ @media screen and (max-width: 786px) {
+  .competition-card-conatiner-right{
+    width: 100%;
+  }
+  .competition-card-conatiner-left{
+    width: 100%;
+  }
+  .competition_card_content-body{
+    flex-direction: column;
+  }
+  .competition-card-conatiner > span {
+    font-size: 3rem;
+  }
+ }
+
+
+ @keyframes heartFadeInOut {
+  0% {transform: scale(1);}
+  25% {transform: scale(.97);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.1);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
