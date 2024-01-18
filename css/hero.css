@@ -51,7 +51,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: calc(40vh);
+    top: 35vh;
     width: 80%;
     /* right:calc(20vw); */
     
@@ -78,7 +78,7 @@ body{
     /* width: 477.11px; */
     font-family: 'Alef', sans-serif;
     font-weight: 400;
-    font-size: max(2vw, 1.5rem);
+    font-size: max(2.3vw, 1.5rem);
     line-height: 28%;
     text-align: center;
     color: hsl(350, 100%, 61%);
@@ -94,7 +94,7 @@ body{
     font-family: 'Alef';
     font-style: normal;
     font-weight: 400;
-    font-size: max(1.5vw, 1.2rem);
+    font-size: max(2vw, 1.2rem);
     line-height: 180%;
     color: rgb(255, 255, 255);
 }
