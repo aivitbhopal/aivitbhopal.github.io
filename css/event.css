@@ -1,72 +1,171 @@
-.event_container{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    padding: 2rem 3rem;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    flex-direction: column;
-    /* background: #002730; */
+/* new event */
+.ticket {
+  font-family: sans-serif;
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-color: #04030c;
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  display: block;
+  margin: 10% auto auto auto;
+  color: #fff;
+}
+
+.date {
+  margin: 15px;
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.date .day {
+  font-size: 80px;
+  float: left;
+}
+
+.date .month-and-time {
+  float: left;
+  margin: 15px 0 0 0;
+  font-weight: bold;
+}
+
+.eventName {
+  font-size: 30px;
+  margin: 10px 100px 0 40px;
+  float: left;
+  font-weight: bold;
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.location {
+  float: left;
+  margin: 135px 0 0 25px;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* .location::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/QRCodeWikipedia.png');
+  background-size: 110px 110px;
+  width: 110px;
+  height: 110px;
+  content: "";
+  display: inline-block;
+  float: left;
+  position: absolute;
+  left: -160px;
+  bottom: 5px;
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+} */
+
+.rip {
+  border-right: 8px dotted #436ea5;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 530px;
+}
+
+.cta .buy {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: var(--secondary);
+  padding: 10px 20px;
+
+  -webkit-transform: rotate(-90deg);
+
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+
+  /* -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); */
+  /* filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); */
+}
+
+.small {
+  font-weight: 200;
+}
+
+.ticket-1 {
+  background-image: url(https://images.unsplash.com/photo-1483101974978-cf266fdf1139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3289&q=80);
+}
+
+.ticket-2 {
+  background-image: url(https://images.unsplash.com/photo-1550184658-ff6132a71714?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2180&q=80);
+}
+
+.event_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  flex-direction: column;
+  /* background: #002730; */
 }
 .events .card {
-  
-    position: relative;
-   width:320px;
-   height:440px;
+  position: relative;
+  width: 320px;
+  height: 440px;
 
- 
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-   
-    transition: 0.5s;
-  }
- 
-  .event_row{
-   
-    display: flex;
-   
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-   
-  }
-  .event_column {
-  
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    flex-wrap: wrap;
-  }
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
 
-  .double-column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 2;
-  }
+  transition: 0.5s;
+}
 
- 
-  
-  .events .card:nth-child(2n-1) .box .content a {
-    background: var(--secondary);
-    
-  }
-  .events .card:nth-child(2n-1) .box {
-      background: var(--blue-gradient);
-  
-  }
-  
-  .events .card:nth-child(2n) .box .content a {
-    background: var(--primary);
-  }
-  .events .card:nth-child(2n) .box  {
-      background: var(--red-gradient);
-  }
-  
-  /* .events .card:nth-child(3) .box .content a {
+.event_row {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.event_column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.events .card:nth-child(2n-1) .box .content a {
+  background: var(--secondary);
+}
+.events .card:nth-child(2n-1) .box {
+  background: var(--blue-gradient);
+}
+
+.events .card:nth-child(2n) .box .content a {
+  background: var(--primary);
+}
+.events .card:nth-child(2n) .box {
+  background: var(--red-gradient);
+}
+
+/* .events .card:nth-child(3) .box .content a {
     background: #F47646;
   }
   .events .card:nth-child(3) .box {
@@ -90,120 +189,192 @@
   .events .card:nth-child(6) .box {
       background: linear-gradient(135deg,#eea849,#f46b45);
   } */
-  
-  .events .card .box {
 
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: #2a2b2f;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  
-  .events .card .box:hover {
-    transform: translateY(-50px);
-  }
-  
-  .events .card .box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.03);
-  }
-  
-  .events .card .box .content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .events .card .box .content h2 {
-    position: absolute;
-    top: -20px;
-    right: 30px;
-    font-size: 8rem;
-    color: rgba(8, 7, 7, 0.1);
-  }
-  
-  .events .card .box .content h3 {
-    font-size: 1.8rem;
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
-    color: #fff;
-    z-index: 1;
-    transition: 0.5s;
-    margin-bottom: 15px;
-  }
-  
-  .events .card .box .content p {
-    font-size: 1rem;
-    font-size: clamp(0.8rem,2vw, 1.2rem);
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    transition: 0.5s;
-  }
-  
-  .events .card .box .content a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    background: black;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-  }
-  .events .card .box .content a:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.664);
-    background: #382727;
-    color: #ffffff;
-  }
-  
+.events .card .box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
 
-  @media screen and (max-width: 780px) {
-    .events .card{
-      width: 300px;
-      height:300px;
-    }
-    /* .events .card .box .content p{
+.events .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.events .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.events .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.events .card .box .content h2 {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(8, 7, 7, 0.1);
+}
+
+.events .card .box .content h3 {
+  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.events .card .box .content p {
+  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.events .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.events .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.664);
+  background: #382727;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 780px) {
+  .events .card {
+    width: 300px;
+    height: 300px;
+  }
+  /* .events .card .box .content p{
       font-size:0.6rem;
     }
     .events .card .box .content h3{
        font-size:1rem;
     } */
-    .event_container{
-      /* height:80vh;
+  .event_container {
+    /* height:80vh;
       overflow:scroll; */
-      flex-direction: row;
-    }
-    .event_row{
-      flex-wrap: wrap;
-      flex-direction: row;
-     
-    }
-  
-    .events .card{
-      box-shadow: none;
-    }
-
-    .event_column{
-      flex: 100%;
-      max-width: 100%;
-    }
-    .double-column{
-      flex: 100%;
-      max-width: 100%;
-    }
-    
+    flex-direction: row;
   }
+  .event_row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .events .card {
+    box-shadow: none;
+  }
+
+  .event_column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .double-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .ticket {
+    width: 550px;
+  }
+
+  .date.day {
+    font-size: 30px;
+  }
+
+  .eventName {
+    margin-left: 25px;
+  }
+
+  .location {
+    margin-left: 0px;
+  }
+
+  .rip {
+    left: 420px;
+  }
+
+  .cta.buy {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ticket {
+    width: 450px;
+  }
+  .date .day {
+    font-size: 40px;
+  }
+
+  .eventName {
+    font-size: 25px;
+  }
+
+  .location {
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .date .month-and-time {
+    font-size: 10px;
+  }
+  .rip {
+    left: 320px;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .ticket {
+    width: 350px;
+  }
+  .date .day {
+    font-size: 30px;
+  }
+
+  .eventName {
+    font-size: 20px;
+  }
+
+  .location {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .date .month-and-time {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .rip {
+    height: 250px;
+    left: 260px;
+  }
+}
