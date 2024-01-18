@@ -51,16 +51,10 @@ body{
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: calc(50vh);
+    top: 35vh;
     width: 80%;
     /* right:calc(20vw); */
     
-}
-.main h1 {
-    font-size: 8vw;
-}
-.main p {
-    font-size: 3vw;
 }
 
 .heading {
@@ -84,11 +78,13 @@ body{
     /* width: 477.11px; */
     font-family: 'Alef', sans-serif;
     font-weight: 400;
-    font-size: 44px;
+    font-size: max(2.3vw, 1.5rem);
     line-height: 28%;
     text-align: center;
-    color: #312A51;
-    top: 100px;
+    color: hsl(350, 100%, 61%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* top: 100px; */
 }
 
 .tags {
@@ -98,9 +94,9 @@ body{
     font-family: 'Alef';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: max(2vw, 1.2rem);
     line-height: 180%;
-    color: rgba(55, 47, 90, 0.55);
+    color: rgb(255, 255, 255);
 }
 
 .main-bottom {
@@ -199,18 +195,18 @@ main {
         height: auto;
     } */
     
-    .main h1 {
+    /* .main h1 {
         font-size: 10vw;
-    }
-    .main p {
+    } */
+    /* .main p {
         font-size: 4.5vw;
-    }
+    } */
     .popup{
         font-size:10px;
         right: 30px;
-    top: 30px;
-    width: auto;
-    height: auto;
+        top: 30px;
+        width: auto;
+        height: auto;
     }
 }
 
