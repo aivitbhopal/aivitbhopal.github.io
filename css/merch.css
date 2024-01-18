@@ -1,3 +1,34 @@
+:root {
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-inactive-color: #fff;
+}
+
+
+/* html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+} */
+/* body {
+    width: 100%;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #000;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+} */
+
+
 .merch-container{
     padding: 1rem 0;
    display: flex;
@@ -69,7 +100,7 @@
     text-align: center;
 }
 
-.size:active, .size:hover{
+.size:hover{
     background-color: #fff;
     color: #000; 
 }
@@ -123,11 +154,6 @@
     padding: 0.8rem 1.2rem;
     border-radius: 10px;
     /* margin-bottom: 0.6rem; */
-}
-
-.merch-card-container img {
-    width: clamp(150px,100%,500px);
-    /* margin-bottom: 2rem; */
 }
 
 
@@ -225,5 +251,107 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+}
+
+
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    /* padding-top: 150px;
+    padding-bottom: 150px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1199px) {
+    .wrapper {
+        flex-flow: column;
+   }
+}
+.swiper {
+    width: 300px;
+    height: 400px;
+    margin: 45px;
+    border-radius: 15px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    width: 100% !important;
+    height: 100% !important;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.swiper-slide .card-image {
+    position: relative;
+    transition: opacity 0.3s ease-out;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide .card-description {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.swiper-slide .card-description:before {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
+.swiper-slide .card-description h1, .swiper-slide .card-description p {
+    position: relative;
+    z-index: 10;
+    text-align: left;
+}
+.swiper-slide .card-description h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.swiper-slide .card-description p {
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #000;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+}
+.swiperEffect {
+    border-radius: 0;
+}
+.swiperEffect .swiper-slide {
+    border-radius: 18px;
+}
+.swiperEffect .swiper-button-next, .swiperEffect .swiper-button-prev {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 420px){
+    .swiperEffect{
+    width: 250px;
     }
 }
