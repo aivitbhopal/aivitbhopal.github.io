@@ -1,3 +1,4 @@
+// keep a default selected value
 const size = document.getElementById("size"); // Size : S M L XL XXL
 const type = document.getElementById("type"); // Type : Normal Oversized
 const size_white = document.getElementById("size white"); // Size : S M L XL XXL
