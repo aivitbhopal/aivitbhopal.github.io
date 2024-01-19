@@ -24,6 +24,9 @@ var swiperFade = new Swiper(".swiperFade", {
     loop: true,
     effect: "cards",
     grabCursor: true,
+    autoplay: {
+      delay: 3000,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
