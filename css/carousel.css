@@ -1,29 +1,27 @@
 .containers {
+  overflow: hidden;
   display: flex;
-
   gap: 10px;
+  flex-direction: row;
   width: 100%;
-  padding: 4% 2%;
-
-  height: 100vh;
+  height: 70vh;
+  padding: 0% 4%;
+}
+.vid {
+  border-radius: 20px;
 }
 .boxes {
   flex: 1;
   overflow: hidden;
-  transition: 0.5s;
-  margin: 0 2%;
-
-  line-height: 0;
-
-  color: aliceblue;
+  transition: 0.5s ease;
 }
+
 .boxes > video {
-  width: 200%;
+  width: 100%;
   height: calc(100% - 10vh);
-  border-radius: 20px;
 
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .boxes:hover {
@@ -33,4 +31,22 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.gallery {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+  .containers {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .boxes:hover {
+    flex: 1 1 20%;
+  }
 }
