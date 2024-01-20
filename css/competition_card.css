@@ -8,7 +8,6 @@
 
  .competition-card-conatiner > span{
   font-weight: 400;
-  font-size: 2rem;
   text-transform: uppercase;
   overflow: auto;
   padding-inline: 10px ; 
@@ -17,7 +16,7 @@
   border-radius: 12px; 
   list-style: none; 
   color: #fff; 
-  font-size: 5rem; 
+  font-size: max(3vw, 2rem); 
   font-family: "Space Mono", monospace; 
   font-weight: 700; 
   text-transform: uppercase; 
@@ -41,6 +40,7 @@
   justify-content: center;
   align-items: center;
  }
+
  .competition-logo{
   display: flex;
   justify-self: center;
@@ -65,12 +65,12 @@
  }
 
  .competition-card-conatiner-left > .competition-reward > div > i{
- font-size: 4rem;
+ font-size: max(5vw, 2.8rem);
  }
 
  .competition-card-conatiner-left > .competition-reward > div > span{
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: max(2vw, 1rem);
   letter-spacing: 0.5;
   padding-top: 0.75rem;
   text-align: center;
@@ -90,17 +90,17 @@ padding-top: 6rem;
 
  .competition-card-conatiner-left > .competition-reward > div:nth-child(2) {
   margin-top: -8rem;
-  border-bottom: #fff solid 225px;
+  border-bottom: var(--secondary) solid 275px;
   margin-left: 1rem;
  }
 
  .competition-card-conatiner-left > .competition-reward > div:nth-child(1) {
   margin-top: -2rem;
-  border-bottom: #fff solid 125px;
+  border-bottom: var(--secondary) solid 175px;
  }
 
  .competition-card-conatiner-left > .competition-reward > div:nth-child(3) {
-  border-bottom: #fff solid 100px;
+  border-bottom: var(--secondary) solid 125px;
   margin-left: 1rem;
  }
 
@@ -128,10 +128,17 @@ padding-top: 6rem;
     opacity: 100%;
     font-weight: 500;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .competition-card-conatiner-right-content > ul {
     padding: 1rem;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 
   .competition-card-conatiner-right-content > ul > li {
@@ -169,8 +176,8 @@ padding-top: 6rem;
   .competition_card_content-body{
     flex-direction: column;
   }
-  .competition-card-conatiner > span {
-    font-size: 3rem;
+  .competition-card-conatiner-right-content > ul {
+    width: 100%;
   }
  }
 

@@ -116,6 +116,10 @@ Custom classes
   text-align: center;
 }
 
+.timeline-contents .container_heading {
+  text-align: left;
+}
+
 .sub-container {
   margin-top: 1rem;
   display: flex;
