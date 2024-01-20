@@ -90,7 +90,7 @@
 }
 
 
-.size { 
+.size-white , .type-white, .size-black, .type-black { 
     color: #fff;
     border:  #fff solid 2px;
     padding: 0.35rem 0.5rem;
@@ -100,7 +100,7 @@
     text-align: center;
 }
 
-.size:hover{
+.active , .size-white:hover , .type-white:hover, .size-black:hover, .type-black:hover{
     background-color: #fff;
     color: #000; 
 }
