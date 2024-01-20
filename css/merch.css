@@ -100,7 +100,7 @@
     text-align: center;
 }
 
-.active , .size-white:hover , .type-white:hover, .size-black:hover, .type-black:hover{
+.merch-container .active , .size-white:hover , .type-white:hover, .size-black:hover, .type-black:hover{
     background-color: #fff;
     color: #000; 
 }
