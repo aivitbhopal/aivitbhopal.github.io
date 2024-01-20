@@ -48,6 +48,7 @@
   .containers {
     flex-direction: column;
     height: 120vh;
+    gap: 0;
   }
 
   .boxes:hover {

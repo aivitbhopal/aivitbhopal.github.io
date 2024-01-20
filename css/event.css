@@ -3,7 +3,7 @@
   font-family: sans-serif;
 
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: 100%;
   background-color: #04030c;
   width: 700px;
@@ -103,6 +103,11 @@
   cursor: pointer;
   background-color: var(--secondary-variant);
   transition: all 0.375s ease-in-out;
+}
+
+.ticket span {
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
 .small {
@@ -362,7 +367,12 @@
     font-size: 10px;
   }
   .rip {
+    height: 280px;
     left: 320px;
+  }
+
+  .cta .buy {
+    right: 10px;
   }
 }
 
@@ -370,7 +380,8 @@
 
 @media screen and (max-width: 450px) {
   .ticket {
-    width: 350px;
+    width: 300px;
+    height: 200px;
   }
   .date .day {
     font-size: 30px;
@@ -378,6 +389,7 @@
 
   .eventName {
     font-size: 20px;
+    margin-left: 15px;
   }
 
   .location {
@@ -385,11 +397,22 @@
     margin-left: 50px;
   }
   .date .month-and-time {
+    margin-top: 3px;
+    margin-left: 5px;
     font-size: 10px;
     font-weight: bold;
   }
   .rip {
-    height: 250px;
-    left: 260px;
+    height: 180px;
+    left: 200px;
+  }
+  .location {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  .cta .buy {
+    top: 40%;
+    right: 0;
+    margin: 0;
   }
 }
