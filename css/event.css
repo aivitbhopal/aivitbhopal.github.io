@@ -283,6 +283,12 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 980px) {
+  .ticket{
+    width: 650px;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .events .card {
     width: 300px;
@@ -370,7 +376,7 @@
 
 @media screen and (max-width: 450px) {
   .ticket {
-    width: 350px;
+    width: 310px;
   }
   .date .day {
     font-size: 30px;
