@@ -81,7 +81,7 @@
 
 .rip {
   border-right: 8px dotted #fcfcfc;
-  height: 300px;
+  height: 325px;
   position: absolute;
   top: 8px;
   left: 530px;
@@ -364,7 +364,7 @@
 
   .rip {
     left: 420px;
-    height: 290px;
+    height: 310px;
   }
 
   .cta.buy {
@@ -399,7 +399,7 @@
     margin-left: 5px;
   }
   .rip {
-    height: 270px;
+    height: 285px;
     left: 320px;
   }
 
@@ -436,7 +436,7 @@
     font-weight: bold;
   }
   .rip {
-    height: 180px;
+    height: 185px;
     left: 200px;
   }
 
