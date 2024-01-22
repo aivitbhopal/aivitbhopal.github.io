@@ -37,7 +37,7 @@
    flex-direction: column;
 }
 
-.merch-container h1{
+/* .merch-container h1{
     color: white;
     border-bottom: 2px solid white;
     border-radius: 12px;
@@ -47,7 +47,7 @@
     letter-spacing: 1.2px;
     width: 100%;
     padding-bottom: 1rem;
-}
+} */
 
 .relative{
     position: relative;

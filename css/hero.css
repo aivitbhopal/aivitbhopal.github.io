@@ -44,6 +44,11 @@ body{
 .popup img{
     height: 3rem;
 }
+
+.popup.aic-passes {
+    right: 250px;
+}
+
 .main {
    /* border:2px solid red; */
     display: flex;
@@ -201,6 +206,16 @@ main {
     /* .main p {
         font-size: 4.5vw;
     } */
+
+    .popup p {
+        display: none;
+    }
+
+    .popup img {
+        height: 2rem;
+        width: 2rem;
+    }
+
     .popup{
         font-size:10px;
         right: 30px;
@@ -208,11 +223,15 @@ main {
         width: auto;
         height: auto;
     }
+
+    .popup.aic-passes {
+        right: 100px;
+    }
 }
 
 @media  screen and (max-width:600px) {
     .main-bottom img{
-        height: 41%;
+        height: 30%;
        
        
     }
@@ -220,5 +239,12 @@ main {
     .main-bottom{
         max-width: 94%;
         bottom: 50px;
+    }
+}
+
+@media  screen and (max-width:450px) {
+    .popup.aic-passes {
+        top: 100px;
+        right: 30px;
     }
 }

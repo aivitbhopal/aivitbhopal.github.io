@@ -29,21 +29,29 @@ t1.from(bottomBar, {
   },
   "<0.2"
 );
-t1.from(subheader, {
-  y: 100,
-  opacity: 0,
-  ease: "power4.out",
-  duration: 0.8,
-}).from(
-  tags,
-  {
-    y: 100,
-    opacity: 0,
-    ease: "power4.out",
-    duration: 0.8,
-  },
-  "<0.1"
-);
+// t1.from(subheader, {
+//   y: 100,
+//   opacity: 0,
+//   ease: "power4.out",
+//   duration: 0.8,
+// }).from(
+//   tags,
+//   {
+//     y: 100,
+//     opacity: 0,
+//     ease: "power4.out",
+//     duration: 0.8,
+//   },
+//   "<0.1"
+// ).then(()=>{
+//   [...tags.children].map(tag=>{
+//     animateText(tag)
+//   })
+// })
+
+[...tags.children].map(tag=>{
+  animateText(tag, 80)
+})
 
 show_hide_nav();
 
@@ -107,7 +115,7 @@ gsap.from(
 );
 
 function timeline_main_animations() {
-  var mobile_view = window.matchMedia("(max-width: 600px)").matches;
+  var mobile_view = window.matchMedia("(max-width: 780px)").matches;
 
   console.log(mobile_view);
 
@@ -323,33 +331,33 @@ gsap.from("#rocket-img", {
 //     }
 // });
 
-gsap.from("#speakers .container_heading", {
-  duration: 1,
-  y: 300,
-  opacity: 0,
-  ease: "power4.inOut",
-  pin: true,
-  scrollTrigger: {
-    trigger: "#speakers",
-    // markers: true,
-    start: "top-=100 bottom",
-    toggleActions: "play none none reverse",
-  },
-});
-gsap.from("#speakers .speakers .speaker-container", {
-  duration: 0.9,
-  y: 300,
-  opacity: 0,
-  stagger: 0.2,
-  ease: "power4.inOut",
-  pin: true,
-  scrollTrigger: {
-    trigger: "#speakers",
-    // markers: true,
-    start: "top 90%",
-    toggleActions: "play none none reverse",
-  },
-});
+// gsap.from("#speakers .container_heading", {
+//   duration: 1,
+//   y: 300,
+//   opacity: 0,
+//   ease: "power4.inOut",
+//   pin: true,
+//   scrollTrigger: {
+//     trigger: "#speakers",
+//     // markers: true,
+//     start: "top-=100 bottom",
+//     toggleActions: "play none none reverse",
+//   },
+// });
+// gsap.from("#speakers .speakers .speaker-container", {
+//   duration: 0.9,
+//   y: 300,
+//   opacity: 0,
+//   stagger: 0.2,
+//   ease: "power4.inOut",
+//   pin: true,
+//   scrollTrigger: {
+//     trigger: "#speakers",
+//     // markers: true,
+//     start: "top 90%",
+//     toggleActions: "play none none reverse",
+//   },
+// });
 // glitch effect js
 
 // const glitch = document.querySelector('.glitch-effect');

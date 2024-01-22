@@ -111,7 +111,7 @@ Custom classes
 
 .container_heading {
   color: white;
-  font-size: 3.1rem;
+  font-size: max(3vw, 2rem);
   padding-bottom: 1rem;
   text-align: center;
 }
