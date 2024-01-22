@@ -16,6 +16,10 @@
   color: #fff;
 }
 
+.ticket:hover {
+  cursor: pointer;
+}
+
 .event_container .sub-container .ticket:nth-child(n+1) {
   margin-top: 2rem;
 }
@@ -49,10 +53,15 @@
 .location {
   float: left;
   margin: 135px 0 20px 75px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.ticket-1 .location{
+  margin-top: 100px;
+  margin-left: 180px;
 }
 
 /* .location::before {
@@ -126,6 +135,10 @@
   background-image: url(https://images.unsplash.com/photo-1636690619068-eb3849be82d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
+.ticket-4 {
+  background-image: url(https://images.unsplash.com/photo-1636690513351-0af1763f6237?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
 .event_container {
   display: flex;
   justify-content: center;
@@ -151,7 +164,7 @@
 
 .event_row {
   display: flex;
-
+  min-width: 80vw;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -342,10 +355,16 @@
 
   .location {
     margin-left: 0px;
+    font-size: 25px;
+  }
+
+  .ticket-1 .location{
+    margin-left: 100px;
   }
 
   .rip {
     left: 420px;
+    height: 290px;
   }
 
   .cta.buy {
@@ -366,14 +385,21 @@
   }
 
   .location {
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 50px;
   }
+
+  .ticket-1 .location{
+    margin-left: 50px;
+  }
+
   .date .month-and-time {
     font-size: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
   .rip {
-    height: 280px;
+    height: 270px;
     left: 320px;
   }
 
@@ -396,10 +422,11 @@
   .eventName {
     font-size: 20px;
     margin-left: 15px;
+    margin-right: 120px;
   }
 
   .location {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 50px;
   }
   .date .month-and-time {
@@ -414,6 +441,10 @@
   }
   .location {
     margin-top: 40px;
+    margin-left: 15px;
+  }
+  .ticket-1 .location{
+    margin-top: 15px;
     margin-left: 15px;
   }
   .cta .buy {
