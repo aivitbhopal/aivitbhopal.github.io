@@ -108,6 +108,11 @@
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
+.cta .buy span {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.1rem;
+}
+
 .cta .buy:hover {
   cursor: pointer;
   background-color: var(--secondary-variant);
