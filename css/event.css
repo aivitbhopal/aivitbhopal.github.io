@@ -439,12 +439,14 @@
     height: 180px;
     left: 200px;
   }
+
   .location {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 15px;
   }
+
   .ticket-1 .location{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 15px;
   }
   .cta .buy {
