@@ -142,6 +142,11 @@
     font-size: clamp(0.75rem, 2.5vw, 1.25rem);
 }
 
+.merch-card-container_contents .merch-price span {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.1rem;
+}
+
 .merch-card-container_contents p {
     color: white;
     line-height: 1.5;
