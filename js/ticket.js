@@ -1,11 +1,18 @@
 const tickets = [...document.querySelectorAll('.ticket')];
 
+const links = {
+    ticket_1: "https://forms.gle/zQaT55RGVn337qo6A",
+    ticket_2: "https://forms.gle/UArygjKY4PCpo1Q9A",
+    ticket_3: "https://forms.gle/Y8PZrfPEzMjVMHpWA",
+    ticket_4: "https://docs.google.com/forms/d/e/1FAIpQLSdUeYmzj1gp3bFg0OqTAez4tyFSuB3KdE0naPggskfbvxmnpg/viewform",
+}
+
 tickets.map(ticket=>{;
     ticket.onclick = event => {
-        var link = event.target.classList.contains('ticket-1') ? "Link for Pass 1" :
-                   event.target.classList.contains('ticket-2') ? "https://docs.google.com/forms/d/e/1FAIpQLSc0H4THSHfY4vlaKNervFnknsMPzW9kjr9f-LOmJk9EhhWIUg/viewform?usp=sharing" :
-                   event.target.classList.contains('ticket-3') ? "https://docs.google.com/forms/d/e/1FAIpQLSdYPMDU4DaaUkagyDCYTt7ztqaVnkazCCxn72W8Q2qqrFBUJw/viewform?usp=sharing" :
-                   event.target.classList.contains('ticket-4') ? "Link for Combo" :
+        var link = event.target.classList.contains('ticket-1') ? links.ticket_1 :
+                   event.target.classList.contains('ticket-2') ? links.ticket_2 :
+                   event.target.classList.contains('ticket-3') ? links.ticket_3 :
+                   event.target.classList.contains('ticket-4') ? links.ticket_4 :
                    null
 
         if (link) {
@@ -15,12 +22,14 @@ tickets.map(ticket=>{;
 })
 
 document.getElementById('ticket-1').onclick = event =>{
-    window.location.href = "Link for Pass 1";
+    window.location.href = links.ticket_1;
 }
-
 document.getElementById('ticket-2').onclick = event =>{
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc0H4THSHfY4vlaKNervFnknsMPzW9kjr9f-LOmJk9EhhWIUg/viewform?usp=sharing";
+    window.location.href = links.ticket_2;
 }
 document.getElementById('ticket-3').onclick = event =>{
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdYPMDU4DaaUkagyDCYTt7ztqaVnkazCCxn72W8Q2qqrFBUJw/viewform?usp=sharing";
+    window.location.href = links.ticket_3;
+}
+document.getElementById('ticket-3').onclick = event =>{
+    window.location.href = links.ticket_4;
 }
