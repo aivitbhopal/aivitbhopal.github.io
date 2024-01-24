@@ -174,6 +174,7 @@ padding-top: 6rem;
   }
   .competition-card-conatiner-left{
     width: 100%;
+    min-height: 350px;
   }
   .competition_card_content-body{
     flex-direction: column;
