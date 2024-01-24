@@ -124,12 +124,12 @@ padding-top: 6rem;
 
 
   .competition-card-conatiner-right-content{
-    /* line-height: 1.5; */
+    line-height: 1.2;
     /* #9897A4 */
     color: #fff;
     opacity: 100%;
-    font-weight: 500;
-    font-size: max(2vw, 1rem);
+    font-weight: 300;
+    font-size: max(1.9vw, 1rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
