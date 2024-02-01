@@ -12,7 +12,7 @@
 
 #rules #topBar {
     position: absolute;
-    background: radial-gradient(circle, #555 50%, transparent 50.2%) 0.5em 0.4em/0.8em 0.8em, radial-gradient(circle, #555 50%, transparent 50.2%) 1.3em 0.4em/0.8em 0.8em, radial-gradient(circle, #555 50%, transparent 50.2%) 2.1em 0.4em/0.8em 0.8em, linear-gradient(#333, #333) 0 0/100% 1.5em;
+    background: radial-gradient(circle, #c20202 50%, transparent 50.2%) 0.5em 0.4em/0.8em 0.8em, radial-gradient(circle, #555 50%, transparent 50.2%) 1.3em 0.4em/0.8em 0.8em, radial-gradient(circle, #555 50%, transparent 50.2%) 2.1em 0.4em/0.8em 0.8em, linear-gradient(#333, #333) 0 0/100% 1.5em;
     background-repeat: no-repeat;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
